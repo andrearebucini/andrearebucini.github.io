@@ -149,3 +149,24 @@ html.dark-mode td {
 html.dark-mode #dark-mode-toggle {
   color: #e6e6e6 !important;
 }
+
+/* Author profile refinements */
+
+.author__pronouns {
+  margin-top: -0.4rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.85em;
+  color: #666666;
+}
+
+.author__bio {
+  margin-bottom: 0.6rem;
+}
+
+.author__urls li span {
+  font-size: 0.9em;
+}
+
+html.dark-mode .author__pronouns {
+  color: #b8b8b8;
+}
