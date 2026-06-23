@@ -545,3 +545,38 @@ html.dark-mode .page__footer {
 html.dark-mode .page__footer-copyright {
   color: #b8b8b8 !important;
 }
+
+/* ============================================================
+   Hide page titles inside page content
+   ============================================================ */
+
+.page__title {
+  display: none !important;
+}
+
+/* ============================================================
+   Active page in navigation dock
+   ============================================================ */
+
+.greedy-nav .visible-links a.active-nav-link {
+  border-bottom: 1px solid #333333 !important;
+  padding-bottom: 0.15rem !important;
+  color: #333333 !important;
+}
+
+.greedy-nav .visible-links a.active-nav-link:hover {
+  border-bottom-color: #333333 !important;
+  color: #333333 !important;
+}
+
+/* Active page in dark mode */
+
+html.dark-mode .greedy-nav .visible-links a.active-nav-link {
+  border-bottom: 1px solid #ffffff !important;
+  color: #ffffff !important;
+}
+
+html.dark-mode .greedy-nav .visible-links a.active-nav-link:hover {
+  border-bottom-color: #ffffff !important;
+  color: #ffffff !important;
+}
