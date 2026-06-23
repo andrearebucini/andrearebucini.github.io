@@ -277,19 +277,30 @@ body {
   }
 }
 
-/* Minimal separator between author profile and page content */
+/* ============================================================
+   Fixed separator between author profile and page content
+   ============================================================ */
 
 @media (min-width: 64em) {
+  .page::before {
+    content: "";
+    position: fixed;
+    top: 3.4rem;
+    bottom: 1.2rem;
+    left: 265px;
+    width: 1px;
+    background: #e5e5e5;
+    z-index: 850;
+    pointer-events: none;
+  }
+
   .page {
-    border-left: 1px solid #e5e5e5 !important;
-    padding-left: 1.25rem !important;
+    padding-left: 1rem !important;
   }
 }
 
-/* Separator in dark mode */
-
-html.dark-mode .page {
-  border-left-color: #333333 !important;
+html.dark-mode .page::before {
+  background: #333333;
 }
 
 /* ============================================================
