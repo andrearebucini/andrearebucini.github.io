@@ -7,9 +7,7 @@ title: ""
 
 I am a third-year Ph.D. student in Economics at the University of Bergamo (Italy).  
 My research interests lie in applied microeconomics, particularly in financial literacy, health economics, household economics, gender economics, and the economics of education.  
-If you want to get in touch, please don’t hesitate to contact me.
-
-[Email](mailto:andrea.rebucini@unibg.it) · [CV](/files/CV_Andrea_Rebucini.pdf) · [LinkedIn](https://www.linkedin.com/in/andrea-rebucini) · [GitHub](https://github.com/yourusername) · [Google Scholar](https://scholar.google.com/citations?user=hVfaDXwAAAAJ&hl) 
+If you want to get in touch, please don’t hesitate to contact me!
 
 ---
 
