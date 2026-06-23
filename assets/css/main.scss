@@ -238,3 +238,12 @@ html.dark-mode .author__urls li a {
     height: 120px !important;
   }
 }
+
+/* Remove permalink symbols next to section titles */
+
+.page__content .header-link,
+.page__content .heading-anchor,
+.page__content .anchor,
+.page__content .octicon-link {
+  display: none !important;
+}
