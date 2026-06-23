@@ -273,3 +273,42 @@ html.dark-mode .greedy-nav {
   background: #121212 !important;
   border-bottom-color: #333333 !important;
 }
+
+/* More compact top navigation bar */
+
+.masthead {
+  min-height: 44px !important;
+}
+
+.masthead__inner-wrap {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.greedy-nav {
+  min-height: 36px !important;
+}
+
+.greedy-nav .site-title,
+.greedy-nav .visible-links a {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  line-height: 1.2 !important;
+}
+
+#dark-mode-toggle {
+  font-size: 0.95rem !important;
+  line-height: 1 !important;
+}
+
+/* Sticky author profile */
+
+@media (min-width: 64em) {
+  .sidebar {
+    position: sticky !important;
+    top: 4rem !important;
+    align-self: flex-start !important;
+    max-height: calc(100vh - 4rem) !important;
+    overflow-y: auto !important;
+  }
+}
