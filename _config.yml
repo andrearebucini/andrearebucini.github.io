@@ -6,6 +6,12 @@ repository: "andrearebucini/andrearebucini.github.io"
 
 remote_theme: "mmistakes/minimal-mistakes@4.28.0"
 
+head_scripts:
+  - /assets/js/theme-init.js
+
+after_footer_scripts:
+  - /assets/js/dark-mode.js
+  
 plugins:
   - jekyll-include-cache
 
