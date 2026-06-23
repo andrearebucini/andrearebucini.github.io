@@ -4,8 +4,21 @@
 @import "minimal-mistakes/skins/default";
 @import "minimal-mistakes";
 
+/* ============================================================
+   Base typography
+   ============================================================ */
+
+html {
+  font-size: 15px !important;
+}
+
+body {
+  color: #333333;
+}
+
 .page__content {
   font-size: 0.8em;
+  line-height: 1.65;
 }
 
 .page__content h1 {
@@ -18,21 +31,102 @@
   padding-bottom: 0.2em;
 }
 
-.author__bio {
-  font-size: 0.9em;
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6,
+.page__title {
+  color: #333333 !important;
 }
 
-/* Masthead layout */
+/* ============================================================
+   Wider page layout and smaller margins
+   ============================================================ */
+
+.initial-content {
+  max-width: none !important;
+}
+
+.masthead__inner-wrap {
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+@media (min-width: 64em) {
+  .sidebar {
+    position: fixed !important;
+    top: 3.2rem !important;
+    left: 2rem !important;
+    width: 220px !important;
+    max-height: calc(100vh - 4rem) !important;
+    overflow-y: auto !important;
+    z-index: 900 !important;
+  }
+
+  .page {
+    float: none !important;
+    width: auto !important;
+    max-width: none !important;
+    margin-left: 280px !important;
+    margin-right: 1.25rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .page__inner-wrap,
+  .page__content {
+    max-width: none !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 64em) {
+  .page {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* ============================================================
+   Sticky and compact masthead
+   ============================================================ */
+
+.masthead {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  min-height: 42px !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.masthead__inner-wrap {
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+  background: #ffffff !important;
+}
 
 .greedy-nav {
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
+  min-height: 34px !important;
+  background: #ffffff !important;
 }
 
 .greedy-nav .site-title {
   flex: 0 0 auto !important;
-  margin-right: 1rem !important;
+  margin-right: 0.85rem !important;
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+  line-height: 1.2 !important;
+  color: #333333 !important;
+  opacity: 1 !important;
 }
 
 .greedy-nav .visible-links {
@@ -45,10 +139,26 @@
 
 .greedy-nav .visible-links li {
   margin-left: 0 !important;
-  margin-right: 0.5rem !important;
+  margin-right: 0.45rem !important;
 }
 
-/* Minimal dark-mode button */
+.greedy-nav .visible-links a {
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+  line-height: 1.2 !important;
+  color: #333333 !important;
+  opacity: 1 !important;
+}
+
+.greedy-nav .site-title:hover,
+.greedy-nav .visible-links a:hover {
+  color: #333333 !important;
+  opacity: 1 !important;
+}
+
+/* ============================================================
+   Minimal dark-mode toggle
+   ============================================================ */
 
 #dark-mode-toggle {
   flex: 0 0 auto !important;
@@ -61,11 +171,11 @@
   background-color: transparent !important;
   appearance: none !important;
   -webkit-appearance: none !important;
-  color: inherit !important;
-  font-size: 1.05rem !important;
+  color: #333333 !important;
+  font-size: 0.95rem !important;
   line-height: 1 !important;
   cursor: pointer !important;
-  opacity: 0.75 !important;
+  opacity: 1 !important;
 }
 
 #dark-mode-toggle:hover,
@@ -76,152 +186,13 @@
   box-shadow: none !important;
   background: none !important;
   background-color: transparent !important;
+  color: #333333 !important;
   opacity: 1 !important;
 }
 
-/* Dark mode colours */
-
-html.dark-mode,
-html.dark-mode body {
-  background: #121212 !important;
-  color: #e6e6e6 !important;
-}
-
-html.dark-mode .masthead,
-html.dark-mode .greedy-nav,
-html.dark-mode .page,
-html.dark-mode .archive,
-html.dark-mode .sidebar,
-html.dark-mode .author__content,
-html.dark-mode .author__urls-wrapper,
-html.dark-mode .page__footer {
-  background: #121212 !important;
-  color: #e6e6e6 !important;
-}
-
-html.dark-mode .page__content,
-html.dark-mode .page__content p,
-html.dark-mode .page__content li,
-html.dark-mode .page__content td,
-html.dark-mode .page__content th {
-  color: #e6e6e6 !important;
-}
-
-html.dark-mode h1,
-html.dark-mode h2,
-html.dark-mode h3,
-html.dark-mode h4,
-html.dark-mode h5,
-html.dark-mode h6 {
-  color: #ffffff !important;
-}
-
-html.dark-mode .page__content h2 {
-  border-bottom-color: #333333 !important;
-}
-
-html.dark-mode a,
-html.dark-mode .page__content a,
-html.dark-mode .author__urls a,
-html.dark-mode .site-title,
-html.dark-mode .visible-links a {
-  color: #9ecbff !important;
-}
-
-html.dark-mode a:hover,
-html.dark-mode .page__content a:hover,
-html.dark-mode .visible-links a:hover {
-  color: #c7e1ff !important;
-}
-
-html.dark-mode code,
-html.dark-mode pre {
-  background: #1e1e1e !important;
-  color: #f0f0f0 !important;
-}
-
-html.dark-mode table,
-html.dark-mode th,
-html.dark-mode td {
-  border-color: #333333 !important;
-}
-
-html.dark-mode #dark-mode-toggle {
-  color: #e6e6e6 !important;
-}
-
-/* Author profile refinements */
-
-.author__pronouns {
-  margin-top: -0.4rem;
-  margin-bottom: 0.6rem;
-  font-size: 0.85em;
-  color: #666666;
-}
-
-.author__bio {
-  margin-bottom: 0.6rem;
-}
-
-.author__urls li span {
-  font-size: 0.9em;
-}
-
-html.dark-mode .author__pronouns {
-  color: #b8b8b8;
-}
-
-/* Wider main text area */
-
-@media (min-width: 64em) {
-  .page {
-    padding-right: 2rem !important;
-  }
-
-  .page__inner-wrap {
-    max-width: 950px !important;
-  }
-
-  .page__content {
-    max-width: 900px !important;
-  }
-}
-
-/* Author profile icons in light mode */
-
-.author__urls i,
-.author__urls svg,
-.author__urls .fa,
-.author__urls .fas,
-.author__urls .fab,
-.author__urls .ai {
-  color: #4a4a4a !important;
-}
-
-.author__urls li,
-.author__urls li span,
-.author__urls li a {
-  color: #4a4a4a !important;
-}
-
-/* Author profile icons in dark mode */
-
-html.dark-mode .author__urls i,
-html.dark-mode .author__urls svg,
-html.dark-mode .author__urls .fa,
-html.dark-mode .author__urls .fas,
-html.dark-mode .author__urls .fab,
-html.dark-mode .author__urls .ai {
-  color: #ffffff !important;
-}
-
-html.dark-mode .author__urls li,
-html.dark-mode .author__urls li span,
-html.dark-mode .author__urls li a {
-  color: #e6e6e6 !important;
-}
-
-/* Larger author profile picture */
+/* ============================================================
+   Author profile
+   ============================================================ */
 
 .author__avatar img {
   max-width: 180px !important;
@@ -231,215 +202,21 @@ html.dark-mode .author__urls li a {
   border-radius: 50% !important;
 }
 
-@media (max-width: 64em) {
-  .author__avatar img {
-    max-width: 120px !important;
-    width: 120px !important;
-    height: 120px !important;
-  }
+.author__bio {
+  margin-bottom: 0.6rem;
+  font-size: 0.9em;
 }
 
-/* Remove permalink symbols next to section titles */
-
-.page__content .header-link,
-.page__content .heading-anchor,
-.page__content .anchor,
-.page__content .octicon-link {
-  display: none !important;
-}
-
-/* Keep top navigation bar fixed while scrolling */
-
-.masthead {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 1000 !important;
-  background: #ffffff !important;
-  border-bottom: 1px solid #e5e5e5 !important;
-}
-
-/* Ensure the inner navigation also keeps the same background */
-
-.masthead__inner-wrap,
-.greedy-nav {
-  background: #ffffff !important;
-}
-
-/* Dark mode version */
-
-html.dark-mode .masthead,
-html.dark-mode .masthead__inner-wrap,
-html.dark-mode .greedy-nav {
-  background: #121212 !important;
-  border-bottom-color: #333333 !important;
-}
-
-/* More compact top navigation bar */
-
-.masthead {
-  min-height: 44px !important;
-}
-
-.masthead__inner-wrap {
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
-}
-
-.greedy-nav {
-  min-height: 36px !important;
-}
-
-.greedy-nav .site-title,
-.greedy-nav .visible-links a {
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
-  line-height: 1.2 !important;
-}
-
-#dark-mode-toggle {
-  font-size: 0.95rem !important;
-  line-height: 1 !important;
-}
-
-/* Fixed author profile on desktop */
-
-@media (min-width: 64em) {
-  .sidebar {
-    position: fixed !important;
-    top: 3.2rem !important;
-    left: 6rem !important;
-    width: 220px !important;
-    max-height: calc(100vh - 4rem) !important;
-    overflow-y: auto !important;
-    z-index: 900 !important;
-  }
-
-  .page {
-    margin-left: 250px !important;
-  }
-}
-
-/* Keep masthead and author-profile colours stable */
-
-/* Top navigation: light mode */
-.masthead,
-.masthead a,
-.greedy-nav,
-.greedy-nav a,
-.greedy-nav .site-title,
-.greedy-nav .visible-links a {
+.author__pronouns {
+  margin-top: -0.4rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.85em;
   color: #333333 !important;
-  opacity: 1 !important;
 }
 
-/* Top navigation: no colour change on hover */
-.masthead a:hover,
-.greedy-nav a:hover,
-.greedy-nav .site-title:hover,
-.greedy-nav .visible-links a:hover {
-  color: #333333 !important;
-  opacity: 1 !important;
+.author__urls li span {
+  font-size: 0.9em;
 }
-
-/* Dark-mode toggle: always clear */
-#dark-mode-toggle,
-#dark-mode-toggle:hover,
-#dark-mode-toggle:focus,
-#dark-mode-toggle:active {
-  color: #333333 !important;
-  opacity: 1 !important;
-}
-
-/* Author profile: light mode */
-.author__name,
-.author__pronouns,
-.author__bio,
-.author__urls,
-.author__urls li,
-.author__urls li span,
-.author__urls li a,
-.author__urls i,
-.author__urls svg,
-.author__urls .fa,
-.author__urls .fas,
-.author__urls .fab,
-.author__urls .ai {
-  color: #333333 !important;
-  opacity: 1 !important;
-}
-
-/* Author profile: no colour change on hover */
-.author__urls a:hover,
-.author__urls a:hover span,
-.author__urls a:hover i,
-.author__urls a:hover svg {
-  color: #333333 !important;
-  opacity: 1 !important;
-}
-
-/* Top navigation: dark mode */
-html.dark-mode .masthead,
-html.dark-mode .masthead a,
-html.dark-mode .greedy-nav,
-html.dark-mode .greedy-nav a,
-html.dark-mode .greedy-nav .site-title,
-html.dark-mode .greedy-nav .visible-links a {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-/* Top navigation: no blue hover in dark mode */
-html.dark-mode .masthead a:hover,
-html.dark-mode .greedy-nav a:hover,
-html.dark-mode .greedy-nav .site-title:hover,
-html.dark-mode .greedy-nav .visible-links a:hover {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-/* Dark-mode toggle: white in dark mode */
-html.dark-mode #dark-mode-toggle,
-html.dark-mode #dark-mode-toggle:hover,
-html.dark-mode #dark-mode-toggle:focus,
-html.dark-mode #dark-mode-toggle:active {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-/* Author profile: dark mode */
-html.dark-mode .author__name,
-html.dark-mode .author__pronouns,
-html.dark-mode .author__bio,
-html.dark-mode .author__urls,
-html.dark-mode .author__urls li,
-html.dark-mode .author__urls li span,
-html.dark-mode .author__urls li a,
-html.dark-mode .author__urls i,
-html.dark-mode .author__urls svg,
-html.dark-mode .author__urls .fa,
-html.dark-mode .author__urls .fas,
-html.dark-mode .author__urls .fab,
-html.dark-mode .author__urls .ai {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-/* Author profile: no hover change in dark mode */
-html.dark-mode .author__urls a:hover,
-html.dark-mode .author__urls a:hover span,
-html.dark-mode .author__urls a:hover i,
-html.dark-mode .author__urls a:hover svg {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-
-
-
-
-
-
-/* Force author profile to remain fully visible */
 
 .sidebar,
 .sidebar *,
@@ -452,21 +229,10 @@ html.dark-mode .author__urls a:hover svg {
 .author__urls,
 .author__urls *,
 .social-icons,
-.social-icons *,
-.author__urls li,
-.author__urls li a,
-.author__urls li span,
-.author__urls i,
-.author__urls svg,
-.author__urls .fa,
-.author__urls .fas,
-.author__urls .fab,
-.author__urls .ai {
+.social-icons * {
   opacity: 1 !important;
   filter: none !important;
 }
-
-/* Author profile colours: light mode */
 
 .sidebar,
 .sidebar *,
@@ -486,8 +252,165 @@ html.dark-mode .author__urls a:hover svg {
   color: #333333 !important;
 }
 
-/* Author profile colours: dark mode */
+.author__urls a:hover,
+.author__urls a:hover *,
+.author__urls li:hover,
+.author__urls li:hover * {
+  color: #333333 !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
 
+@media (max-width: 64em) {
+  .author__avatar img {
+    max-width: 120px !important;
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
+
+/* ============================================================
+   Normal links inside page content
+   ============================================================ */
+
+.page__content a {
+  color: #336699 !important;
+}
+
+.page__content a:hover {
+  color: #224466 !important;
+}
+
+/* ============================================================
+   Remove heading permalink appearance and behaviour
+   ============================================================ */
+
+/* Hide generated permalink symbols */
+.page__content .header-link,
+.page__content .heading-anchor,
+.page__content .anchor,
+.page__content .octicon-link,
+.page__content a[aria-hidden="true"],
+.page__title .header-link,
+.page__title .heading-anchor,
+.page__title .anchor,
+.page__title .octicon-link,
+.page__title a[aria-hidden="true"] {
+  display: none !important;
+}
+
+/* Make page titles and section titles look like plain text */
+.page__title,
+.page__title a,
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6,
+.page__content h1 a,
+.page__content h2 a,
+.page__content h3 a,
+.page__content h4 a,
+.page__content h5 a,
+.page__content h6 a {
+  color: #333333 !important;
+  text-decoration: none !important;
+}
+
+/* Disable self-links on page titles and section headings */
+.page__title a,
+.page__content h1 a,
+.page__content h2 a,
+.page__content h3 a,
+.page__content h4 a,
+.page__content h5 a,
+.page__content h6 a {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+/* ============================================================
+   Dark mode
+   ============================================================ */
+
+html.dark-mode,
+html.dark-mode body {
+  background: #121212 !important;
+  color: #e6e6e6 !important;
+}
+
+html.dark-mode .masthead,
+html.dark-mode .masthead__inner-wrap,
+html.dark-mode .greedy-nav,
+html.dark-mode .page,
+html.dark-mode .archive,
+html.dark-mode .sidebar,
+html.dark-mode .author__content,
+html.dark-mode .author__urls-wrapper,
+html.dark-mode .page__footer {
+  background: #121212 !important;
+  color: #e6e6e6 !important;
+}
+
+html.dark-mode .masthead {
+  border-bottom-color: #333333 !important;
+}
+
+html.dark-mode .page__content,
+html.dark-mode .page__content p,
+html.dark-mode .page__content li,
+html.dark-mode .page__content td,
+html.dark-mode .page__content th {
+  color: #e6e6e6 !important;
+}
+
+/* Main content links in dark mode */
+html.dark-mode .page__content a {
+  color: #9ecbff !important;
+}
+
+html.dark-mode .page__content a:hover {
+  color: #c7e1ff !important;
+}
+
+/* But page titles and section titles must remain white, not blue */
+html.dark-mode .page__title,
+html.dark-mode .page__title a,
+html.dark-mode .page__content h1,
+html.dark-mode .page__content h2,
+html.dark-mode .page__content h3,
+html.dark-mode .page__content h4,
+html.dark-mode .page__content h5,
+html.dark-mode .page__content h6,
+html.dark-mode .page__content h1 a,
+html.dark-mode .page__content h2 a,
+html.dark-mode .page__content h3 a,
+html.dark-mode .page__content h4 a,
+html.dark-mode .page__content h5 a,
+html.dark-mode .page__content h6 a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+html.dark-mode .page__content h2 {
+  border-bottom-color: #333333 !important;
+}
+
+/* Dock links stay white in dark mode */
+html.dark-mode .greedy-nav .site-title,
+html.dark-mode .greedy-nav .site-title:hover,
+html.dark-mode .greedy-nav .visible-links a,
+html.dark-mode .greedy-nav .visible-links a:hover,
+html.dark-mode #dark-mode-toggle,
+html.dark-mode #dark-mode-toggle:hover,
+html.dark-mode #dark-mode-toggle:focus,
+html.dark-mode #dark-mode-toggle:active {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Author profile stays white in dark mode */
 html.dark-mode .sidebar,
 html.dark-mode .sidebar *,
 html.dark-mode .author__name,
@@ -508,67 +431,24 @@ html.dark-mode .author__urls .ai {
   filter: none !important;
 }
 
-/* Prevent hover effects in author profile */
-
-.author__urls a:hover,
-.author__urls a:hover *,
 html.dark-mode .author__urls a:hover,
-html.dark-mode .author__urls a:hover * {
-  color: inherit !important;
+html.dark-mode .author__urls a:hover *,
+html.dark-mode .author__urls li:hover,
+html.dark-mode .author__urls li:hover * {
+  color: #ffffff !important;
   opacity: 1 !important;
   filter: none !important;
 }
 
-
-/* Section titles should not look like links */
-
-.page__content h1,
-.page__content h2,
-.page__content h3,
-.page__content h4,
-.page__content h5,
-.page__content h6 {
-  color: #333333 !important;
+/* Code, preformatted text, and tables in dark mode */
+html.dark-mode code,
+html.dark-mode pre {
+  background: #1e1e1e !important;
+  color: #f0f0f0 !important;
 }
 
-.page__content h1 a,
-.page__content h2 a,
-.page__content h3 a,
-.page__content h4 a,
-.page__content h5 a,
-.page__content h6 a {
-  color: #333333 !important;
-  text-decoration: none !important;
-  pointer-events: none !important;
-  cursor: default !important;
-}
-
-/* Section titles in dark mode */
-
-html.dark-mode .page__content h1,
-html.dark-mode .page__content h2,
-html.dark-mode .page__content h3,
-html.dark-mode .page__content h4,
-html.dark-mode .page__content h5,
-html.dark-mode .page__content h6,
-html.dark-mode .page__content h1 a,
-html.dark-mode .page__content h2 a,
-html.dark-mode .page__content h3 a,
-html.dark-mode .page__content h4 a,
-html.dark-mode .page__content h5 a,
-html.dark-mode .page__content h6 a {
-  color: #ffffff !important;
-  text-decoration: none !important;
-  pointer-events: none !important;
-  cursor: default !important;
-}
-
-/* Hide generated heading permalink icons */
-
-.page__content .header-link,
-.page__content .heading-anchor,
-.page__content .anchor,
-.page__content .octicon-link,
-.page__content a[aria-hidden="true"] {
-  display: none !important;
+html.dark-mode table,
+html.dark-mode th,
+html.dark-mode td {
+  border-color: #333333 !important;
 }
