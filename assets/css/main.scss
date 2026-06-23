@@ -306,11 +306,15 @@ html.dark-mode .greedy-nav {
 @media (min-width: 64em) {
   .sidebar {
     position: fixed !important;
-    top: 4.2rem !important;
-    left: 2rem !important;
+    top: 3.6rem !important;
+    left: 4rem !important;
     width: 220px !important;
-    max-height: calc(100vh - 4.5rem) !important;
+    max-height: calc(100vh - 4rem) !important;
     overflow-y: auto !important;
     z-index: 900 !important;
+  }
+
+  .page {
+    margin-left: 300px !important;
   }
 }
