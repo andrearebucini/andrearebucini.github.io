@@ -247,3 +247,29 @@ html.dark-mode .author__urls li a {
 .page__content .octicon-link {
   display: none !important;
 }
+
+/* Keep top navigation bar fixed while scrolling */
+
+.masthead {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+/* Ensure the inner navigation also keeps the same background */
+
+.masthead__inner-wrap,
+.greedy-nav {
+  background: #ffffff !important;
+}
+
+/* Dark mode version */
+
+html.dark-mode .masthead,
+html.dark-mode .masthead__inner-wrap,
+html.dark-mode .greedy-nav {
+  background: #121212 !important;
+  border-bottom-color: #333333 !important;
+}
