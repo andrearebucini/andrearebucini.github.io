@@ -1,8 +1,8 @@
 (function () {
   function createDarkModeButton() {
-    const masthead = document.querySelector(".masthead__menu");
+    const nav = document.querySelector(".greedy-nav");
 
-    if (!masthead) {
+    if (!nav) {
       return;
     }
 
@@ -10,25 +10,26 @@
     button.id = "dark-mode-toggle";
     button.type = "button";
     button.setAttribute("aria-label", "Toggle dark mode");
+    button.setAttribute("title", "Toggle dark mode");
 
     const currentTheme = localStorage.getItem("theme");
     const isDark = currentTheme === "dark";
 
-    button.textContent = isDark ? "Light mode" : "Dark mode";
+    button.textContent = isDark ? "☀" : "☾";
 
     button.addEventListener("click", function () {
       const darkModeIsActive = document.documentElement.classList.toggle("dark-mode");
 
       if (darkModeIsActive) {
         localStorage.setItem("theme", "dark");
-        button.textContent = "Light mode";
+        button.textContent = "☀";
       } else {
         localStorage.setItem("theme", "light");
-        button.textContent = "Dark mode";
+        button.textContent = "☾";
       }
     });
 
-    masthead.appendChild(button);
+    nav.appendChild(button);
   }
 
   if (document.readyState === "loading") {
