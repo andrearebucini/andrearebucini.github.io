@@ -9,7 +9,7 @@
    ============================================================ */
 
 html {
-  font-size: 15px !important;
+  font-size: 16px !important;
 }
 
 body {
@@ -17,8 +17,16 @@ body {
 }
 
 .page__content {
-  font-size: 0.95em;
-  line-height: 1.65;
+  font-size: 0.86em !important;
+  line-height: 1.65 !important;
+}
+
+.sidebar {
+  font-size: 0.94rem !important;
+}
+
+.masthead {
+  font-size: 0.94rem !important;
 }
 
 .page__content h1 {
@@ -72,8 +80,8 @@ body {
     float: none !important;
     width: auto !important;
     max-width: none !important;
-    margin-left: 280px !important;
-    margin-right: 1.25rem !important;
+    margin-left: 255px !important;
+    margin-right: 1rem !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -451,4 +459,47 @@ html.dark-mode table,
 html.dark-mode th,
 html.dark-mode td {
   border-color: #333333 !important;
+}
+
+/* ============================================================
+   Footer: remove dock appearance, keep centred sentence
+   ============================================================ */
+
+.page__footer {
+  background: transparent !important;
+  border-top: none !important;
+  margin-top: 3rem !important;
+  padding: 1.5rem 0 1rem 0 !important;
+  color: #666666 !important;
+}
+
+.page__footer footer {
+  max-width: none !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+  text-align: center !important;
+}
+
+.page__footer-copyright {
+  float: none !important;
+  display: block !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  font-size: 0.75rem !important;
+  color: #666666 !important;
+}
+
+/* Hide footer social/link row if it appears */
+.page__footer-follow {
+  display: none !important;
+}
+
+html.dark-mode .page__footer {
+  background: transparent !important;
+  border-top: none !important;
+  color: #b8b8b8 !important;
+}
+
+html.dark-mode .page__footer-copyright {
+  color: #b8b8b8 !important;
 }
