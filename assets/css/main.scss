@@ -9,7 +9,7 @@
    ============================================================ */
 
 html {
-  font-size: 16px !important;
+  font-size: 16.5px !important;
 }
 
 body {
@@ -17,12 +17,12 @@ body {
 }
 
 .page__content {
-  font-size: 0.86em !important;
+  font-size: 0.92em !important;
   line-height: 1.65 !important;
 }
 
 .sidebar {
-  font-size: 0.94rem !important;
+  font-size: 0.98rem !important;
 }
 
 .masthead {
@@ -80,8 +80,8 @@ body {
     float: none !important;
     width: auto !important;
     max-width: none !important;
-    margin-left: 255px !important;
-    margin-right: 1rem !important;
+    margin-left: 180px !important;
+    margin-right: 0.75rem !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -147,7 +147,7 @@ body {
 
 .greedy-nav .visible-links li {
   margin-left: 0 !important;
-  margin-right: 0.45rem !important;
+  margin-right: 0.25rem !important;
 }
 
 .greedy-nav .visible-links a {
@@ -212,18 +212,18 @@ body {
 
 .author__bio {
   margin-bottom: 0.6rem;
-  font-size: 0.9em;
+  font-size: 0.96em;
 }
 
 .author__pronouns {
-  margin-top: -0.4rem;
+  margin-top: -0.35rem;
   margin-bottom: 0.6rem;
-  font-size: 0.85em;
+  font-size: 0.9em;
   color: #333333 !important;
 }
 
 .author__urls li span {
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 
 .sidebar,
