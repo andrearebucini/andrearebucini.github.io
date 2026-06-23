@@ -21,3 +21,99 @@
 .author__bio {
   font-size: 0.9em;
 }
+
+/* Dark mode toggle button */
+
+#dark-mode-toggle {
+  margin-left: 1rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid #b6b6b6;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+#dark-mode-toggle:hover {
+  background: #f2f2f2;
+}
+
+/* Dark mode colours */
+
+html.dark-mode,
+html.dark-mode body {
+  background: #121212;
+  color: #e6e6e6;
+}
+
+html.dark-mode .masthead,
+html.dark-mode .greedy-nav,
+html.dark-mode .page,
+html.dark-mode .archive,
+html.dark-mode .sidebar,
+html.dark-mode .author__content,
+html.dark-mode .author__urls-wrapper,
+html.dark-mode .page__footer {
+  background: #121212;
+  color: #e6e6e6;
+}
+
+html.dark-mode .page__content,
+html.dark-mode .page__content p,
+html.dark-mode .page__content li,
+html.dark-mode .page__content td,
+html.dark-mode .page__content th {
+  color: #e6e6e6;
+}
+
+html.dark-mode a,
+html.dark-mode .page__content a,
+html.dark-mode .author__urls a,
+html.dark-mode .site-title,
+html.dark-mode .visible-links a {
+  color: #9ecbff;
+}
+
+html.dark-mode a:hover,
+html.dark-mode .page__content a:hover,
+html.dark-mode .visible-links a:hover {
+  color: #c7e1ff;
+}
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6 {
+  color: #ffffff;
+}
+
+html.dark-mode .page__content h2 {
+  border-bottom-color: #333333;
+}
+
+html.dark-mode code,
+html.dark-mode pre {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+html.dark-mode table {
+  border-color: #333333;
+}
+
+html.dark-mode th,
+html.dark-mode td {
+  border-color: #333333;
+}
+
+html.dark-mode #dark-mode-toggle {
+  border-color: #666666;
+  color: #e6e6e6;
+}
+
+html.dark-mode #dark-mode-toggle:hover {
+  background: #242424;
+}
