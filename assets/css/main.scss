@@ -22,17 +22,17 @@
   font-size: 0.9em;
 }
 
-/* Masthead layout: site title, then pages on the left, then dark-mode toggle on the right */
+/* Masthead layout */
 
 .greedy-nav {
   display: flex !important;
-  align-items: center;
+  align-items: center !important;
   justify-content: flex-start !important;
 }
 
 .greedy-nav .site-title {
-  flex: 0 0 auto;
-  margin-right: 2rem;
+  flex: 0 0 auto !important;
+  margin-right: 2rem !important;
 }
 
 .greedy-nav .visible-links {
@@ -48,42 +48,104 @@
   margin-right: 1.4rem !important;
 }
 
-/* Dark-mode toggle: minimal symbol, no square */
+/* Minimal dark-mode button */
 
 #dark-mode-toggle {
-  flex: 0 0 auto;
+  flex: 0 0 auto !important;
   margin-left: auto !important;
   padding: 0 !important;
-  border: none !important;
-  outline: none;
+  border: 0 !important;
+  outline: 0 !important;
   box-shadow: none !important;
-  background: transparent !important;
+  background: none !important;
   background-color: transparent !important;
-  appearance: none;
-  -webkit-appearance: none;
-  color: inherit;
-  font-size: 1.1rem;
-  line-height: 1;
-  cursor: pointer;
-  opacity: 0.7;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  color: inherit !important;
+  font-size: 1.05rem !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+  opacity: 0.75 !important;
 }
 
-#dark-mode-toggle:hover {
-  opacity: 1;
-  border: none !important;
+#dark-mode-toggle:hover,
+#dark-mode-toggle:focus,
+#dark-mode-toggle:active {
+  border: 0 !important;
+  outline: 0 !important;
   box-shadow: none !important;
-  background: transparent !important;
+  background: none !important;
   background-color: transparent !important;
+  opacity: 1 !important;
 }
 
-#dark-mode-toggle:focus {
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-  background-color: transparent !important;
+/* Dark mode colours */
+
+html.dark-mode,
+html.dark-mode body {
+  background: #121212 !important;
+  color: #e6e6e6 !important;
 }
 
-#dark-mode-toggle:focus-visible {
-  outline: 1px solid currentColor;
-  outline-offset: 4px;
+html.dark-mode .masthead,
+html.dark-mode .greedy-nav,
+html.dark-mode .page,
+html.dark-mode .archive,
+html.dark-mode .sidebar,
+html.dark-mode .author__content,
+html.dark-mode .author__urls-wrapper,
+html.dark-mode .page__footer {
+  background: #121212 !important;
+  color: #e6e6e6 !important;
+}
+
+html.dark-mode .page__content,
+html.dark-mode .page__content p,
+html.dark-mode .page__content li,
+html.dark-mode .page__content td,
+html.dark-mode .page__content th {
+  color: #e6e6e6 !important;
+}
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6 {
+  color: #ffffff !important;
+}
+
+html.dark-mode .page__content h2 {
+  border-bottom-color: #333333 !important;
+}
+
+html.dark-mode a,
+html.dark-mode .page__content a,
+html.dark-mode .author__urls a,
+html.dark-mode .site-title,
+html.dark-mode .visible-links a {
+  color: #9ecbff !important;
+}
+
+html.dark-mode a:hover,
+html.dark-mode .page__content a:hover,
+html.dark-mode .visible-links a:hover {
+  color: #c7e1ff !important;
+}
+
+html.dark-mode code,
+html.dark-mode pre {
+  background: #1e1e1e !important;
+  color: #f0f0f0 !important;
+}
+
+html.dark-mode table,
+html.dark-mode th,
+html.dark-mode td {
+  border-color: #333333 !important;
+}
+
+html.dark-mode #dark-mode-toggle {
+  color: #e6e6e6 !important;
 }
