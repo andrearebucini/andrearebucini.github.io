@@ -278,20 +278,23 @@ body {
 }
 
 /* ============================================================
-   Fixed separator between author profile and page content
+   Stable separator between author profile and page content
    ============================================================ */
 
 @media (min-width: 64em) {
-  .page::before {
-    content: "";
-    position: fixed;
-    top: 3.4rem;
-    bottom: 1.2rem;
-    left: 265px;
-    width: 1px;
-    background: #e5e5e5;
-    z-index: 850;
-    pointer-events: none;
+  .sidebar::after {
+    content: "" !important;
+    position: fixed !important;
+    top: 3rem !important;
+    bottom: 1.2rem !important;
+    left: 285px !important;
+    width: 1px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    background: #e5e5e5 !important;
+    z-index: 850 !important;
+    pointer-events: none !important;
+    display: block !important;
   }
 
   .page {
@@ -299,8 +302,21 @@ body {
   }
 }
 
-html.dark-mode .page::before {
-  background: #333333;
+@media (min-width: 64em) {
+  html.dark-mode .sidebar::after {
+    content: "" !important;
+    position: fixed !important;
+    top: 3rem !important;
+    bottom: 1.2rem !important;
+    left: 285px !important;
+    width: 1px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    background: #333333 !important;
+    z-index: 850 !important;
+    pointer-events: none !important;
+    display: block !important;
+  }
 }
 
 /* ============================================================
