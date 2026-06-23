@@ -22,13 +22,12 @@ M. Brambilla, L. Schionato, and A. Rebucini
 
 ## Work in progress
 
-**Unexpected spousal death and economic security in later life**  
-Under review
+**Unexpected spousal death and economic security in later life** (under review)
 
 **Spousal death, financial literacy, and economic resilience**
 
 **Parental beliefs, STEM, and gendered track choices: correcting misperceptions in early educational decisions**  
-With A. Cristini and F. Origo
+with A. Cristini and F. Origo
 
 **Sex education: mandatory programmes and adolescent health in Europe**  
-With E. Baldazzi and C. Gastaldi
+with E. Baldazzi and C. Gastaldi
