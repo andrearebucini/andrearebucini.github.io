@@ -175,19 +175,17 @@ html.dark-mode .author__pronouns {
 
 @media (min-width: 64em) {
   .page {
-    width: calc(100% - 220px) !important;
-    padding-right: 0 !important;
+    padding-right: 2rem !important;
   }
 
   .page__inner-wrap {
-    max-width: 900px !important;
+    max-width: 950px !important;
   }
 
   .page__content {
-    max-width: 850px !important;
+    max-width: 900px !important;
   }
 }
-
 /* Author profile icons in dark mode */
 
 html.dark-mode .author__urls i,
