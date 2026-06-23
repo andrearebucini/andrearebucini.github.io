@@ -30,15 +30,15 @@ author:
   email: "andrea.rebucini@unibg.it"
   
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:andrea.rebucini@unibg.it"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/andrea-rebucini"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=hVfaDXwAAAAJ&hl"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/andrearebucini"
-    - label: "Google Scholar"
-      icon: "ai ai-google-scholar-square ai-fw"
-      url: "https://scholar.google.com/citations?user=hVfaDXwAAAAJ&hl"
 
       
 footer:
