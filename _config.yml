@@ -1,0 +1,49 @@
+title: "Andrea Rebucini"
+name: "Andrea Rebucini"
+description: "Ph.D. Student in Economics"
+url: "https://andrearebucini.github.io"
+repository: "andrearebucini/andrearebucini.github.io"
+
+remote_theme: "mmistakes/minimal-mistakes@4.28.0"
+
+plugins:
+  - jekyll-include-cache
+
+minimal_mistakes_skin: "default"
+
+include:
+  - _pages
+
+author:
+  name: "Andrea Rebucini"
+  avatar: "/images/profile.png"
+  bio: "Ph.D. Student in Economics, University of Bergamo"
+  location: "Bergamo, Italy"
+  email: "andrea.rebucini@unibg.it"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:andrea.rebucini@unibg.it"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/andrearebucini"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar-square ai-fw"
+      url: "YOUR-GOOGLE-SCHOLAR-LINK"
+
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:andrea.rebucini@unibg.it"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/andrearebucini"
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
