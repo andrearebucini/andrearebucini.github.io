@@ -22,16 +22,14 @@ Applied Microeconomics, Economics of Education, Financial Literacy, Gender Econo
 ## Education
 
 **Ph.D. in Economics**, University of Bergamo  
+Supervisor: Prof. Annalisa Cristini  
 November 2023 – present
-Supervisor: Prof. Annalisa Cristini
 
 **M.Sc. in Economics and Data Analysis**, University of Bergamo  
 October 2020 – July 2022  
-Graduated with honours
 
 **B.Sc. in Economics**, University of Bergamo  
 October 2017 – October 2020  
-Graduated with honours
 
 ---
 
@@ -39,7 +37,7 @@ Graduated with honours
 
 **Visiting Research Student**, London School of Economics and Political Science (LSE)
 Department of Social Policy  
-September 2025 – June 2026
-
 Affiliated with the Women in Social and Public Policy Research Hub (WISPPRH)  
-Host: Prof. Almudena Sevilla
+Host: Prof. Almudena Sevilla  
+September 2025 – June 2026  
+
