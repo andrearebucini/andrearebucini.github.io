@@ -1,1 +1,23 @@
+---
+---
 
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
+
+.page__content {
+  font-size: 0.95em;
+}
+
+.page__content h1 {
+  margin-top: 0.5em;
+}
+
+.page__content h2 {
+  margin-top: 1.8em;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0.2em;
+}
+
+.author__bio {
+  font-size: 0.9em;
+}
