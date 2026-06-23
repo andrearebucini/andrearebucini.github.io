@@ -11,6 +11,7 @@ head_scripts:
 
 after_footer_scripts:
   - /assets/js/dark-mode.js
+  - /assets/js/active-nav.js
   
 plugins:
   - jekyll-include-cache
