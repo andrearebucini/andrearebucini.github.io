@@ -40,7 +40,6 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/andrearebucini"
 
-      
 footer:
   links:
     - label: "Email"
@@ -57,3 +56,5 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+heading_anchors: false
