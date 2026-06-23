@@ -21,9 +21,11 @@ include:
   - _pages
 
 author:
-  name: "Andrea Rebucini"
   avatar: "/images/profile.jpg"
-  bio: "Ph.D. Student in Economics, University of Bergamo"
+  name: "Andrea Rebucini"
+  pronouns: "He/Him" 
+  bio: "Ph.D. Student in Economics"
+  employer: "University of Bergamo"
   location: "Bergamo, Italy"
   email: "andrea.rebucini@unibg.it"
   links:
