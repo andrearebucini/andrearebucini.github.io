@@ -1,32 +1,28 @@
 (function () {
+  function updateButtonSymbol(button) {
+    const isDark = document.documentElement.classList.contains("dark-mode");
+    button.textContent = isDark ? "☀" : "☾";
+    button.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+    button.setAttribute("title", isDark ? "Switch to light mode" : "Switch to dark mode");
+  }
+
   function createDarkModeButton() {
     const nav = document.querySelector(".greedy-nav");
 
-    if (!nav) {
+    if (!nav || document.querySelector("#dark-mode-toggle")) {
       return;
     }
 
     const button = document.createElement("button");
     button.id = "dark-mode-toggle";
     button.type = "button";
-    button.setAttribute("aria-label", "Toggle dark mode");
-    button.setAttribute("title", "Toggle dark mode");
 
-    const currentTheme = localStorage.getItem("theme");
-    const isDark = currentTheme === "dark";
-
-    button.textContent = isDark ? "☀" : "☾";
+    updateButtonSymbol(button);
 
     button.addEventListener("click", function () {
-      const darkModeIsActive = document.documentElement.classList.toggle("dark-mode");
-
-      if (darkModeIsActive) {
-        localStorage.setItem("theme", "dark");
-        button.textContent = "☀";
-      } else {
-        localStorage.setItem("theme", "light");
-        button.textContent = "☾";
-      }
+      const isDark = document.documentElement.classList.toggle("dark-mode");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      updateButtonSymbol(button);
     });
 
     nav.appendChild(button);
