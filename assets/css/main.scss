@@ -307,7 +307,7 @@ html.dark-mode .greedy-nav {
   .sidebar {
     position: fixed !important;
     top: 3.2rem !important;
-    left: 5rem !important;
+    left: 6rem !important;
     width: 220px !important;
     max-height: calc(100vh - 4rem) !important;
     overflow-y: auto !important;
@@ -317,4 +317,118 @@ html.dark-mode .greedy-nav {
   .page {
     margin-left: 250px !important;
   }
+}
+
+/* Keep masthead and author-profile colours stable */
+
+/* Top navigation: light mode */
+.masthead,
+.masthead a,
+.greedy-nav,
+.greedy-nav a,
+.greedy-nav .site-title,
+.greedy-nav .visible-links a {
+  color: #333333 !important;
+  opacity: 1 !important;
+}
+
+/* Top navigation: no colour change on hover */
+.masthead a:hover,
+.greedy-nav a:hover,
+.greedy-nav .site-title:hover,
+.greedy-nav .visible-links a:hover {
+  color: #333333 !important;
+  opacity: 1 !important;
+}
+
+/* Dark-mode toggle: always clear */
+#dark-mode-toggle,
+#dark-mode-toggle:hover,
+#dark-mode-toggle:focus,
+#dark-mode-toggle:active {
+  color: #333333 !important;
+  opacity: 1 !important;
+}
+
+/* Author profile: light mode */
+.author__name,
+.author__pronouns,
+.author__bio,
+.author__urls,
+.author__urls li,
+.author__urls li span,
+.author__urls li a,
+.author__urls i,
+.author__urls svg,
+.author__urls .fa,
+.author__urls .fas,
+.author__urls .fab,
+.author__urls .ai {
+  color: #333333 !important;
+  opacity: 1 !important;
+}
+
+/* Author profile: no colour change on hover */
+.author__urls a:hover,
+.author__urls a:hover span,
+.author__urls a:hover i,
+.author__urls a:hover svg {
+  color: #333333 !important;
+  opacity: 1 !important;
+}
+
+/* Top navigation: dark mode */
+html.dark-mode .masthead,
+html.dark-mode .masthead a,
+html.dark-mode .greedy-nav,
+html.dark-mode .greedy-nav a,
+html.dark-mode .greedy-nav .site-title,
+html.dark-mode .greedy-nav .visible-links a {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Top navigation: no blue hover in dark mode */
+html.dark-mode .masthead a:hover,
+html.dark-mode .greedy-nav a:hover,
+html.dark-mode .greedy-nav .site-title:hover,
+html.dark-mode .greedy-nav .visible-links a:hover {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Dark-mode toggle: white in dark mode */
+html.dark-mode #dark-mode-toggle,
+html.dark-mode #dark-mode-toggle:hover,
+html.dark-mode #dark-mode-toggle:focus,
+html.dark-mode #dark-mode-toggle:active {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Author profile: dark mode */
+html.dark-mode .author__name,
+html.dark-mode .author__pronouns,
+html.dark-mode .author__bio,
+html.dark-mode .author__urls,
+html.dark-mode .author__urls li,
+html.dark-mode .author__urls li span,
+html.dark-mode .author__urls li a,
+html.dark-mode .author__urls i,
+html.dark-mode .author__urls svg,
+html.dark-mode .author__urls .fa,
+html.dark-mode .author__urls .fas,
+html.dark-mode .author__urls .fab,
+html.dark-mode .author__urls .ai {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Author profile: no hover change in dark mode */
+html.dark-mode .author__urls a:hover,
+html.dark-mode .author__urls a:hover span,
+html.dark-mode .author__urls a:hover i,
+html.dark-mode .author__urls a:hover svg {
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
