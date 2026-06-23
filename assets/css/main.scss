@@ -186,6 +186,24 @@ html.dark-mode .author__pronouns {
     max-width: 900px !important;
   }
 }
+
+/* Author profile icons in light mode */
+
+.author__urls i,
+.author__urls svg,
+.author__urls .fa,
+.author__urls .fas,
+.author__urls .fab,
+.author__urls .ai {
+  color: #4a4a4a !important;
+}
+
+.author__urls li,
+.author__urls li span,
+.author__urls li a {
+  color: #4a4a4a !important;
+}
+
 /* Author profile icons in dark mode */
 
 html.dark-mode .author__urls i,
