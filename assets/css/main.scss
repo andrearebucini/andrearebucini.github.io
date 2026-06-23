@@ -432,3 +432,143 @@ html.dark-mode .author__urls a:hover svg {
   color: #ffffff !important;
   opacity: 1 !important;
 }
+
+
+
+
+
+
+
+/* Force author profile to remain fully visible */
+
+.sidebar,
+.sidebar *,
+.author__avatar,
+.author__avatar img,
+.author__content,
+.author__content *,
+.author__urls-wrapper,
+.author__urls-wrapper *,
+.author__urls,
+.author__urls *,
+.social-icons,
+.social-icons *,
+.author__urls li,
+.author__urls li a,
+.author__urls li span,
+.author__urls i,
+.author__urls svg,
+.author__urls .fa,
+.author__urls .fas,
+.author__urls .fab,
+.author__urls .ai {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* Author profile colours: light mode */
+
+.sidebar,
+.sidebar *,
+.author__name,
+.author__pronouns,
+.author__bio,
+.author__urls,
+.author__urls li,
+.author__urls li a,
+.author__urls li span,
+.author__urls i,
+.author__urls svg,
+.author__urls .fa,
+.author__urls .fas,
+.author__urls .fab,
+.author__urls .ai {
+  color: #333333 !important;
+}
+
+/* Author profile colours: dark mode */
+
+html.dark-mode .sidebar,
+html.dark-mode .sidebar *,
+html.dark-mode .author__name,
+html.dark-mode .author__pronouns,
+html.dark-mode .author__bio,
+html.dark-mode .author__urls,
+html.dark-mode .author__urls li,
+html.dark-mode .author__urls li a,
+html.dark-mode .author__urls li span,
+html.dark-mode .author__urls i,
+html.dark-mode .author__urls svg,
+html.dark-mode .author__urls .fa,
+html.dark-mode .author__urls .fas,
+html.dark-mode .author__urls .fab,
+html.dark-mode .author__urls .ai {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* Prevent hover effects in author profile */
+
+.author__urls a:hover,
+.author__urls a:hover *,
+html.dark-mode .author__urls a:hover,
+html.dark-mode .author__urls a:hover * {
+  color: inherit !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+
+/* Section titles should not look like links */
+
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6 {
+  color: #333333 !important;
+}
+
+.page__content h1 a,
+.page__content h2 a,
+.page__content h3 a,
+.page__content h4 a,
+.page__content h5 a,
+.page__content h6 a {
+  color: #333333 !important;
+  text-decoration: none !important;
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+/* Section titles in dark mode */
+
+html.dark-mode .page__content h1,
+html.dark-mode .page__content h2,
+html.dark-mode .page__content h3,
+html.dark-mode .page__content h4,
+html.dark-mode .page__content h5,
+html.dark-mode .page__content h6,
+html.dark-mode .page__content h1 a,
+html.dark-mode .page__content h2 a,
+html.dark-mode .page__content h3 a,
+html.dark-mode .page__content h4 a,
+html.dark-mode .page__content h5 a,
+html.dark-mode .page__content h6 a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+/* Hide generated heading permalink icons */
+
+.page__content .header-link,
+.page__content .heading-anchor,
+.page__content .anchor,
+.page__content .octicon-link,
+.page__content a[aria-hidden="true"] {
+  display: none !important;
+}
