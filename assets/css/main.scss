@@ -170,3 +170,20 @@ html.dark-mode #dark-mode-toggle {
 html.dark-mode .author__pronouns {
   color: #b8b8b8;
 }
+
+/* Wider main text area */
+
+@media (min-width: 64em) {
+  .page {
+    width: calc(100% - 220px) !important;
+    padding-right: 0 !important;
+  }
+
+  .page__inner-wrap {
+    max-width: 950px !important;
+  }
+
+  .page__content {
+    max-width: 900px !important;
+  }
+}
