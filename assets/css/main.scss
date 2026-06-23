@@ -202,3 +202,21 @@ html.dark-mode .author__urls li span,
 html.dark-mode .author__urls li a {
   color: #e6e6e6 !important;
 }
+
+/* Larger author profile picture */
+
+.author__avatar img {
+  max-width: 150px !important;
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+}
+
+@media (max-width: 64em) {
+  .author__avatar img {
+    max-width: 120px !important;
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
