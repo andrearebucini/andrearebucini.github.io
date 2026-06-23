@@ -8,7 +8,7 @@ title: "Research"
 ### Peer-reviewed journal articles
 
 **Restrictive measures and substance use reporting: New evidence from the COVID-19 pandemic**  
-Andrea Rebucini, Federica Origo, Federico Schionato, and Francesco S. Romolo  
+A. Rebucini, F. Origo, F. Schionato, and F.S. Romolo  
 *International Journal of Drug Policy*, 122, 104238, 2023.  
 [DOI](https://doi.org/10.1016/j.drugpo.2023.104238)
 
