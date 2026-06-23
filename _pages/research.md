@@ -9,8 +9,7 @@ title: "Research"
 
 **Restrictive measures and substance use reporting: New evidence from the COVID-19 pandemic**  
 A. Rebucini, F. Origo, F. Schionato, and F.S. Romolo  
-*International Journal of Drug Policy*, 122, 104238, 2023   
-[DOI](https://doi.org/10.1016/j.drugpo.2023.104238)
+*International Journal of Drug Policy*, 122, 104238, 2023. [DOI](https://doi.org/10.1016/j.drugpo.2023.104238)
 
 ### Other publications
 
