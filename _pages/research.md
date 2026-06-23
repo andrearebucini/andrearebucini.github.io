@@ -26,8 +26,8 @@ M. Brambilla, L. Schionato, and A. Rebucini
 
 **Spousal death, financial literacy, and economic resilience**
 
-**Parental beliefs, STEM, and gendered track choices: correcting misperceptions in early educational decisions**  
+**Parental beliefs, STEM, and gendered track choices: Correcting misperceptions in early educational decisions**  
 with A. Cristini and F. Origo
 
-**Sex education: mandatory programmes and adolescent health in Europe**  
+**Sex education: Mandatory programmes and adolescent health in Europe**  
 with E. Baldazzi and C. Gastaldi
