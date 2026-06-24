@@ -3,11 +3,6 @@ permalink: /
 title: ""
 ---
 
----
-permalink: /
-title: "Home"
----
-
 <section class="mobile-author-card">
   <div class="mobile-author-card__avatar">
     <img src="/images/profile.jpg" alt="Andrea Rebucini">
@@ -44,7 +39,7 @@ title: "Home"
   </div>
 </section>
 
-# Andrea Rebucini
+# Bio
 
 I am a third-year PhD student in Economics at the [University of Bergamo](https://www.unibg.it/en), where I am affiliated with the [Department of Economics](https://dse.unibg.it/en) and supervised by [Prof. Annalisa Cristini](https://unibg.unifind.cineca.it/individual?uri=http://irises.unibg.it/resource/person/3083). I hold an MSc in Economics and Data Analysis and a BSc in Economics from the University of Bergamo.
 
