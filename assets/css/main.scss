@@ -671,3 +671,31 @@ html.dark-mode .greedy-nav .visible-links a.active-nav-link:active {
   background-color: #343434 !important;
   box-shadow: inset 0 -2px 0 #ffffff !important;
 }
+
+/* ============================================================
+   Presentation page image
+   ============================================================ */
+
+.presentation-figure {
+  margin: 0 0 2rem 0 !important;
+  max-width: 850px !important;
+}
+
+.presentation-figure img {
+  width: 100% !important;
+  max-height: 520px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 6px !important;
+}
+
+.presentation-figure figcaption {
+  margin-top: 0.4rem !important;
+  font-size: 0.75rem !important;
+  color: #666666 !important;
+  text-align: left !important;
+}
+
+html.dark-mode .presentation-figure figcaption {
+  color: #b8b8b8 !important;
+}
