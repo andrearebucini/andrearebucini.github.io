@@ -3,6 +3,11 @@ permalink: /presentations/
 title: "Presentations"
 ---
 
+<figure class="presentation-figure">
+  <img src="/images/presentation_milan_2025.jpg" alt="Presenting at the Milan PhD Economics Workshop, 2025">
+  <figcaption>Presentation during an academic workshop.</figcaption>
+</figure>
+
 ## Conference, workshop, and seminar presentations
 
 ### 2026
