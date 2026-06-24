@@ -552,99 +552,122 @@ html.dark-mode .page__footer-copyright {
 }
 
 /* ============================================================
-   Active page and hover effect in navigation dock
+   Final navigation hover fix: shaded cell only, no theme underline
    ============================================================ */
 
-.greedy-nav .visible-links a {
-  border-bottom: none !important;
-  text-decoration: none !important;
-  background-image: none !important;
-  border-radius: 4px !important;
-  padding-left: 0.25rem !important;
-  padding-right: 0.25rem !important;
-  transition: background-color 0.12s ease-in-out !important;
-}
-
+/* Remove all theme-generated underline mechanisms */
+.greedy-nav .visible-links a,
+.greedy-nav .visible-links a:link,
+.greedy-nav .visible-links a:visited,
 .greedy-nav .visible-links a:hover,
 .greedy-nav .visible-links a:focus,
 .greedy-nav .visible-links a:active {
   text-decoration: none !important;
-  border-bottom: none !important;
+  border: none !important;
+  border-bottom: 0 !important;
   background-image: none !important;
+  background-size: 0 0 !important;
+  background-repeat: no-repeat !important;
 }
 
-/* Active page: underline because it is active */
+/* Kill Minimal Mistakes pseudo-element underlines */
+.greedy-nav .visible-links a::before,
+.greedy-nav .visible-links a::after,
+.greedy-nav .visible-links li::before,
+.greedy-nav .visible-links li::after {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  border: 0 !important;
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Base nav link style */
+.greedy-nav .visible-links a {
+  border-radius: 4px !important;
+  padding-left: 0.25rem !important;
+  padding-right: 0.25rem !important;
+  box-shadow: none !important;
+  transition: background-color 0.12s ease-in-out !important;
+}
+
+/* Active page: custom underline only */
 .greedy-nav .visible-links a.active-nav-link {
   color: #333333 !important;
-  text-decoration: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
   box-shadow: inset 0 -2px 0 #333333 !important;
+  background-color: transparent !important;
 }
 
-/* Non-active page hover: shaded cell only, no underline */
+/* Non-active hover: shaded cell only, no underline */
 .greedy-nav .visible-links a:not(.active-nav-link):hover,
 .greedy-nav .visible-links a:not(.active-nav-link):focus,
 .greedy-nav .visible-links a:not(.active-nav-link):active {
   color: #333333 !important;
-  text-decoration: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
-  box-shadow: none !important;
   background-color: #eeeeee !important;
+  box-shadow: none !important;
 }
 
-/* Active page hover: keep only active underline plus shaded cell */
+/* Active hover: custom active underline + shaded cell only */
 .greedy-nav .visible-links a.active-nav-link:hover,
 .greedy-nav .visible-links a.active-nav-link:focus,
 .greedy-nav .visible-links a.active-nav-link:active {
   color: #333333 !important;
-  text-decoration: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
-  box-shadow: inset 0 -2px 0 #333333 !important;
   background-color: #eeeeee !important;
+  box-shadow: inset 0 -2px 0 #333333 !important;
 }
 
-/* Dark mode: active page underline */
+/* Dark mode */
+html.dark-mode .greedy-nav .visible-links a,
+html.dark-mode .greedy-nav .visible-links a:link,
+html.dark-mode .greedy-nav .visible-links a:visited,
+html.dark-mode .greedy-nav .visible-links a:hover,
+html.dark-mode .greedy-nav .visible-links a:focus,
+html.dark-mode .greedy-nav .visible-links a:active {
+  text-decoration: none !important;
+  border: none !important;
+  border-bottom: 0 !important;
+  background-image: none !important;
+}
+
+html.dark-mode .greedy-nav .visible-links a::before,
+html.dark-mode .greedy-nav .visible-links a::after,
+html.dark-mode .greedy-nav .visible-links li::before,
+html.dark-mode .greedy-nav .visible-links li::after {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  border: 0 !important;
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
 html.dark-mode .greedy-nav .visible-links a.active-nav-link {
   color: #ffffff !important;
-  text-decoration: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
   box-shadow: inset 0 -2px 0 #ffffff !important;
+  background-color: transparent !important;
 }
 
-/* Dark mode: non-active page hover */
 html.dark-mode .greedy-nav .visible-links a:not(.active-nav-link):hover,
 html.dark-mode .greedy-nav .visible-links a:not(.active-nav-link):focus,
 html.dark-mode .greedy-nav .visible-links a:not(.active-nav-link):active {
   color: #ffffff !important;
-  text-decoration: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
-  box-shadow: none !important;
   background-color: #2a2a2a !important;
+  box-shadow: none !important;
 }
 
-/* Dark mode: active page hover */
 html.dark-mode .greedy-nav .visible-links a.active-nav-link:hover,
 html.dark-mode .greedy-nav .visible-links a.active-nav-link:focus,
 html.dark-mode .greedy-nav .visible-links a.active-nav-link:active {
   color: #ffffff !important;
-  text-decoration: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
-  box-shadow: inset 0 -2px 0 #ffffff !important;
   background-color: #2a2a2a !important;
-}
-
-/* Remove possible theme-generated pseudo-underlines */
-.greedy-nav .visible-links a::before,
-.greedy-nav .visible-links a::after,
-html.dark-mode .greedy-nav .visible-links a::before,
-html.dark-mode .greedy-nav .visible-links a::after {
-  text-decoration: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
+  box-shadow: inset 0 -2px 0 #ffffff !important;
 }
