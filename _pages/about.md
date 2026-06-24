@@ -11,7 +11,7 @@ title: ""
   <div class="mobile-author-card__content">
     <h1>Andrea Rebucini</h1>
     <p class="mobile-author-card__pronouns">He/Him</p>
-    <p class="mobile-author-card__bio">Ph.D. Student in Economics</p>
+    <p class="mobile-author-card__bio">PhD Student in Economics</p>
     <p class="mobile-author-card__employer">University of Bergamo</p>
     <p class="mobile-author-card__location">Bergamo, Italy</p>
 
