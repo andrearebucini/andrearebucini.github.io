@@ -20,20 +20,20 @@ title: ""
         <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i>
         Email
       </a>
-
-      <a href="https://github.com/andrearebucini">
-        <i class="fab fa-fw fa-github" aria-hidden="true"></i>
-        GitHub
+      
+      <a href="https://www.linkedin.com/in/andrea-rebucini/">
+        <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
+        LinkedIn
       </a>
 
       <a href="https://scholar.google.com/citations?user=hVfaDXwAAAAJ&hl=en">
         <i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>
         Google Scholar
       </a>
-
-      <a href="https://www.linkedin.com/in/andrea-rebucini/">
-        <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
-        LinkedIn
+      
+      <a href="https://github.com/andrearebucini">
+        <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+        GitHub
       </a>
     </div>
   </div>
