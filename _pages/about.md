@@ -26,7 +26,7 @@ title: ""
         LinkedIn
       </a>
 
-      <a href="https://scholar.google.com/citations?user=hVfaDXwAAAAJ&hl=en">
+      <a href="https://scholar.google.com/citations?user=hVfaDXwAAAAJ&hl">
         <i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>
         Google Scholar
       </a>
