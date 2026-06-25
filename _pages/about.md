@@ -39,6 +39,8 @@ title: ""
   </div>
 </section>
 
+# About me  
+
 I am a third-year PhD student in Economics at the [University of Bergamo](https://www.unibg.it/en) in Italy, where I am affiliated with the [Department of Economics](https://dse.unibg.it/en) and supervised by Prof. [Annalisa Cristini](https://unibg.unifind.cineca.it/individual?uri=http://irises.unibg.it/resource/person/3083). I hold an MSc in Economics and Data Analysis and a BSc in Economics from the University of Bergamo.
 
 I spent the academic year 2025–26 visiting the [Department of Social Policy](https://www.lse.ac.uk/social-policy) of the [London School of Economics and Political Science](https://www.lse.ac.uk/), where I was affiliated with the [Women in Social and Public Policy Research Hub](https://www.lse.ac.uk/social-policy/research/research-clusters/wispprh), hosted by Prof. [Almudena Sevilla](https://www.lse.ac.uk/people/almudena-sevilla).
