@@ -555,7 +555,6 @@ html.dark-mode .page__footer-copyright {
    Final navigation hover fix: shaded cell only, no theme underline
    ============================================================ */
 
-/* Remove all theme-generated underline mechanisms */
 .greedy-nav .visible-links a,
 .greedy-nav .visible-links a:link,
 .greedy-nav .visible-links a:visited,
@@ -570,7 +569,6 @@ html.dark-mode .page__footer-copyright {
   background-repeat: no-repeat !important;
 }
 
-/* Kill Minimal Mistakes pseudo-element underlines */
 .greedy-nav .visible-links a::before,
 .greedy-nav .visible-links a::after,
 .greedy-nav .visible-links li::before,
@@ -587,7 +585,6 @@ html.dark-mode .page__footer-copyright {
   transform: none !important;
 }
 
-/* Base nav link style */
 .greedy-nav .visible-links a {
   border-radius: 4px !important;
   padding-left: 0.25rem !important;
@@ -596,14 +593,12 @@ html.dark-mode .page__footer-copyright {
   transition: background-color 0.12s ease-in-out !important;
 }
 
-/* Active page: custom underline only */
 .greedy-nav .visible-links a.active-nav-link {
   color: #333333 !important;
   box-shadow: inset 0 -2px 0 #333333 !important;
   background-color: transparent !important;
 }
 
-/* Non-active hover: shaded cell only, no underline */
 .greedy-nav .visible-links a:not(.active-nav-link):hover,
 .greedy-nav .visible-links a:not(.active-nav-link):focus,
 .greedy-nav .visible-links a:not(.active-nav-link):active {
@@ -612,7 +607,6 @@ html.dark-mode .page__footer-copyright {
   box-shadow: none !important;
 }
 
-/* Active hover: custom active underline + shaded cell only */
 .greedy-nav .visible-links a.active-nav-link:hover,
 .greedy-nav .visible-links a.active-nav-link:focus,
 .greedy-nav .visible-links a.active-nav-link:active {
@@ -621,7 +615,6 @@ html.dark-mode .page__footer-copyright {
   box-shadow: inset 0 -2px 0 #333333 !important;
 }
 
-/* Dark mode */
 html.dark-mode .greedy-nav .visible-links a,
 html.dark-mode .greedy-nav .visible-links a:link,
 html.dark-mode .greedy-nav .visible-links a:visited,
@@ -700,17 +693,14 @@ html.dark-mode .presentation-figure figcaption {
   color: #b8b8b8 !important;
 }
 
-
 /* ============================================================
    Mobile layout: author card and navigation
    ============================================================ */
 
-/* Hide the custom mobile author card on desktop */
 .mobile-author-card {
   display: none !important;
 }
 
-/* Mobile-specific layout */
 @media (max-width: 64em) {
 
   /* ------------------------------------------------------------
@@ -725,6 +715,7 @@ html.dark-mode .presentation-figure figcaption {
   }
 
   /* Keep mobile page content clean and full-width */
+
   .page,
   .page__inner-wrap,
   .page__content {
@@ -742,47 +733,54 @@ html.dark-mode .presentation-figure figcaption {
   }
 
   /* ------------------------------------------------------------
-     Mobile author card: shown only where inserted, i.e. Home
+     Mobile author card: centred and vertically organised
      ------------------------------------------------------------ */
 
   .mobile-author-card {
     display: block !important;
-    margin: 1rem 0 1.6rem 0 !important;
-    padding: 1rem 0 1.2rem 0 !important;
+    margin: 1.2rem auto 1.8rem auto !important;
+    padding: 1.1rem 0 1.4rem 0 !important;
     border-bottom: 1px solid #e5e5e5 !important;
+    text-align: center !important;
   }
 
   .mobile-author-card__avatar {
-    margin-bottom: 0.8rem !important;
+    margin: 0 auto 0.9rem auto !important;
+    text-align: center !important;
   }
 
   .mobile-author-card__avatar img {
-    width: 105px !important;
-    height: 105px !important;
-    max-width: 105px !important;
+    width: 135px !important;
+    height: 135px !important;
+    max-width: 135px !important;
     object-fit: cover !important;
     border-radius: 50% !important;
     display: block !important;
+    margin: 0 auto !important;
+  }
+
+  .mobile-author-card__content {
+    text-align: center !important;
   }
 
   .mobile-author-card__content h1 {
     margin: 0 0 0.15rem 0 !important;
-    font-size: 1.35rem !important;
+    font-size: 1.4rem !important;
     line-height: 1.2 !important;
     color: #333333 !important;
   }
 
   .mobile-author-card__pronouns {
-    margin: 0 0 0.55rem 0 !important;
-    font-size: 0.82rem !important;
+    margin: 0 0 0.6rem 0 !important;
+    font-size: 0.85rem !important;
     color: #666666 !important;
   }
 
   .mobile-author-card__bio,
   .mobile-author-card__employer,
   .mobile-author-card__location {
-    margin: 0.15rem 0 !important;
-    font-size: 0.88rem !important;
+    margin: 0.18rem 0 !important;
+    font-size: 0.9rem !important;
     line-height: 1.35 !important;
     color: #333333 !important;
   }
@@ -793,21 +791,27 @@ html.dark-mode .presentation-figure figcaption {
 
   .mobile-author-card__links {
     display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 0.4rem 0.75rem !important;
-    margin-top: 0.75rem !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    margin-top: 0.9rem !important;
   }
 
   .mobile-author-card__links a {
     display: inline-flex !important;
     align-items: center !important;
-    gap: 0.25rem !important;
-    font-size: 0.82rem !important;
+    justify-content: center !important;
+    gap: 0.35rem !important;
+    width: fit-content !important;
+    min-width: 9rem !important;
+    padding: 0.28rem 0.55rem !important;
+    font-size: 0.85rem !important;
     line-height: 1.2 !important;
     color: #333333 !important;
     text-decoration: none !important;
     border-bottom: none !important;
     background-image: none !important;
+    border-radius: 4px !important;
   }
 
   .mobile-author-card__links a:hover,
@@ -815,7 +819,6 @@ html.dark-mode .presentation-figure figcaption {
     color: #333333 !important;
     text-decoration: none !important;
     background: #eeeeee !important;
-    border-radius: 4px !important;
   }
 
   .mobile-author-card__links i,
@@ -847,7 +850,6 @@ html.dark-mode .presentation-figure figcaption {
     min-height: 36px !important;
   }
 
-  /* Mobile menu button placed at the far left */
   .greedy-nav .greedy-nav__toggle {
     order: 0 !important;
     margin-left: 0 !important;
@@ -857,7 +859,6 @@ html.dark-mode .presentation-figure figcaption {
     flex: 0 0 auto !important;
   }
 
-  /* Site title after the menu button */
   .greedy-nav .site-title {
     order: 1 !important;
     flex: 1 1 auto !important;
@@ -869,7 +870,6 @@ html.dark-mode .presentation-figure figcaption {
     text-overflow: ellipsis !important;
   }
 
-  /* Dark-mode button remains at the far right */
   #dark-mode-toggle {
     order: 3 !important;
     flex: 0 0 auto !important;
@@ -878,7 +878,6 @@ html.dark-mode .presentation-figure figcaption {
     font-size: 0.95rem !important;
   }
 
-  /* The visible links should not sit between title and dark toggle on mobile */
   .greedy-nav .visible-links {
     order: 2 !important;
     flex: 0 0 auto !important;
@@ -886,7 +885,6 @@ html.dark-mode .presentation-figure figcaption {
     margin-right: 0 !important;
   }
 
-  /* Let the dropdown menu remain usable */
   .greedy-nav .hidden-links {
     top: 100% !important;
     right: auto !important;
@@ -914,7 +912,6 @@ html.dark-mode .presentation-figure figcaption {
     text-decoration: none !important;
   }
 
-  /* Remove desktop separator on mobile */
   .sidebar::after {
     display: none !important;
   }
