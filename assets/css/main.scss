@@ -331,10 +331,17 @@ body {
 
 .page__content a {
   color: #336699 !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
 }
 
-.page__content a:hover {
+.page__content a:hover,
+.page__content a:focus {
   color: #224466 !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
 }
 
 /* ============================================================
@@ -420,10 +427,17 @@ html.dark-mode .page__content th {
 
 html.dark-mode .page__content a {
   color: #b7d7ff !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
 }
 
-html.dark-mode .page__content a:hover {
+html.dark-mode .page__content a:hover,
+html.dark-mode .page__content a:focus {
   color: #d4e8ff !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
 }
 
 html.dark-mode .page__title,
