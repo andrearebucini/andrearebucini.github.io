@@ -29,5 +29,5 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
 **Parental beliefs, STEM, and gendered track choices: Correcting misperceptions in early educational decisions**  
 with [A. Cristini](https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3083) and [F. Origo](https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3333)
 
-**Sex education: Mandatory programmes and adolescent health in Europe**  
+**Sex education: Mandatory school programmes and adolescent health in Europe**  
 with [E. Baldazzi](https://elisabaldazzi.github.io/) and [C. Gastaldi](https://www.unibz.it/en/faculties/economics-management/phd-economics-finance/phd-students/phd/48805-chiara-gastaldi)
