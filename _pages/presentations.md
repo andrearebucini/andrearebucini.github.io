@@ -5,12 +5,12 @@ title: "Presentations"
 
 ## Conference, workshop, and seminar presentations
 
-<figure class="presentation-figure">
-  <img src="/images/presentation_milan_2025.jpeg" alt="Presenting at the Milan PhD Economics Workshop, 2025">
-  <figcaption>Presenting at the Milan PhD Economics Workshop, 2025.</figcaption>
-</figure>
-
 ### 2026
+
+<figure class="presentation-figure">
+  <img src="/images/presentation_aede_2026.jpeg" alt="Presenting at the Meeting of the Economics of Education Association (AEDE), 2026">
+  <figcaption>Presenting at the Meeting of the Economics of Education Association (AEDE), 2026.</figcaption>
+</figure>
 
 **International Workshop of the G53 Network Rising Scholars**  
 Reggio Calabria, Italy  
@@ -29,6 +29,11 @@ Bergamo, Italy
 January 2026
 
 ### 2025
+
+<figure class="presentation-figure">
+  <img src="/images/presentation_milan_2025.jpeg" alt="Presenting at the Milan PhD Economics Workshop, 2025">
+  <figcaption>Presenting at the Milan PhD Economics Workshop, 2025.</figcaption>
+</figure>
 
 **Mannheim Institute for Financial Education Early Career Workshop**  
 Mannheim, Germany  
