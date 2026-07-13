@@ -18,7 +18,7 @@ July 2026, scheduled
 
 **Meeting of the Economics of Education Association (AEDE)**  
 Logroño, Spain  
-July 2026, scheduled
+July 2026
 
 **Meeting of the Society of Economics of the Household (SEHO)**  
 Pavia, Italy  
