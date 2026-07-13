@@ -8,7 +8,7 @@ title: "Presentations"
 ### 2026
 
 <figure class="presentation-figure">
-  <img src="/images/presentation_aede_2026.jpeg" alt="Presenting at the Meeting of the Economics of Education Association (AEDE), 2026">
+  <img src="/images/presentation_aede_2026.jpg" alt="Presenting at the Meeting of the Economics of Education Association (AEDE), 2026">
   <figcaption>Presenting at the Meeting of the Economics of Education Association (AEDE), 2026.</figcaption>
 </figure>
 
