@@ -84,3 +84,11 @@ Europe is facing persistent shortages of STEM skills alongside large and endurin
     </p>
   </div>
 </details>
+
+---
+
+## Awards and honours
+
+**María Jesús San Segundo Award, 2026**  
+Second best paper award for young researchers  
+Economics of Education Association (AEDE)
