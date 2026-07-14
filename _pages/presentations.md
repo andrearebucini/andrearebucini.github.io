@@ -35,7 +35,7 @@ January 2026
   <figcaption>Presenting at the Milan PhD Economics Workshop, 2025.</figcaption>
 </figure>
 
-**Mannheim Institute for Financial Education Early Career Workshop**  
+**Mannheim Institute for Financial Education (MIFE) Early Career Workshop**  
 Mannheim, Germany  
 November 2025
 
