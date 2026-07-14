@@ -89,6 +89,6 @@ Europe is facing persistent shortages of STEM skills alongside large and endurin
 
 ## Awards and honours
 
-**María Jesús San Segundo Award, 2026**  
+**María Jesús San Segundo Award 2026**  
 Second Best Paper Award for Young Researchers for the paper *"Parental beliefs, STEM, and gendered track choices:
 Correcting misperceptions in early educational decisions"* presented during the XXXIV Meeting of the Economics of Education Association (AEDE) held in Logroño (Spain), 8-9 July 2026.
