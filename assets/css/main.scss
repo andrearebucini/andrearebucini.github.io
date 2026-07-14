@@ -1023,9 +1023,15 @@ html.dark-mode .presentation-figure figcaption {
   color: #666666 !important;
 }
 
+.project-title {
+  display: inline !important;
+}
+
 .project-authors {
-  margin: 0.35rem 0 0.45rem 1.4rem !important;
+  display: block !important;
+  margin: 0.25rem 0 0 1.4rem !important;
   font-size: 0.95em !important;
+  font-weight: normal !important;
   color: #555555 !important;
 }
 
