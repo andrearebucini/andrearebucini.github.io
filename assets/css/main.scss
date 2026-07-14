@@ -979,3 +979,91 @@ html.dark-mode .presentation-figure figcaption {
     background-color: #343434 !important;
   }
 }
+
+/* ============================================================
+   Expandable research projects
+   ============================================================ */
+
+.research-project {
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.75rem !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.research-project summary {
+  cursor: pointer !important;
+  list-style: none !important;
+  color: #333333 !important;
+  line-height: 1.35 !important;
+}
+
+.research-project summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.research-project summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1rem;
+  margin-right: 0.35rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.research-project[open] summary::before {
+  content: "–";
+}
+
+.research-project summary:hover {
+  color: #333333 !important;
+}
+
+.project-status {
+  font-weight: normal !important;
+  color: #666666 !important;
+}
+
+.project-authors {
+  margin: 0.35rem 0 0.45rem 1.4rem !important;
+  font-size: 0.95em !important;
+  color: #555555 !important;
+}
+
+.project-abstract {
+  margin: 0.55rem 0 0 1.4rem !important;
+  padding-left: 0.75rem !important;
+  border-left: 2px solid #e5e5e5 !important;
+}
+
+.project-abstract p {
+  margin-bottom: 0 !important;
+  color: #333333 !important;
+}
+
+/* Dark mode */
+
+html.dark-mode .research-project {
+  border-bottom-color: #444444 !important;
+}
+
+html.dark-mode .research-project summary,
+html.dark-mode .research-project summary::before,
+html.dark-mode .research-project summary:hover {
+  color: #ffffff !important;
+}
+
+html.dark-mode .project-status {
+  color: #cccccc !important;
+}
+
+html.dark-mode .project-authors {
+  color: #d6d6d6 !important;
+}
+
+html.dark-mode .project-abstract {
+  border-left-color: #555555 !important;
+}
+
+html.dark-mode .project-abstract p {
+  color: #e6e6e6 !important;
+}
