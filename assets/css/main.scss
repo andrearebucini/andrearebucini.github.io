@@ -986,8 +986,8 @@ html.dark-mode .presentation-figure figcaption {
 
 .research-project {
   margin-bottom: 1rem !important;
-  padding-bottom: 0.75rem !important;
-  border-bottom: 1px solid #e5e5e5 !important;
+  padding-bottom: 0.25rem !important;
+  border-bottom: none !important;
 }
 
 .research-project summary {
@@ -1049,7 +1049,7 @@ html.dark-mode .presentation-figure figcaption {
 /* Dark mode */
 
 html.dark-mode .research-project {
-  border-bottom-color: #444444 !important;
+  border-bottom: none !important;
 }
 
 html.dark-mode .research-project summary,
