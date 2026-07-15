@@ -39,7 +39,7 @@ January 2026
 Mannheim, Germany  
 November 2025
 
-**PhD Conference in Social Sciences and Economics**  
+**Sapienza PhD Conference in Social Sciences and Economics**  
 Rome, Italy  
 September 2025
 
