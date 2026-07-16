@@ -14,7 +14,7 @@ title: "Presentations"
 
 **International Workshop of the G53 Network Rising Scholars**  
 Reggio Calabria, Italy  
-July 2026, scheduled
+July 2026
 
 **Meeting of the Economics of Education Association (AEDE)**  
 Logroño, Spain  
