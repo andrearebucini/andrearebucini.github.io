@@ -12,6 +12,10 @@ title: "Presentations"
   <figcaption>Presenting at the Meeting of the Economics of Education Association (AEDE), 2026.</figcaption>
 </figure>
 
+**Sapienza PhD Conference in Social Sciences and Economics**  
+Rome, Italy  
+September 2026, scheduled
+
 **International Workshop of the G53 Network Rising Scholars**  
 Reggio Calabria, Italy  
 July 2026
