@@ -8,8 +8,8 @@ title: "Presentations"
 ### 2026
 
 <figure class="presentation-figure">
-  <img src="/images/presentation_aede_2026.jpg" alt="Presenting at the Meeting of the Economics of Education Association (AEDE), 2026">
-  <figcaption>Presenting at the Meeting of the Economics of Education Association (AEDE), 2026.</figcaption>
+  <img src="/images/presentation_g53_2026.jpg" alt="Presenting at the International Workshop of the G53 Network Rising Scholars, 2026">
+  <figcaption>Presenting at the International Workshop of the G53 Network Rising Scholars, 2026.</figcaption>
 </figure>
 
 **Sapienza PhD Conference in Social Sciences and Economics**  
