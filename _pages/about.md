@@ -43,9 +43,7 @@ title: ""
 
 I am a third-year PhD student in Economics at the [University of Bergamo](https://www.unibg.it/en) in Italy, where I am affiliated with the [Department of Economics](https://dse.unibg.it/en) and supervised by Prof. [Annalisa Cristini](https://unibg.unifind.cineca.it/individual?uri=http://irises.unibg.it/resource/person/3083). I hold an MSc in Economics and Data Analysis and a BSc in Economics from the University of Bergamo.
 
-I spent the academic year 2025–26 visiting the [Department of Social Policy](https://www.lse.ac.uk/social-policy) of the [London School of Economics and Political Science](https://www.lse.ac.uk/), where I was also affiliated with the [Women in Social and Public Policy Research Hub](https://www.lse.ac.uk/social-policy/research/research-clusters/wispprh), hosted by Prof. [Almudena Sevilla](https://www.lse.ac.uk/people/almudena-sevilla).
-
-Since August 2026, I have been a member of the [G53 Network Rising Scholars](https://g53network.org/training-and-mentoring/g53-network-rising-scholars/), a global community of early-career researchers in financial literacy and personal finance.
+I spent the academic year 2025–26 visiting the [Department of Social Policy](https://www.lse.ac.uk/social-policy) of the [London School of Economics and Political Science](https://www.lse.ac.uk/), where I was also affiliated with the [Women in Social and Public Policy Research Hub](https://www.lse.ac.uk/social-policy/research/research-clusters/wispprh), hosted by Prof. [Almudena Sevilla](https://www.lse.ac.uk/people/almudena-sevilla). Since August 2026, I have been a member of the [G53 Network Rising Scholars](https://g53network.org/training-and-mentoring/g53-network-rising-scholars/), a global community of early-career researchers in financial literacy and personal finance.
 
 Before joining the PhD programme, I was a research assistant at the [University of Milano-Bicocca](https://en.unimib.it/) (Italy) while, beyond academia, I worked as a data analyst at a consulting firm in Italy, contributing to projects commissioned by local and national institutions on school guidance and labour market outcomes.
 
