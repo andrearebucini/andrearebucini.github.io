@@ -93,6 +93,6 @@ Second Best Paper Award for Young Researchers for the paper *"Parental beliefs, 
 Correcting misperceptions in early educational decisions"* presented during the XXXIV Meeting of the Economics of Education Association (AEDE) held in Logroño (Spain), 8-9 July 2026.
 
 <figure class="presentation-figure">
-  <img src="/images/presentation_aede_2026.jpg" alt="Presenting at the Meeting of the Economics of Education Association (AEDE), 2026">
-  <figcaption>Presenting at the Meeting of the Economics of Education Association (AEDE), 2026.</figcaption>
+  <img src="/images/presentation_aede_2026.jpg" alt="Presenting at the XXXIV Meeting of the Economics of Education Association (AEDE), 2026">
+  <figcaption>Presenting at the XXXIV Meeting of the Economics of Education Association (AEDE), 2026.</figcaption>
 </figure>
