@@ -8,8 +8,8 @@ title: "Presentations"
 ### 2026
 
 <figure class="presentation-figure">
-  <img src="/images/presentation_g53_2026.jpg" alt="Presenting at the International Workshop of the G53 Network Rising Scholars, 2026">
-  <figcaption>Presenting at the International Workshop of the G53 Network Rising Scholars, 2026.</figcaption>
+  <img src="/images/presentation_g53_2026.jpg" alt="Presenting at the 1st International Workshop of the G53 Network Rising Scholars, 2026">
+  <figcaption>Presenting at the 1st International Workshop of the G53 Network Rising Scholars, 2026.</figcaption>
 </figure>
 
 **IV Sapienza PhD Conference in Social Sciences and Economics**  
@@ -35,8 +35,8 @@ January 2026
 ### 2025
 
 <figure class="presentation-figure">
-  <img src="/images/presentation_milan_2025.jpeg" alt="Presenting at the Milan PhD Economics Workshop, 2025">
-  <figcaption>Presenting at the Milan PhD Economics Workshop, 2025.</figcaption>
+  <img src="/images/presentation_milan_2025.jpeg" alt="Presenting at the 3rd Milan PhD Economics Workshop, 2025">
+  <figcaption>Presenting at the 3rd Milan PhD Economics Workshop, 2025.</figcaption>
 </figure>
 
 **Mannheim Institute for Financial Education (MIFE) Early Career Workshop 2025**  
