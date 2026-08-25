@@ -78,6 +78,13 @@ This paper investigates if and how older individuals prepare financially for spo
     <p>
 Europe is facing persistent shortages of STEM skills alongside large and enduring gender gaps in STEM participation. This paper shows that part of this gap can open before high school even begins, when families in early-tracking systems decide which upper-secondary pathway a child will attend. We study Italy, where 13-14 year-old students choose among academic, technical, and vocational programmes that differ sharply in STEM content and progression opportunities. We field a household-level survey experiment with 348 Italian couples (696 parents) of 8th-grade students immediately before the enrolment window. Parents are surveyed separately and, prior to treatment, complete a Gender-Science Implicit Association Test. We first document a sizeable “daughter penalty”. Conditional on grades, perceived non-cognitive traits, stereotypes, and school recommendations, parents remain about 10 percentage points less likely to prefer a STEM-oriented track for daughters than for sons. Treated households watch a short video providing evidence-based information on early labour-market outcomes across STEM and non-STEM pathways. The intervention increases knowledge of returns by 0.71-0.73 points on a 0-3 score and raises parents’ stated STEM preference by 12-15 percentage points. Preference responses are concentrated among parents of daughters and are strong even among implicitly stereotyped parents. The treatment also shifts reported decision-making towards discussion and increases within-couple alignment in STEM preferences without increasing disagreement. The results suggest that embedding concise, credible returns to education information into guidance and enrolment channels can improve decision quality and help narrow gender gaps in STEM-oriented pathways at low cost.
     </p>
+   <p class="project-meta">
+    <strong>JEL codes:</strong> I21, I24, J16, D83
+  </p>
+
+  <p class="project-meta">
+    <strong>Keywords:</strong> STEM education; Gender stereotypes; Parental beliefs; Information experiment; Upper-secondary school choice
+  </p>
   </div>
 </details>
 
