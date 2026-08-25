@@ -20,7 +20,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
 
 ---
 
-## Work in progress
+## Working papers
 
 <details class="research-project">
   <summary>
@@ -87,6 +87,10 @@ Europe is facing persistent shortages of STEM skills alongside large and endurin
   </p>
   </div>
 </details>
+
+---
+
+## Selected work in progress
 
 <details class="research-project">
   <summary>
