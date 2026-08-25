@@ -53,7 +53,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
       <strong>Spousal death, financial literacy, and economic resilience</strong>
     </span>
     <span class="project-status">
-      Status: Draft available upon request
+      Status: Draft in progress
     </span>
   </summary>
 
@@ -81,7 +81,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
       with <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3083">A. Cristini</a> and <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3333">F. Origo</a>
     </span>
     <span class="project-status">
-      Status: Draft available upon request
+      Status: Draft in progress
     </span>
   </summary>
 
