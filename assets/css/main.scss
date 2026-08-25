@@ -1014,15 +1014,6 @@ html.dark-mode .presentation-figure figcaption {
   content: "–";
 }
 
-.research-project summary:hover {
-  color: #333333 !important;
-}
-
-.project-status {
-  font-weight: normal !important;
-  color: #666666 !important;
-}
-
 .project-title {
   display: inline !important;
 }
@@ -1035,15 +1026,38 @@ html.dark-mode .presentation-figure figcaption {
   color: #555555 !important;
 }
 
+.project-status {
+  font-weight: normal !important;
+  color: #666666 !important;
+}
+
 .project-abstract {
-  margin: 0.55rem 0 0 1.4rem !important;
+  margin: 0.65rem 0 0 1.4rem !important;
   padding-left: 0.75rem !important;
   border-left: 2px solid #e5e5e5 !important;
 }
 
 .project-abstract p {
-  margin-bottom: 0 !important;
   color: #333333 !important;
+}
+
+.project-abstract > p:first-child {
+  margin-bottom: 0.75rem !important;
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+.project-meta {
+  margin: 0.25rem 0 !important;
+  font-size: 0.9em !important;
+  line-height: 1.35 !important;
+  text-align: left !important;
+  color: #555555 !important;
+}
+
+.project-meta strong {
+  color: #333333 !important;
+  font-weight: 600 !important;
 }
 
 /* Dark mode */
@@ -1072,4 +1086,12 @@ html.dark-mode .project-abstract {
 
 html.dark-mode .project-abstract p {
   color: #e6e6e6 !important;
+}
+
+html.dark-mode .project-meta {
+  color: #cccccc !important;
+}
+
+html.dark-mode .project-meta strong {
+  color: #ffffff !important;
 }
