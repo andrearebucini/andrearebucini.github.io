@@ -33,6 +33,13 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
     <p>
 Research on widowhood typically dates treatment at bereavement. Yet when death follows a period of illness, caregiving, and financial preparation, household outcomes may begin adjusting beforehand. Pre-event observations may therefore be partly treated, and conventional estimates may combine anticipatory adjustment with the consequences of spousal loss. This paper addresses this timing problem using longitudinal data from the Survey of Health, Ageing and Retirement in Europe (SHARE) for 2004-2022 and end-of-life interviews to identify unexpected deaths, meaning deaths preceded by limited forewarning. I combine this classification with propensity-score matching and difference-in-differences models in a staggered-treatment setting to estimate the effects of unexpected spousal death on survivors’ economic outcomes. The estimates show a large and persistent deterioration in late-life economic security: equivalised income falls by about 22%, expenditure rises by about 5%, financial distress increases, and net wealth declines gradually, primarily through real assets and long-term savings. These effects are substantially larger for widows than for widowers. The mechanisms analysis considers labour-market adjustment, survivor pensions, private life insurance, inheritance, portfolio responses, housing and living arrangements, and formal and informal support. Labour-market re-entry is limited and life insurance has no significant moderating effect, while income losses and increases in financial distress are smaller in countries characterised by more generous survivor provision. Inheritance information shows that wealth declines partly reflect transfers outside the surviving household, but also asset liquidation and post-bereavement housing adjustment. The findings demonstrate the importance of treatment timing and of assessing current resource flows and balance-sheet responses jointly.
     </p>
+    <p class="project-meta">
+    <strong>JEL codes:</strong> D14, G51, J14
+  </p>
+
+  <p class="project-meta">
+    <strong>Keywords:</strong> Widowhood; Spousal death; Household finance; Europe; SHARE
+  </p>
   </div>
 </details>
 
