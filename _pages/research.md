@@ -42,7 +42,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
     </p>
 
     <p class="project-meta">
-      <strong>Keywords:</strong> widowhood; spousal death; household finance; Europe; SHARE.
+      <strong>Keywords:</strong> Widowhood; Spousal death; Household finance; Europe; SHARE.
     </p>
   </div>
 </details>
@@ -64,7 +64,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
     </p>
 
     <p class="project-meta">
-      <strong>Keywords:</strong> spousal death; household finance; financial literacy; financial responsibility; Europe; SHARE.
+      <strong>Keywords:</strong> Spousal death; Household finance; Financial literacy; Financial responsibility; Europe; SHARE.
     </p>
   </div>
 </details>
@@ -89,7 +89,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
     </p>
 
     <p class="project-meta">
-      <strong>Keywords:</strong> STEM education; gender stereotypes; parental beliefs; information experiment; upper-secondary school choice.
+      <strong>Keywords:</strong> STEM education; Gender stereotypes; Parental beliefs; Information experiment; Upper-secondary school choice.
     </p>
   </div>
 </details>
@@ -118,7 +118,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
     </p>
 
     <p class="project-meta">
-      <strong>Keywords:</strong> mandatory sex education; adolescent fertility; adolescent births; abortion; sexually transmitted infections; Europe.
+      <strong>Keywords:</strong> Mandatory sex education; Adolescent fertility; Adolescent births; Abortion; Sexually transmitted infections; Europe.
     </p>
   </div>
 </details>
