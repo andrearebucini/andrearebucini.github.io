@@ -23,14 +23,15 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
 ## Working papers
 
 <details class="research-project">
-  <summary>
-    <span class="project-title">
-      <strong>Unexpected spousal death and economic security in later life</strong> [PDF](/files/Paper_S1.pdf)
-    </span>
-    <span class="project-status">
-      Status: Under review
-    </span>
-  </summary>
+<summary>
+  <span class="project-title">
+    <strong>Unexpected spousal death and economic security in later life</strong>
+    <a class="paper-link" href="/files/Paper_S1.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation();">[PDF]</a>
+  </span>
+  <span class="project-status">
+    Status: Under review
+  </span>
+</summary>
 
   <div class="project-abstract">
     <p>
