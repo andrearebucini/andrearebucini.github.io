@@ -991,7 +991,7 @@ html.dark-mode .presentation-figure figcaption {
 }
 
 .research-project summary {
-  cursor: pointer !important;
+  cursor: default !important;
   list-style: none !important;
   color: #333333 !important;
   line-height: 1.35 !important;
@@ -1002,16 +1002,13 @@ html.dark-mode .presentation-figure figcaption {
 }
 
 .research-project summary::before {
-  content: "+";
-  display: inline-block;
-  width: 1rem;
-  margin-right: 0.35rem;
-  font-weight: 600;
-  color: #333333;
+  content: none !important;
+  display: none !important;
 }
 
 .research-project[open] summary::before {
-  content: "–";
+  content: none !important;
+  display: none !important;
 }
 
 .project-title {
@@ -1020,19 +1017,66 @@ html.dark-mode .presentation-figure figcaption {
 
 .project-authors {
   display: block !important;
-  margin: 0.25rem 0 0 1.4rem !important;
+  margin: 0.25rem 0 0 0 !important;
   font-size: 0.95em !important;
   font-weight: normal !important;
   color: #555555 !important;
 }
 
 .project-status {
+  display: block !important;
+  margin: 0.2rem 0 0 0 !important;
+  font-size: 0.88em !important;
   font-weight: normal !important;
   color: #666666 !important;
+  font-style: italic !important;
+}
+
+.abstract-toggle {
+  display: inline-block !important;
+  margin-top: 0.25rem !important;
+  font-size: 0.86em !important;
+  font-weight: normal !important;
+  color: #336699 !important;
+  cursor: pointer !important;
+}
+
+.abstract-toggle::before {
+  content: "▸";
+  display: inline-block !important;
+  margin-right: 0.3rem !important;
+  font-size: 0.85em !important;
+}
+
+.research-project[open] .abstract-toggle::before {
+  content: "▾";
+}
+
+.abstract-toggle:hover {
+  text-decoration: underline !important;
+}
+
+.paper-link {
+  margin-left: 0.35rem !important;
+  font-size: 0.9em !important;
+  font-weight: normal !important;
+  white-space: nowrap !important;
+  color: #336699 !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+}
+
+.paper-link:hover,
+.paper-link:focus {
+  color: #224466 !important;
+  text-decoration: underline !important;
+  border-bottom: none !important;
+  background-image: none !important;
 }
 
 .project-abstract {
-  margin: 0.65rem 0 0 1.4rem !important;
+  margin: 0.65rem 0 0 0 !important;
   padding-left: 0.75rem !important;
   border-left: 2px solid #e5e5e5 !important;
 }
@@ -1060,24 +1104,42 @@ html.dark-mode .presentation-figure figcaption {
   font-weight: 600 !important;
 }
 
-/* Dark mode */
+/* Dark mode: expandable research projects */
 
 html.dark-mode .research-project {
   border-bottom: none !important;
 }
 
 html.dark-mode .research-project summary,
-html.dark-mode .research-project summary::before,
 html.dark-mode .research-project summary:hover {
   color: #ffffff !important;
 }
 
-html.dark-mode .project-status {
-  color: #cccccc !important;
-}
-
 html.dark-mode .project-authors {
   color: #d6d6d6 !important;
+}
+
+html.dark-mode .project-status {
+  color: #c8c8c8 !important;
+}
+
+html.dark-mode .abstract-toggle {
+  color: #9bbce0 !important;
+}
+
+html.dark-mode .abstract-toggle:hover {
+  color: #d4e8ff !important;
+  text-decoration: underline !important;
+}
+
+html.dark-mode .paper-link {
+  color: #b7d7ff !important;
+}
+
+html.dark-mode .paper-link:hover,
+html.dark-mode .paper-link:focus {
+  color: #d4e8ff !important;
+  text-decoration: underline !important;
 }
 
 html.dark-mode .project-abstract {
@@ -1096,15 +1158,8 @@ html.dark-mode .project-meta strong {
   color: #ffffff !important;
 }
 
-.project-status {
-  display: block !important;
-  margin: 0.2rem 0 0 1.4rem !important;
-  font-size: 0.88em !important;
-  font-weight: normal !important;
-  color: #666666 !important;
-  font-style: italic !important;
-}
-
-html.dark-mode .project-status {
-  color: #c8c8c8 !important;
+@media (max-width: 64em) {
+  .project-abstract > p:first-child {
+    text-align: left !important;
+  }
 }
