@@ -25,7 +25,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
 <details class="research-project">
   <summary>
     <span class="project-title">
-      <strong>Unexpected spousal death and economic security in later life</strong>
+      <strong>Unexpected spousal death and economic security in later life</strong> [PDF]()
     </span>
     <span class="project-status">
       Status: Under review
