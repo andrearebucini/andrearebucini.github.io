@@ -20,7 +20,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
 
 ---
 
-## Work in progress
+## Working papers
 
 <details class="research-project">
   <summary>
@@ -93,6 +93,10 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
     </p>
   </div>
 </details>
+
+---
+
+## Work in progress
 
 <details class="research-project">
   <summary>
