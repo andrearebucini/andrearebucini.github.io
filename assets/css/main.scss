@@ -5,7 +5,8 @@
 @import "minimal-mistakes";
 
 /* ============================================================
-   Base typography
+   01. BASE TYPOGRAPHY
+   General font size, body colour, headings, and content spacing
    ============================================================ */
 
 html {
@@ -50,7 +51,8 @@ body {
 }
 
 /* ============================================================
-   Wider page layout and smaller margins
+   02. DESKTOP PAGE LAYOUT
+   Width, margins, sidebar position, and main content placement
    ============================================================ */
 
 .initial-content {
@@ -101,7 +103,8 @@ body {
 }
 
 /* ============================================================
-   Sticky and compact masthead
+   03. STICKY AND COMPACT TOP NAVIGATION
+   Masthead, site title, visible navigation links
    ============================================================ */
 
 .masthead {
@@ -171,7 +174,8 @@ body {
 }
 
 /* ============================================================
-   Minimal dark-mode toggle
+   04. DARK-MODE TOGGLE BUTTON
+   Small moon/sun button in the navigation bar
    ============================================================ */
 
 #dark-mode-toggle {
@@ -205,7 +209,8 @@ body {
 }
 
 /* ============================================================
-   Author profile
+   05. DESKTOP AUTHOR PROFILE
+   Sidebar portrait, author information, and social links
    ============================================================ */
 
 .author__avatar img {
@@ -284,7 +289,8 @@ body {
 }
 
 /* ============================================================
-   Stable separator between author profile and page content
+   06. DESKTOP SEPARATOR LINE
+   Vertical line between author sidebar and page content
    ============================================================ */
 
 @media (min-width: 64em) {
@@ -326,7 +332,8 @@ body {
 }
 
 /* ============================================================
-   Normal links inside page content
+   07. NORMAL PAGE LINKS
+   Link colour and hover behaviour inside page content
    ============================================================ */
 
 .page__content a {
@@ -345,7 +352,8 @@ body {
 }
 
 /* ============================================================
-   Remove heading permalink appearance and behaviour
+   08. HEADING LINKS AND PAGE TITLE
+   Remove automatic heading anchors and hide internal page title
    ============================================================ */
 
 .page__content .header-link,
@@ -390,8 +398,13 @@ body {
   cursor: default !important;
 }
 
+.page__title {
+  display: none !important;
+}
+
 /* ============================================================
-   Dark mode
+   09. GLOBAL DARK MODE
+   Backgrounds, text, headings, links, tables, and code blocks
    ============================================================ */
 
 html.dark-mode,
@@ -516,7 +529,8 @@ html.dark-mode td {
 }
 
 /* ============================================================
-   Footer: remove dock appearance, keep centred sentence
+   10. FOOTER
+   Remove dock appearance and keep centred copyright sentence
    ============================================================ */
 
 .page__footer {
@@ -558,15 +572,8 @@ html.dark-mode .page__footer-copyright {
 }
 
 /* ============================================================
-   Hide page titles inside page content
-   ============================================================ */
-
-.page__title {
-  display: none !important;
-}
-
-/* ============================================================
-   Final navigation hover fix: shaded cell only, no theme underline
+   11. NAVIGATION HOVER AND ACTIVE PAGE STATE
+   Shaded hover cell and active-page underline
    ============================================================ */
 
 .greedy-nav .visible-links a,
@@ -680,7 +687,8 @@ html.dark-mode .greedy-nav .visible-links a.active-nav-link:active {
 }
 
 /* ============================================================
-   Presentation page image
+   12. PRESENTATION AND AWARD IMAGES
+   Figure width, image crop, rounded corners, and captions
    ============================================================ */
 
 .presentation-figure {
@@ -708,7 +716,8 @@ html.dark-mode .presentation-figure figcaption {
 }
 
 /* ============================================================
-   Mobile layout: author card and navigation
+   13. MOBILE LAYOUT
+   Hide desktop sidebar and make page full-width on mobile
    ============================================================ */
 
 .mobile-author-card {
@@ -716,19 +725,12 @@ html.dark-mode .presentation-figure figcaption {
 }
 
 @media (max-width: 64em) {
-
-  /* ------------------------------------------------------------
-     Remove Minimal Mistakes mobile author sidebar/follow button
-     ------------------------------------------------------------ */
-
   .sidebar,
   .author__urls-wrapper,
   .author__urls-wrapper .btn,
   .author__urls-wrapper button {
     display: none !important;
   }
-
-  /* Keep mobile page content clean and full-width */
 
   .page,
   .page__inner-wrap,
@@ -745,11 +747,14 @@ html.dark-mode .presentation-figure figcaption {
     width: 100% !important;
     max-width: none !important;
   }
+}
 
-  /* ------------------------------------------------------------
-     Mobile author card: centred and vertically organised
-     ------------------------------------------------------------ */
+/* ============================================================
+   14. MOBILE AUTHOR CARD
+   Centred profile image and author information on mobile
+   ============================================================ */
 
+@media (max-width: 64em) {
   .mobile-author-card {
     display: block !important;
     margin: 1.2rem auto 1.8rem auto !important;
@@ -842,11 +847,14 @@ html.dark-mode .presentation-figure figcaption {
   .mobile-author-card__links .fab {
     color: #333333 !important;
   }
+}
 
-  /* ------------------------------------------------------------
-     Mobile masthead: menu button | Andrea Rebucini | dark toggle
-     ------------------------------------------------------------ */
+/* ============================================================
+   15. MOBILE NAVIGATION
+   Menu button, site title, dark-mode toggle, and dropdown links
+   ============================================================ */
 
+@media (max-width: 64em) {
   .masthead {
     min-height: 42px !important;
   }
@@ -932,7 +940,8 @@ html.dark-mode .presentation-figure figcaption {
 }
 
 /* ============================================================
-   Mobile dark mode
+   16. MOBILE DARK MODE
+   Dark-mode adjustments for mobile author card and menu
    ============================================================ */
 
 @media (max-width: 64em) {
@@ -981,7 +990,8 @@ html.dark-mode .presentation-figure figcaption {
 }
 
 /* ============================================================
-   Expandable research projects
+   17. RESEARCH PROJECTS
+   Working papers and work-in-progress expandable abstracts
    ============================================================ */
 
 .research-project {
@@ -1001,18 +1011,14 @@ html.dark-mode .presentation-figure figcaption {
   display: none !important;
 }
 
-.research-project summary::before {
-  content: none !important;
-  display: none !important;
-}
-
+.research-project summary::before,
 .research-project[open] summary::before {
   content: none !important;
   display: none !important;
 }
 
 .project-title {
-  display: inline !important;
+  display: block !important;
 }
 
 .project-authors {
@@ -1033,11 +1039,12 @@ html.dark-mode .presentation-figure figcaption {
 }
 
 .abstract-toggle {
-  display: inline-block !important;
+  display: block !important;
+  width: fit-content !important;
   margin-top: 0.25rem !important;
   font-size: 0.86em !important;
   font-weight: normal !important;
-  color: #336699 !important;
+  color: #333333 !important;
   cursor: pointer !important;
 }
 
@@ -1046,6 +1053,7 @@ html.dark-mode .presentation-figure figcaption {
   display: inline-block !important;
   margin-right: 0.3rem !important;
   font-size: 0.85em !important;
+  color: #333333 !important;
 }
 
 .research-project[open] .abstract-toggle::before {
@@ -1053,7 +1061,8 @@ html.dark-mode .presentation-figure figcaption {
 }
 
 .abstract-toggle:hover {
-  text-decoration: underline !important;
+  color: #333333 !important;
+  text-decoration: none !important;
 }
 
 .paper-link {
@@ -1104,7 +1113,10 @@ html.dark-mode .presentation-figure figcaption {
   font-weight: 600 !important;
 }
 
-/* Dark mode: expandable research projects */
+/* ============================================================
+   18. RESEARCH PROJECTS: DARK MODE
+   Dark-mode colours for abstracts, metadata, and PDF links
+   ============================================================ */
 
 html.dark-mode .research-project {
   border-bottom: none !important;
@@ -1123,13 +1135,14 @@ html.dark-mode .project-status {
   color: #c8c8c8 !important;
 }
 
-html.dark-mode .abstract-toggle {
-  color: #9bbce0 !important;
+html.dark-mode .abstract-toggle,
+html.dark-mode .abstract-toggle::before {
+  color: #ffffff !important;
 }
 
 html.dark-mode .abstract-toggle:hover {
-  color: #d4e8ff !important;
-  text-decoration: underline !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 
 html.dark-mode .paper-link {
@@ -1157,6 +1170,11 @@ html.dark-mode .project-meta {
 html.dark-mode .project-meta strong {
   color: #ffffff !important;
 }
+
+/* ============================================================
+   19. RESEARCH PROJECTS: MOBILE
+   Disable justified abstracts on narrow screens
+   ============================================================ */
 
 @media (max-width: 64em) {
   .project-abstract > p:first-child {
