@@ -82,7 +82,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
 
 ---
 
-## Work in progress
+## Selected work in progress
 
 <details class="research-project">
   <summary>
