@@ -47,7 +47,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
 Before joining the PhD programme, I was a research assistant at the [University of Milano-Bicocca](https://en.unimib.it/) (Italy) while, beyond academia, I worked as a data analyst at [PTS](https://pts-spa.com/), a consulting firm in Italy, contributing to projects commissioned by local and national institutions on school guidance and labour market outcomes.
 
-My research interests are in applied microeconomics, with a focus on household economics, economics of education, financial literacy, gender economics, health economics, and impact evaluation.
+My research interests are in applied microeconomics, with a focus on household economics, economics of education, financial literacy, gender economics, and health economics.
 
 If you want to get in touch, please do not hesitate to contact me!
 
