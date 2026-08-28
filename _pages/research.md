@@ -7,16 +7,16 @@ title: "Research"
 
 ### Peer-reviewed journal articles
 
-[**Restrictive measures and substance use reporting: New evidence from the COVID-19 pandemic**](https://doi.org/10.1016/j.drugpo.2023.104238)  
-A. Rebucini, [F. Origo](https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3333), [F. Schionato](https://www.unimib.it/francesca-schionato), and [F.S. Romolo](https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F80828)  
+[**Restrictive measures and substance use reporting: New evidence from the COVID-19 pandemic**](https://doi.org/10.1016/j.drugpo.2023.104238){:target="_blank" rel="noopener noreferrer"}  
+A. Rebucini, [F. Origo](https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3333){:target="_blank" rel="noopener noreferrer"}, [F. Schionato](https://www.unimib.it/francesca-schionato), and [F.S. Romolo](https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F80828){:target="_blank" rel="noopener noreferrer"}  
 *International Journal of Drug Policy*, 122, 104238, 2023
 
 ### Other publications
 
-[**Percorsi di inserimento lavorativo dei laureati dell’Università degli Studi di Milano**](https://www.edizionistudium.it/sites/default/files/nuova_professionalita_-_n.2_-_giugnoluglio_2024_-_pdf.pdf)   
-[M. Brambilla](https://www.unimi.it/it/ugov/person/marina-brambilla), L. Schionato, and A. Rebucini  
+[**Percorsi di inserimento lavorativo dei laureati dell’Università degli Studi di Milano**](https://www.edizionistudium.it/sites/default/files/nuova_professionalita_-_n.2_-_giugnoluglio_2024_-_pdf.pdf){:target="_blank" rel="noopener noreferrer"}   
+[M. Brambilla](https://www.unimi.it/it/ugov/person/marina-brambilla){:target="_blank" rel="noopener noreferrer"}, L. Schionato, and A. Rebucini  
 *Nuova Professionalità*, V(2), 48-68, 2024
-Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore.com/art/universita-milano-entro-3-anni-titolo-accademico-70percento-laureati-trova-impiego-AGalgh4)
+Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore.com/art/universita-milano-entro-3-anni-titolo-accademico-70percento-laureati-trova-impiego-AGalgh4){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
