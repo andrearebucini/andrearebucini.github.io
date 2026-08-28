@@ -15,7 +15,7 @@ A. Rebucini, [F. Origo](https://unibg.unifind.cineca.it/individual?uri=http%3A%2
 
 [**Percorsi di inserimento lavorativo dei laureati dell’Università degli Studi di Milano**](https://www.edizionistudium.it/sites/default/files/nuova_professionalita_-_n.2_-_giugnoluglio_2024_-_pdf.pdf){:target="_blank" rel="noopener noreferrer"}   
 [M. Brambilla](https://www.unimi.it/it/ugov/person/marina-brambilla){:target="_blank" rel="noopener noreferrer"}, L. Schionato, and A. Rebucini  
-*Nuova Professionalità*, V(2), 48-68, 2024
+*Nuova Professionalità*, V(2), 48-68, 2024  
 Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore.com/art/universita-milano-entro-3-anni-titolo-accademico-70percento-laureati-trova-impiego-AGalgh4){:target="_blank" rel="noopener noreferrer"}
 
 ---
