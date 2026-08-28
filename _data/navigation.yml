@@ -11,3 +11,4 @@ main:
 
   - title: "CV"
     url: /files/CV_Andrea_Rebucini.pdf
+    target: "_blank"
