@@ -32,7 +32,7 @@ July 2026
 University of Pavia, Pavia, Italy  
 June 2026
 
-**2nd-Year Internal Economics PhD Workshop**  
+**2nd-Year Economics PhD Workshop** (Internal)  
 University of Bergamo, Bergamo, Italy  
 January 2026
 
@@ -55,6 +55,6 @@ September 2025
 Università Cattolica del Sacro Cuore, Milan, Italy  
 June 2025
 
-**1st-Year Internal Economics PhD Workshop**  
+**1st-Year Economics PhD Workshop** (Internal)  
 University of Bergamo, Bergamo, Italy  
 January 2025
