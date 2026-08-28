@@ -13,27 +13,27 @@ title: "Presentations"
 </figure>
 
 **Brown Bag Seminar** (Internal)  
-Bergamo, Italy  
+University of Bergamo, Bergamo, Italy  
 September 2026, scheduled
 
 **IV Sapienza PhD Conference in Social Sciences and Economics**  
-Rome, Italy  
+Sapienza University of Rome, Rome, Italy  
 September 2026, scheduled
 
 **1st International Workshop of the G53 Network Rising Scholars**  
-Reggio Calabria, Italy  
+Regional Venue, Reggio Calabria, Italy  
 July 2026
 
 **XXXIV Meeting of the Economics of Education Association (AEDE)**  
-Logroño, Spain  
+University of La Rioja, Logroño, Spain  
 July 2026
 
 **Meeting of the Society of Economics of the Household (SEHO) 2026**  
-Pavia, Italy  
+University of Pavia, Pavia, Italy  
 June 2026
 
 **2nd-Year Internal Economics PhD Workshop**  
-Bergamo, Italy  
+University of Bergamo, Bergamo, Italy  
 January 2026
 
 ### 2025
@@ -44,17 +44,17 @@ January 2026
 </figure>
 
 **Mannheim Institute for Financial Education (MIFE) Early Career Workshop 2025**  
-Mannheim, Germany  
+University of Mannheim / MIFE, Mannheim, Germany  
 November 2025
 
 **III Sapienza PhD Conference in Social Sciences and Economics**  
-Rome, Italy  
+Sapienza University of Rome, Rome, Italy  
 September 2025
 
 **3rd Milan PhD Economics Workshop**  
-Milan, Italy  
+Università Cattolica del Sacro Cuore, Milan, Italy  
 June 2025
 
 **1st-Year Internal Economics PhD Workshop**  
-Bergamo, Italy  
+University of Bergamo, Bergamo, Italy  
 January 2025
