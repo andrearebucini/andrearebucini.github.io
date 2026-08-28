@@ -56,7 +56,7 @@
         {% for link in author.links %}
           {% unless link.label == "Email" %}
             <li>
-              <a href="{{ link.url }}">
+              <a href="{{ link.url }}" target="_blank" rel="noopener" onclick="event.stopPropagation();">
                 {% if link.icon %}
                   <i class="{{ link.icon }}" aria-hidden="true"></i>
                 {% endif %}
