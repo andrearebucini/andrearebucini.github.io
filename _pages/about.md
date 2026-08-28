@@ -51,4 +51,4 @@ My research interests are in applied microeconomics, with a focus on household e
 
 If you want to get in touch, please do not hesitate to contact me!
 
-You can also view and download my full CV [here](/files/CV_Andrea_Rebucini.pdf).
+You can also view and download my full CV [here](/files/CV_Andrea_Rebucini.pdf){:target="_blank" rel="noopener noreferrer"}.
