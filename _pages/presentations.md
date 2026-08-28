@@ -12,6 +12,10 @@ title: "Presentations"
   <figcaption>Presenting at the 1st International Workshop of the G53 Network Rising Scholars, 2026.</figcaption>
 </figure>
 
+**Brown Bag Seminar** (Internal)  
+Bergamo, Italy  
+September 2026, scheduled
+
 **IV Sapienza PhD Conference in Social Sciences and Economics**  
 Rome, Italy  
 September 2026, scheduled
