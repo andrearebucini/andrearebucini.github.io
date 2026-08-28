@@ -29,7 +29,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
       <a class="paper-link" href="/files/Paper_S1.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation();">PDF</a>
     </span>
     <span class="project-status">
-      Status: Under review
+      Status: Submitted
     </span>
     <span class="abstract-toggle">
       Abstract
