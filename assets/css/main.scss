@@ -333,20 +333,26 @@ body {
 
 /* ============================================================
    07. NORMAL PAGE LINKS
-   Link colour and hover behaviour inside page content
+   Links inherit text colour and are identified by underline
    ============================================================ */
 
 .page__content a {
-  color: #336699 !important;
-  text-decoration: none !important;
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.06em !important;
+  text-underline-offset: 0.13em !important;
+  text-decoration-color: currentColor !important;
   border-bottom: none !important;
   background-image: none !important;
 }
 
 .page__content a:hover,
 .page__content a:focus {
-  color: #224466 !important;
-  text-decoration: none !important;
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.08em !important;
+  text-underline-offset: 0.13em !important;
+  text-decoration-color: currentColor !important;
   border-bottom: none !important;
   background-image: none !important;
 }
@@ -439,16 +445,22 @@ html.dark-mode .page__content th {
 }
 
 html.dark-mode .page__content a {
-  color: #b7d7ff !important;
-  text-decoration: none !important;
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.06em !important;
+  text-underline-offset: 0.13em !important;
+  text-decoration-color: currentColor !important;
   border-bottom: none !important;
   background-image: none !important;
 }
 
 html.dark-mode .page__content a:hover,
 html.dark-mode .page__content a:focus {
-  color: #d4e8ff !important;
-  text-decoration: none !important;
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.08em !important;
+  text-underline-offset: 0.13em !important;
+  text-decoration-color: currentColor !important;
   border-bottom: none !important;
   background-image: none !important;
 }
@@ -1070,16 +1082,20 @@ html.dark-mode .presentation-figure figcaption {
   font-size: 0.9em !important;
   font-weight: normal !important;
   white-space: nowrap !important;
-  color: #336699 !important;
-  text-decoration: none !important;
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.06em !important;
+  text-underline-offset: 0.13em !important;
+  text-decoration-color: currentColor !important;
   border-bottom: none !important;
   background-image: none !important;
 }
 
 .paper-link:hover,
 .paper-link:focus {
-  color: #224466 !important;
+  color: inherit !important;
   text-decoration: underline !important;
+  text-decoration-thickness: 0.08em !important;
   border-bottom: none !important;
   background-image: none !important;
 }
@@ -1145,14 +1161,12 @@ html.dark-mode .abstract-toggle:hover {
   text-decoration: none !important;
 }
 
-html.dark-mode .paper-link {
-  color: #b7d7ff !important;
-}
-
+html.dark-mode .paper-link,
 html.dark-mode .paper-link:hover,
 html.dark-mode .paper-link:focus {
-  color: #d4e8ff !important;
+  color: inherit !important;
   text-decoration: underline !important;
+  text-decoration-color: currentColor !important;
 }
 
 html.dark-mode .project-abstract {
