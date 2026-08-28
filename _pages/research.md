@@ -93,7 +93,7 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
       with <a href="https://elisabaldazzi.github.io/">E. Baldazzi</a> and <a href="https://www.unibz.it/en/faculties/economics-management/phd-economics-finance/phd-students/phd/48805-chiara-gastaldi">C. Gastaldi</a>
     </span>
     <span class="abstract-toggle">
-      Abstract
+      Preliminary abstract
     </span>
   </summary>
 
