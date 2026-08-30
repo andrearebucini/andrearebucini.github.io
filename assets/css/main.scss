@@ -596,6 +596,50 @@ body,
 }
 
 /* ============================================================
+   PUBLICATIONS AND BIO LINKS
+   Compact publication entries and profile links in bio
+   ============================================================ */
+
+.bio-links {
+  margin-top: 1rem !important;
+  font-size: 0.92em !important;
+  line-height: 1.45 !important;
+}
+
+.bio-links a {
+  white-space: nowrap !important;
+}
+
+.bio-links span {
+  margin: 0 0.25rem !important;
+  color: #777777 !important;
+}
+
+.publication-item {
+  margin-bottom: 1.15rem !important;
+}
+
+.publication-title {
+  margin-bottom: 0.15rem !important;
+  line-height: 1.35 !important;
+}
+
+.publication-meta {
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem !important;
+  font-size: 0.95em !important;
+  line-height: 1.4 !important;
+  color: #555555 !important;
+}
+
+.publication-note {
+  margin-top: 0.15rem !important;
+  font-size: 0.9em !important;
+  line-height: 1.4 !important;
+  color: #666666 !important;
+}
+
+/* ============================================================
    13. DARK MODE
    Backgrounds, headings, navigation, bio, research projects
    ============================================================ */
@@ -795,6 +839,18 @@ html.dark-mode table,
 html.dark-mode th,
 html.dark-mode td {
   border-color: #444444 !important;
+}
+
+html.dark-mode .bio-links span {
+  color: #b8b8b8 !important;
+}
+
+html.dark-mode .publication-meta {
+  color: #d6d6d6 !important;
+}
+
+html.dark-mode .publication-note {
+  color: #c8c8c8 !important;
 }
 
 /* ============================================================
