@@ -80,9 +80,9 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
     <span class="project-meta project-meta-inline">
       <strong>Presented at:</strong>
-      <span class="project-event-inline">III Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(Rome, Italy, September 2025)</span></span>
-      <span class="event-separator">|</span>
       <span class="project-event-inline">3rd Milan PhD Economics Workshop <span class="project-event-detail">(Milan, Italy, June 2025)</span></span>
+      <span class="event-separator">|</span>
+      <span class="project-event-inline">III Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(Rome, Italy, September 2025)</span></span>
     </span>
 
     <span class="abstract-toggle">
@@ -105,13 +105,13 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
     <span class="project-meta project-meta-inline">
       <strong>Presented at:</strong>
+      <span class="project-event-inline">MIFE Early Career Workshop <span class="project-event-detail">(Mannheim, Germany, November 2025)</span></span>
+      <span class="event-separator">|</span>
       <span class="project-event-inline">2nd-Year Internal Economics PhD Workshop <span class="project-event-detail">(Bergamo, Italy, January 2026)</span></span>
       <span class="event-separator">|</span>
-      <span class="project-event-inline">Mannheim Institute for Financial Education Early Career Workshop <span class="project-event-detail">(Mannheim, Germany, November 2025)</span></span>
+      <span class="project-event-inline">SEHO 2026 <span class="project-event-detail">(Pavia, Italy, June 2026)</span></span>
       <span class="event-separator">|</span>
-      <span class="project-event-inline">Meeting of the Society of Economics of the Household <span class="project-event-detail">(Pavia, Italy, June 2026)</span></span>
-      <span class="event-separator">|</span>
-      <span class="project-event-inline">1st International Workshop of the G53 Network Rising Scholars <span class="project-event-detail">(Reggio Calabria, Italy, July 2026)</span></span>
+      <span class="project-event-inline">G53 Rising Scholars Workshop <span class="project-event-detail">(Reggio Calabria, Italy, July 2026)</span></span>
     </span>
 
     <span class="abstract-toggle">
@@ -138,7 +138,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
     <span class="project-meta project-meta-inline">
       <strong>Presented at:</strong>
-      <span class="project-event-inline">XXXIV Meeting of the Economics of Education Association <span class="project-event-detail">(Logroño, Spain, July 2026)</span></span>
+      <span class="project-event-inline">AEDE 2026 <span class="project-event-detail">(Logroño, Spain, July 2026)</span></span>
     </span>
 
     <span class="project-meta project-meta-inline">
@@ -175,7 +175,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </span>
 
     <span class="project-meta project-meta-inline">
-      <strong>Presented at:</strong>
+      <strong>Scheduled presentations:</strong>
       <span class="project-event-inline">Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(Rome, Italy, forthcoming September 2026)</span></span>
       <span class="event-separator">|</span>
       <span class="project-event-inline">Brown Bag Seminar <span class="project-event-detail">(Bergamo, Italy, forthcoming September 2026)</span></span>
