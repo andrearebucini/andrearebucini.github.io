@@ -99,6 +99,7 @@
 
       link.addEventListener("click", function (event) {
         event.preventDefault();
+        link.blur();
         scrollToSection(link);
       });
     });
