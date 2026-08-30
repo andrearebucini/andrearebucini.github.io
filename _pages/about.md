@@ -203,7 +203,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </span>
 
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false');">
-      Preliminary abstract
+      Astract
     </button>
   </div>
 
