@@ -13,27 +13,84 @@
     return path;
   }
 
-  function markActiveNavLink() {
+  function getNavLinks() {
+    return Array.from(
+      document.querySelectorAll(".greedy-nav .visible-links a, .greedy-nav .hidden-links a")
+    );
+  }
+
+  function getSectionLinks() {
     const currentPath = normalisePath(window.location.pathname);
-    const navLinks = document.querySelectorAll(".greedy-nav .visible-links a");
 
-    navLinks.forEach(function (link) {
-      const linkPath = normalisePath(new URL(link.href).pathname);
+    return getNavLinks().filter(function (link) {
+      const url = new URL(link.href);
+      const linkPath = normalisePath(url.pathname);
 
-      const isHome = linkPath === "/" && currentPath === "/";
-      const isSection = linkPath !== "/" && currentPath.startsWith(linkPath);
+      return linkPath === currentPath && url.hash && document.querySelector(url.hash);
+    });
+  }
 
-      if (isHome || isSection) {
+  function clearActiveNavLinks() {
+    getNavLinks().forEach(function (link) {
+      link.classList.remove("active-nav-link");
+    });
+  }
+
+  function getStickyOffset() {
+    const masthead = document.querySelector(".masthead");
+    const sectionNav = document.querySelector(".section-nav");
+
+    const mastheadHeight = masthead ? masthead.offsetHeight : 0;
+    const sectionNavHeight = sectionNav ? sectionNav.offsetHeight : 0;
+
+    return mastheadHeight + sectionNavHeight + 20;
+  }
+
+  function markActiveSectionLink() {
+    const sectionLinks = getSectionLinks();
+
+    if (sectionLinks.length === 0) {
+      clearActiveNavLinks();
+      return;
+    }
+
+    const offset = getStickyOffset();
+    const scrollPosition = window.scrollY + offset;
+
+    let activeHash = sectionLinks[0].hash;
+
+    sectionLinks.forEach(function (link) {
+      const section = document.querySelector(link.hash);
+
+      if (!section) {
+        return;
+      }
+
+      if (section.offsetTop <= scrollPosition) {
+        activeHash = link.hash;
+      }
+    });
+
+    clearActiveNavLinks();
+
+    sectionLinks.forEach(function (link) {
+      if (link.hash === activeHash) {
         link.classList.add("active-nav-link");
-      } else {
-        link.classList.remove("active-nav-link");
       }
     });
   }
 
+  function initialiseActiveNav() {
+    markActiveSectionLink();
+
+    window.addEventListener("scroll", markActiveSectionLink, { passive: true });
+    window.addEventListener("resize", markActiveSectionLink);
+    window.addEventListener("hashchange", markActiveSectionLink);
+  }
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", markActiveNavLink);
+    document.addEventListener("DOMContentLoaded", initialiseActiveNav);
   } else {
-    markActiveNavLink();
+    initialiseActiveNav();
   }
 })();
