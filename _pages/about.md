@@ -175,10 +175,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </span>
 
     <span class="project-meta project-meta-inline">
-      <strong>Scheduled presentations:</strong>
-      <span class="project-event-inline">Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(Rome, Italy, forthcoming)</span></span>
+      <strong>Presented at:</strong>
+      <span class="project-event-inline">Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(Rome, Italy, forthcoming September 2026)</span></span>
       <span class="event-separator">|</span>
-      <span class="project-event-inline">Brown Bag Seminar <span class="project-event-detail">(forthcoming)</span></span>
+      <span class="project-event-inline">Brown Bag Seminar <span class="project-event-detail">(Bergamo, Italy, forthcoming September 2026)</span></span>
     </span>
 
     <span class="abstract-toggle">
