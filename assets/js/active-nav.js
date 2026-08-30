@@ -1,96 +1,100 @@
 (function () {
-  function normalisePath(path) {
-    if (!path) {
-      return "/";
+  function getSectionNavLinks() {
+    return Array.from(document.querySelectorAll(".section-nav a[href^='#'], .section-nav a[href^='/#']"));
+  }
+
+  function getTargetFromLink(link) {
+    const url = new URL(link.href, window.location.origin);
+    if (!url.hash) {
+      return null;
     }
 
-    path = path.replace(/\/index\.html$/, "/");
-
-    if (!path.endsWith("/")) {
-      path += "/";
-    }
-
-    return path;
+    return document.querySelector(url.hash);
   }
 
-  function getNavLinks() {
-    return Array.from(
-      document.querySelectorAll(".greedy-nav .visible-links a, .greedy-nav .hidden-links a")
-    );
+  function getOffset() {
+    const nav = document.querySelector(".section-nav");
+    return nav ? nav.offsetHeight + 18 : 18;
   }
 
-  function getSectionLinks() {
-    const currentPath = normalisePath(window.location.pathname);
-
-    return getNavLinks().filter(function (link) {
-      const url = new URL(link.href);
-      const linkPath = normalisePath(url.pathname);
-
-      return linkPath === currentPath && url.hash && document.querySelector(url.hash);
-    });
-  }
-
-  function clearActiveNavLinks() {
-    getNavLinks().forEach(function (link) {
+  function clearActiveLinks() {
+    getSectionNavLinks().forEach(function (link) {
       link.classList.remove("active-nav-link");
     });
   }
 
-  function getStickyOffset() {
-    const masthead = document.querySelector(".masthead");
-    const sectionNav = document.querySelector(".section-nav");
+  function markActiveSection() {
+    const links = getSectionNavLinks().filter(function (link) {
+      return getTargetFromLink(link);
+    });
 
-    const mastheadHeight = masthead ? masthead.offsetHeight : 0;
-    const sectionNavHeight = sectionNav ? sectionNav.offsetHeight : 0;
-
-    return mastheadHeight + sectionNavHeight + 20;
-  }
-
-  function markActiveSectionLink() {
-    const sectionLinks = getSectionLinks();
-
-    if (sectionLinks.length === 0) {
-      clearActiveNavLinks();
+    if (links.length === 0) {
       return;
     }
 
-    const offset = getStickyOffset();
-    const scrollPosition = window.scrollY + offset;
+    const scrollPosition = window.scrollY + getOffset() + 10;
+    let activeHash = links[0].hash;
 
-    let activeHash = sectionLinks[0].hash;
+    links.forEach(function (link) {
+      const target = getTargetFromLink(link);
 
-    sectionLinks.forEach(function (link) {
-      const section = document.querySelector(link.hash);
-
-      if (!section) {
-        return;
-      }
-
-      if (section.offsetTop <= scrollPosition) {
+      if (target && target.offsetTop <= scrollPosition) {
         activeHash = link.hash;
       }
     });
 
-    clearActiveNavLinks();
+    clearActiveLinks();
 
-    sectionLinks.forEach(function (link) {
+    links.forEach(function (link) {
       if (link.hash === activeHash) {
         link.classList.add("active-nav-link");
       }
     });
   }
 
-  function initialiseActiveNav() {
-    markActiveSectionLink();
+  function handleSectionClicks() {
+    getSectionNavLinks().forEach(function (link) {
+      const target = getTargetFromLink(link);
 
-    window.addEventListener("scroll", markActiveSectionLink, { passive: true });
-    window.addEventListener("resize", markActiveSectionLink);
-    window.addEventListener("hashchange", markActiveSectionLink);
+      if (!target) {
+        return;
+      }
+
+      link.addEventListener("click", function (event) {
+        const url = new URL(link.href, window.location.origin);
+
+        if (url.pathname !== window.location.pathname && url.pathname !== "/") {
+          return;
+        }
+
+        event.preventDefault();
+
+        const top = target.offsetTop - getOffset();
+
+        window.scrollTo({
+          top: top,
+          behavior: "smooth"
+        });
+
+        history.pushState(null, "", url.hash);
+
+        setTimeout(markActiveSection, 250);
+      });
+    });
+  }
+
+  function initialise() {
+    handleSectionClicks();
+    markActiveSection();
+
+    window.addEventListener("scroll", markActiveSection, { passive: true });
+    window.addEventListener("resize", markActiveSection);
+    window.addEventListener("hashchange", markActiveSection);
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initialiseActiveNav);
+    document.addEventListener("DOMContentLoaded", initialise);
   } else {
-    initialiseActiveNav();
+    initialise();
   }
 })();
