@@ -1,14 +1,18 @@
 main:
+  - title: "About"
+    url: /#about
 
-  - title: "Home"
-    url: /
-    
   - title: "Research"
-    url: /research/
+    url: /#working-papers
+
+  - title: "Publications"
+    url: /#publications
+
+  - title: "Awards"
+    url: /#awards
 
   - title: "Presentations"
-    url: /presentations/
+    url: /#presentations
 
   - title: "CV"
     url: /files/CV_Andrea_Rebucini.pdf
-    target: "_blank"
