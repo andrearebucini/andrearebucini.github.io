@@ -67,11 +67,11 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
 ## Working papers
 
-<details class="research-project">
-  <summary>
+<div class="research-project">
+  <div class="project-header">
     <span class="project-title">
       <strong>Unexpected spousal death and economic security in later life</strong>
-      <a class="paper-link" href="/files/Paper_S1.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation();">Latest version</a>
+      <a class="paper-link" href="/files/Paper_S1.pdf" target="_blank" rel="noopener">Latest version</a>
     </span>
 
     <span class="project-status">
@@ -80,65 +80,79 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
     <span class="project-meta project-meta-inline">
       <strong>Presented at:</strong>
-      <span class="project-event-inline">3rd Milan PhD Economics Workshop <span class="project-event-detail">(Milan, Italy, June 2025)</span></span>
+      <span class="project-event-inline">3rd Milan PhD Economics Workshop <span class="project-event-detail">(June 2025)</span></span>
       <span class="event-separator">|</span>
-      <span class="project-event-inline">III Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(Rome, Italy, September 2025)</span></span>
+      <span class="project-event-inline">III Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(September 2025)</span></span>
     </span>
 
-    <span class="abstract-toggle">
+    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false');">
       Abstract
-    </span>
-  </summary>
+    </button>
+  </div>
 
   <div class="project-abstract">
     <p>
       Research on widowhood typically dates treatment at bereavement. Yet when death follows a period of illness, caregiving, and financial preparation, household outcomes may begin adjusting beforehand. Pre-event observations may therefore be partly treated, and conventional estimates may combine anticipatory adjustment with the consequences of spousal loss. This paper addresses this timing problem using longitudinal data from the Survey of Health, Ageing and Retirement in Europe (SHARE) for 2004–2022 and end-of-life interviews to identify unexpected deaths, meaning deaths preceded by limited forewarning. I combine this classification with propensity-score matching and difference-in-differences models in a staggered-treatment setting to estimate the effects of unexpected spousal death on survivors’ economic outcomes. The estimates show a large and persistent deterioration in late-life economic security: equivalised income falls by about 22%, expenditure rises by about 5%, financial distress increases, and net wealth declines gradually, primarily through real assets and long-term savings. These effects are substantially larger for widows than for widowers. The mechanisms analysis considers labour-market adjustment, survivor pensions, private life insurance, inheritance, portfolio responses, housing and living arrangements, and formal and informal support. Labour-market re-entry is limited and life insurance has no significant moderating effect, while income losses and increases in financial distress are smaller in countries characterised by more generous survivor provision. Inheritance information shows that wealth declines partly reflect transfers outside the surviving household, but also asset liquidation and post-bereavement housing adjustment. The findings demonstrate the importance of treatment timing and of assessing current resource flows and balance-sheet responses jointly.
     </p>
-  </div>
-</details>
 
-<details class="research-project">
-  <summary>
+    <p class="project-classification">
+      <strong>JEL codes:</strong> D14, J14, I31, J16, C23.
+    </p>
+    <p class="project-classification">
+      <strong>Keywords:</strong> Widowhood; spousal death; economic security; household finance; older adults; SHARE; difference-in-differences.
+    </p>
+  </div>
+</div>
+
+<div class="research-project">
+  <div class="project-header">
     <span class="project-title">
       <strong>Spousal death, financial literacy, and economic resilience</strong>
     </span>
 
     <span class="project-meta project-meta-inline">
       <strong>Presented at:</strong>
-      <span class="project-event-inline">MIFE Early Career Workshop <span class="project-event-detail">(Mannheim, Germany, November 2025)</span></span>
+      <span class="project-event-inline">MIFE Early Career Workshop <span class="project-event-detail">(November 2025)</span></span>
       <span class="event-separator">|</span>
-      <span class="project-event-inline">2nd-Year Internal Economics PhD Workshop <span class="project-event-detail">(Bergamo, Italy, January 2026)</span></span>
+      <span class="project-event-inline">2nd-Year Internal Economics PhD Workshop <span class="project-event-detail">(January 2026)</span></span>
       <span class="event-separator">|</span>
-      <span class="project-event-inline">SEHO 2026 <span class="project-event-detail">(Pavia, Italy, June 2026)</span></span>
+      <span class="project-event-inline">SEHO 2026 <span class="project-event-detail">(June 2026)</span></span>
       <span class="event-separator">|</span>
-      <span class="project-event-inline">G53 Rising Scholars Workshop <span class="project-event-detail">(Reggio Calabria, Italy, July 2026)</span></span>
+      <span class="project-event-inline">G53 Rising Scholars Workshop <span class="project-event-detail">(July 2026)</span></span>
     </span>
 
-    <span class="abstract-toggle">
+    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false');">
       Abstract
-    </span>
-  </summary>
+    </button>
+  </div>
 
   <div class="project-abstract">
     <p>
       This paper investigates if and how older individuals prepare financially for spousal death and whether financially literate individuals are better equipped to face the economic consequences of bereavement. Using longitudinal data from the Survey of Health, Ageing and Retirement in Europe (SHARE), covering 2004–2022, I distinguish between expected and unexpected spousal deaths based on end-of-life interviews that document the circumstances surrounding death. The analysis proceeds in two parts. First, I study how financial literacy and financial responsibility evolve before spousal death. Using two-way fixed-effects models, I show that anticipatory adjustment arises only when spousal death is foreseeable. In these cases, financial literacy increases and the probability of assuming primary responsibility for household finances rises, whereas no comparable pre-bereavement dynamics are observed when death is unexpected. The evidence further suggests that individuals who take on financial responsibility experience faster literacy growth, although the transfer of responsibility often occurs late. Second, focusing on unexpected spousal deaths, I estimate the economic impact of bereavement using propensity score matching combined with difference-in-differences. Unexpected spousal death leads to declines in equivalised net income and wealth and increases financial distress. Financially literate individuals experience smaller income losses and appear better able to manage assets and mobilise accumulated financial buffers. The findings are relevant in light of persistent gender differences in financial literacy and responsibility within couples and women’s greater exposure to widowhood in later life.
     </p>
-  </div>
-</details>
 
-<details class="research-project">
-  <summary>
+    <p class="project-classification">
+      <strong>JEL codes:</strong> D14, G53, J14, I31, D91.
+    </p>
+    <p class="project-classification">
+      <strong>Keywords:</strong> Financial literacy; widowhood; bereavement; financial responsibility; household finance; economic resilience; SHARE.
+    </p>
+  </div>
+</div>
+
+<div class="research-project">
+  <div class="project-header">
     <span class="project-title">
       <strong>Parental beliefs, STEM, and gendered track choices: Correcting misperceptions in early educational decisions</strong>
     </span>
 
     <span class="project-authors">
-      with <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3083" target="_blank" rel="noopener" onclick="event.stopPropagation();">A. Cristini</a> and <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3333" target="_blank" rel="noopener" onclick="event.stopPropagation();">F. Origo</a>
+      with <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3083" target="_blank" rel="noopener">A. Cristini</a> and <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3333" target="_blank" rel="noopener">F. Origo</a>
     </span>
 
     <span class="project-meta project-meta-inline">
       <strong>Presented at:</strong>
-      <span class="project-event-inline">AEDE 2026 <span class="project-event-detail">(Logroño, Spain, July 2026)</span></span>
+      <span class="project-event-inline">AEDE 2026 <span class="project-event-detail">(July 2026)</span></span>
     </span>
 
     <span class="project-meta project-meta-inline">
@@ -146,17 +160,24 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
       <span class="project-event-inline">María Jesús San Segundo Award 2026, Second Best Paper Award for Young Researchers</span>
     </span>
 
-    <span class="abstract-toggle">
+    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false');">
       Abstract
-    </span>
-  </summary>
+    </button>
+  </div>
 
   <div class="project-abstract">
     <p>
       Europe is facing persistent shortages of STEM skills alongside large and enduring gender gaps in STEM participation. This paper shows that part of this gap can open before high school even begins, when families in early-tracking systems decide which upper-secondary pathway a child will attend. We study Italy, where 13–14 year-old students choose among academic, technical, and vocational programmes that differ sharply in STEM content and progression opportunities. We field a household-level survey experiment with 348 Italian couples, corresponding to 696 parents, of 8th-grade students immediately before the enrolment window. Parents are surveyed separately and, prior to treatment, complete a Gender-Science Implicit Association Test. We first document a sizeable “daughter penalty”. Conditional on grades, perceived non-cognitive traits, stereotypes, and school recommendations, parents remain about 10 percentage points less likely to prefer a STEM-oriented track for daughters than for sons. Treated households watch a short video providing evidence-based information on early labour-market outcomes across STEM and non-STEM pathways. The intervention increases knowledge of returns by 0.71–0.73 points on a 0–3 score and raises parents’ stated STEM preference by 12–15 percentage points. Preference responses are concentrated among parents of daughters and are strong even among implicitly stereotyped parents. The treatment also shifts reported decision-making towards discussion and increases within-couple alignment in STEM preferences without increasing disagreement. The results suggest that embedding concise, credible returns to education information into guidance and enrolment channels can improve decision quality and help narrow gender gaps in STEM-oriented pathways at low cost.
     </p>
+
+    <p class="project-classification">
+      <strong>JEL codes:</strong> I21, I24, J16, J24, D83, C93.
+    </p>
+    <p class="project-classification">
+      <strong>Keywords:</strong> STEM education; parental beliefs; gender gaps; school choice; information intervention; implicit stereotypes; educational tracking.
+    </p>
   </div>
-</details>
+</div>
 
 </section>
 
@@ -164,34 +185,41 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
 ## Selected work in progress
 
-<details class="research-project">
-  <summary>
+<div class="research-project">
+  <div class="project-header">
     <span class="project-title">
       <strong>Sex education: Mandatory school programmes and adolescent health in Europe</strong>
     </span>
 
     <span class="project-authors">
-      with <a href="https://elisabaldazzi.github.io/" target="_blank" rel="noopener" onclick="event.stopPropagation();">E. Baldazzi</a> and <a href="https://www.unibz.it/en/faculties/economics-management/phd-economics-finance/phd-students/phd/48805-chiara-gastaldi" target="_blank" rel="noopener" onclick="event.stopPropagation();">C. Gastaldi</a>
+      with <a href="https://elisabaldazzi.github.io/" target="_blank" rel="noopener">E. Baldazzi</a> and <a href="https://www.unibz.it/en/faculties/economics-management/phd-economics-finance/phd-students/phd/48805-chiara-gastaldi" target="_blank" rel="noopener">C. Gastaldi</a>
     </span>
 
     <span class="project-meta project-meta-inline">
-      <strong>Scheduled presentations:</strong>
-      <span class="project-event-inline">Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(Rome, Italy, forthcoming September 2026)</span></span>
+      <strong>Presented at:</strong>
+      <span class="project-event-inline">Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(September 2026, forthcoming)</span></span>
       <span class="event-separator">|</span>
-      <span class="project-event-inline">Brown Bag Seminar <span class="project-event-detail">(Bergamo, Italy, forthcoming September 2026)</span></span>
+      <span class="project-event-inline">Brown Bag Seminar <span class="project-event-detail">(September 2026, forthcoming)</span></span>
     </span>
 
-    <span class="abstract-toggle">
+    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false');">
       Preliminary abstract
-    </span>
-  </summary>
+    </button>
+  </div>
 
   <div class="project-abstract">
     <p>
       This paper examines the effects of mandatory sex education on adolescent reproductive and sexual health in Europe. We combine cross-country variation in the timing of policy adoption with measures of births, fertility, abortions, and sexually transmitted infections (STIs) among adolescents aged 15–19 from the Global Burden of Disease (GBD) study, produced by the Institute for Health Metrics and Evaluation (IHME). We estimate average treatment effects using a staggered difference-in-differences design that exploits cross-country variation in the timing of policy adoption. The results show gradual and persistent reductions in adolescent births and fertility, with effects increasing as exposure to the policy accumulates. Abortion rates also decline, particularly at longer post-treatment horizons, suggesting that mandatory sex education reduces adolescent pregnancies rather than merely shifting pregnancy outcomes from births to abortions. The policy is additionally associated with a reduction in the STI rate. This aggregate effect is smaller than the fertility-related effects and masks substantial heterogeneity across individual infections. Overall, the findings indicate that the implementation of mandatory sex education programmes in schools improves adolescent reproductive and sexual health, although its effects emerge gradually and vary across outcomes.
     </p>
+
+    <p class="project-classification">
+      <strong>JEL codes:</strong> I12, I18, J13, H75, C23.
+    </p>
+    <p class="project-classification">
+      <strong>Keywords:</strong> Sex education; adolescent health; adolescent fertility; adolescent pregnancy; sexually transmitted infections; school policy; staggered difference-in-differences.
+    </p>
   </div>
-</details>
+</div>
 
 </section>
 
