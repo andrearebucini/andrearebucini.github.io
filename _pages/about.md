@@ -8,16 +8,16 @@ author_profile: false
 <header class="site-hero" id="about">
   <h1>Andrea Rebucini</h1>
   <p>PhD Student in Economics</p>
-
-  <nav class="section-nav" aria-label="Section navigation">
-    <a href="#about">About</a>
-    <a href="#working-papers">Working papers</a>
-    <a href="#work-in-progress">Work in progress</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
-    <a href="/files/CV_Andrea_Rebucini.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-  </nav>
 </header>
+
+<nav class="section-nav" aria-label="Section navigation">
+  <a href="#about">About</a>
+  <a href="#working-papers">Working papers</a>
+  <a href="#work-in-progress">Work in progress</a>
+  <a href="#publications">Publications</a>
+  <a href="#contact">Contact</a>
+  <a href="/files/CV_Andrea_Rebucini.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+</nav>
 
 <section class="bio-section homepage-section" id="research-profile">
   <div class="bio-text" markdown="1">
