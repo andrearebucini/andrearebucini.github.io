@@ -5,46 +5,38 @@ layout: single
 author_profile: false
 ---
 
-<section class="top-profile" id="about">
-  <img src="/images/profile.jpg" alt="Andrea Rebucini" class="top-profile__avatar">
+<header class="site-hero" id="about">
+  <h1>Andrea Rebucini</h1>
+  <p>PhD Student in Economics</p>
 
-  <div class="top-profile__content">
-    <h1>Andrea Rebucini</h1>
-    <p class="top-profile__subtitle">PhD Student in Economics, University of Bergamo</p>
-    <p class="top-profile__meta">Bergamo, Italy · He/Him</p>
+  <nav class="section-nav" aria-label="Section navigation">
+    <a href="#about">About</a>
+    <a href="#working-papers">Working papers</a>
+    <a href="#work-in-progress">Work in progress</a>
+    <a href="#publications">Publications</a>
+    <a href="#awards">Awards</a>
+    <a href="#presentations">Presentations</a>
+    <a href="#contact">Contact</a>
+    <a href="/files/CV_Andrea_Rebucini.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+  </nav>
+</header>
 
-    <p class="top-profile__links">
-      <a href="mailto:andrea.rebucini@unibg.it">Email</a> ·
-      <a href="/files/CV_Andrea_Rebucini.pdf" target="_blank" rel="noopener noreferrer">CV</a> ·
-      <a href="https://scholar.google.com/citations?user=hVfaDXwAAAAJ&hl" target="_blank" rel="noopener noreferrer">Google Scholar</a> ·
-      <a href="https://github.com/andrearebucini" target="_blank" rel="noopener noreferrer">GitHub</a> ·
-      <a href="https://www.linkedin.com/in/andrea-rebucini/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </p>
-  </div>
-</section>
+<section class="bio-section homepage-section" id="research-profile">
+  <div class="bio-text" markdown="1">
 
-<nav class="section-nav" aria-label="Section navigation">
-  <a href="#about">About</a>
-  <a href="#working-papers">Working papers</a>
-  <a href="#work-in-progress">Work in progress</a>
-  <a href="#publications">Publications</a>
-  <a href="#awards">Awards</a>
-  <a href="#presentations">Presentations</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="research-profile" class="homepage-section" markdown="1">
-
-## Research profile
-
-I am Andrea, a third-year PhD student in Economics at the [University of Bergamo](https://www.unibg.it/en){:target="_blank" rel="noopener noreferrer"} in Italy, where I am affiliated with the [Department of Economics](https://dse.unibg.it/en){:target="_blank" rel="noopener noreferrer"} and supervised by Prof. [Annalisa Cristini](https://unibg.unifind.cineca.it/individual?uri=http://irises.unibg.it/resource/person/3083){:target="_blank" rel="noopener noreferrer"}. I hold an MSc in Economics and Data Analysis and a BSc in Economics from the University of Bergamo.
+I am a third-year PhD student in Economics at the [University of Bergamo](https://www.unibg.it/en){:target="_blank" rel="noopener noreferrer"} in Italy, where I am affiliated with the [Department of Economics](https://dse.unibg.it/en){:target="_blank" rel="noopener noreferrer"} and supervised by Prof. [Annalisa Cristini](https://unibg.unifind.cineca.it/individual?uri=http://irises.unibg.it/resource/person/3083){:target="_blank" rel="noopener noreferrer"}. I hold an MSc in Economics and Data Analysis and a BSc in Economics from the University of Bergamo.
 
 I spent the academic year 2025–26 visiting the [Department of Social Policy](https://www.lse.ac.uk/social-policy){:target="_blank" rel="noopener noreferrer"} of the [London School of Economics and Political Science](https://www.lse.ac.uk/){:target="_blank" rel="noopener noreferrer"}, where I was also affiliated with the [Women in Social and Public Policy Research Hub](https://www.lse.ac.uk/social-policy/research/research-clusters/wispprh){:target="_blank" rel="noopener noreferrer"}, hosted by Prof. [Almudena Sevilla](https://www.lse.ac.uk/people/almudena-sevilla){:target="_blank" rel="noopener noreferrer"}. Since August 2026, I have been a member of the [G53 Network Rising Scholars](https://g53network.org/training-and-mentoring/g53-network-rising-scholars/){:target="_blank" rel="noopener noreferrer"}, a global community of early-career researchers in financial literacy and personal finance. From October 2026, I will undertake a doctoral research internship at the [Financial Education Directorate](https://www.bancaditalia.it/chi-siamo/organizzazione/ac/tutela-educazione-finanziaria/index.html?com.dotmarketing.htmlpage.language=1){:target="_blank" rel="noopener noreferrer"} of the Bank of Italy, where I will be involved in a project on bank branch closures, microenterprise capabilities, and trust in the digital era.
 
-Before joining the PhD programme, I was a research assistant at the [University of Milano-Bicocca](https://en.unimib.it/){:target="_blank" rel="noopener noreferrer"} while, beyond academia, I worked as a data analyst at [PTS](https://pts-spa.com/){:target="_blank" rel="noopener noreferrer"}, a consulting firm in Italy, contributing to projects commissioned by local and national institutions on school guidance and labour market outcomes.
+Before joining the PhD programme, I was a research assistant at the [University of Milano-Bicocca](https://en.unimib.it/){:target="_blank" rel="noopener noreferrer"} while, beyond academia, I worked as a data analyst at [PTS](https://pts-spa.com/){:target="_blank" rel="noopener noreferrer"}, contributing to projects commissioned by local and national institutions on school guidance and labour market outcomes.
 
 My research interests are in applied microeconomics, with a focus on household economics, economics of education, financial literacy, gender economics, and health economics.
 
+  </div>
+
+  <div class="bio-photo">
+    <img src="/images/profile.jpg" alt="Andrea Rebucini">
+  </div>
 </section>
 
 <section id="working-papers" class="homepage-section" markdown="1">
