@@ -85,7 +85,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
       <span class="project-event-inline">III Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(September 2025)</span></span>
     </span>
 
-    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false');">
+    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
       Abstract
     </button>
   </div>
@@ -96,10 +96,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes:</strong> D14, J14, I31, J16, C23.
+      <strong>JEL codes:</strong>
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> Widowhood; spousal death; economic security; household finance; older adults; SHARE; difference-in-differences.
+      <strong>Keywords:</strong>
     </p>
   </div>
 </div>
@@ -121,7 +121,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
       <span class="project-event-inline">G53 Rising Scholars Workshop <span class="project-event-detail">(July 2026)</span></span>
     </span>
 
-    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false');">
+    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
       Abstract
     </button>
   </div>
@@ -132,10 +132,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes:</strong> D14, G53, J14, I31, D91.
+      <strong>JEL codes:</strong>
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> Financial literacy; widowhood; bereavement; financial responsibility; household finance; economic resilience; SHARE.
+      <strong>Keywords:</strong>
     </p>
   </div>
 </div>
@@ -160,7 +160,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
       <span class="project-event-inline">María Jesús San Segundo Award 2026, Second Best Paper Award for Young Researchers</span>
     </span>
 
-    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false');">
+    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
       Abstract
     </button>
   </div>
@@ -171,10 +171,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes:</strong> I21, I24, J16, J24, D83, C93.
+      <strong>JEL codes:</strong>
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> STEM education; parental beliefs; gender gaps; school choice; information intervention; implicit stereotypes; educational tracking.
+      <strong>Keywords:</strong>
     </p>
   </div>
 </div>
@@ -202,8 +202,8 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
       <span class="project-event-inline">Brown Bag Seminar <span class="project-event-detail">(September 2026, forthcoming)</span></span>
     </span>
 
-    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false');">
-      Astract
+    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
+      Abstract
     </button>
   </div>
 
@@ -213,20 +213,18 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes:</strong> I12, I18, J13, H75, C23.
+      <strong>JEL codes:</strong>
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> Sex education; adolescent health; adolescent fertility; adolescent pregnancy; sexually transmitted infections; school policy; staggered difference-in-differences.
+      <strong>Keywords:</strong>
     </p>
   </div>
 </div>
 
 </section>
 
-<section id="publications" class="homepage-section" markdown="1">
-
+<section id="publications" class="homepage-section publications-section" markdown="1">
 ## Publications
-
 ### Peer-reviewed journal articles
 
 <div class="publication-item">
@@ -255,5 +253,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     Summary of findings published in <em>Il Sole 24 Ore</em> <a href="https://www.ilsole24ore.com/art/universita-milano-entro-3-anni-titolo-accademico-70percento-laureati-trova-impiego-AGalgh4" target="_blank" rel="noopener noreferrer">here</a>.
   </p>
 </div>
+
+<div class="section-end-spacer"></div>
 
 </section>
