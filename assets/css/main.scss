@@ -59,11 +59,17 @@ body,
 .abstract-toggle,
 .site-hero *,
 .bio-section *,
+.bio-links,
+.bio-links *,
 .project-title,
 .project-authors,
 .project-status,
+.project-meta,
+.project-meta *,
 .project-abstract,
 .project-abstract *,
+.publication-item,
+.publication-item *,
 #dark-mode-toggle {
   transition: none !important;
 }
@@ -262,6 +268,10 @@ body,
   margin-top: 0 !important;
 }
 
+.bio-text p {
+  margin-bottom: 0.85rem !important;
+}
+
 .bio-photo {
   text-align: center !important;
 }
@@ -275,6 +285,52 @@ body,
   border-radius: 50% !important;
   display: block !important;
   margin: 0 auto !important;
+}
+
+/* Profile/contact links inside bio */
+
+.bio-links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 0.25rem 0.55rem !important;
+  margin-top: 1.05rem !important;
+  margin-bottom: 0 !important;
+  font-size: 0.92em !important;
+  line-height: 1.45 !important;
+}
+
+.bio-links a {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.28rem !important;
+  white-space: nowrap !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+}
+
+.bio-links a:hover,
+.bio-links a:focus {
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.06em !important;
+  text-underline-offset: 0.13em !important;
+  border-bottom: none !important;
+  background-image: none !important;
+}
+
+.bio-links i {
+  width: 0.95rem !important;
+  text-align: center !important;
+  font-size: 0.9em !important;
+  color: #555555 !important;
+}
+
+.bio-links span {
+  margin: 0 0.05rem !important;
+  color: #777777 !important;
 }
 
 /* ============================================================
@@ -339,7 +395,7 @@ body,
   background-image: none !important;
 }
 
-/* Navigation links must not inherit normal page-link underlines */
+/* Navigation and bio links must not inherit normal page-link underlines */
 
 .page__content .section-nav a,
 .page__content .section-nav a:hover,
@@ -414,8 +470,8 @@ body,
    ============================================================ */
 
 .research-project {
-  margin-bottom: 1.15rem !important;
-  padding-bottom: 0.25rem !important;
+  margin-bottom: 1.25rem !important;
+  padding-bottom: 0.3rem !important;
   border-bottom: none !important;
 }
 
@@ -438,6 +494,7 @@ body,
 
 .project-title {
   display: block !important;
+  margin-bottom: 0.1rem !important;
 }
 
 .project-authors {
@@ -450,17 +507,71 @@ body,
 
 .project-status {
   display: block !important;
-  margin: 0.2rem 0 0 0 !important;
+  margin: 0.22rem 0 0 0 !important;
   font-size: 0.88em !important;
   font-weight: normal !important;
   color: #666666 !important;
   font-style: italic !important;
 }
 
+/* Presentation and award metadata */
+
+.project-meta {
+  display: block !important;
+  margin: 0.35rem 0 0 0 !important;
+  font-size: 0.88em !important;
+  line-height: 1.38 !important;
+  text-align: left !important;
+  color: #555555 !important;
+}
+
+.project-meta strong {
+  color: #333333 !important;
+  font-weight: 600 !important;
+}
+
+.project-meta--events,
+.project-meta--award {
+  max-width: 900px !important;
+  padding: 0.42rem 0.55rem !important;
+  border-left: 2px solid #e1e1e1 !important;
+  background: #fafafa !important;
+  border-radius: 4px !important;
+}
+
+.project-meta--award {
+  background: #fbfbfb !important;
+}
+
+.project-event {
+  position: relative !important;
+  display: block !important;
+  margin-top: 0.18rem !important;
+  padding-left: 0.75rem !important;
+}
+
+.project-event::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0.12rem !important;
+  top: 0.62em !important;
+  width: 0.22rem !important;
+  height: 0.22rem !important;
+  border-radius: 50% !important;
+  background: #777777 !important;
+}
+
+.project-event-detail {
+  color: #666666 !important;
+  white-space: nowrap !important;
+}
+
+/* Abstract toggle */
+
 .abstract-toggle {
   display: block !important;
   width: fit-content !important;
-  margin-top: 0.25rem !important;
+  margin-top: 0.42rem !important;
   font-size: 0.86em !important;
   font-weight: normal !important;
   color: #333333 !important;
@@ -509,7 +620,7 @@ body,
 }
 
 .project-abstract {
-  margin: 0.65rem 0 0 0 !important;
+  margin: 0.7rem 0 0 0 !important;
   padding-left: 0.75rem !important;
   border-left: 2px solid #e5e5e5 !important;
 }
@@ -524,22 +635,44 @@ body,
   text-justify: inter-word !important;
 }
 
-.project-meta {
-  margin: 0.25rem 0 !important;
-  font-size: 0.9em !important;
+/* ============================================================
+   11. PUBLICATIONS
+   Compact publication entries with journal metadata inline
+   ============================================================ */
+
+.publication-item {
+  margin-bottom: 1.15rem !important;
+}
+
+.publication-title {
+  margin-bottom: 0.15rem !important;
   line-height: 1.35 !important;
-  text-align: left !important;
+}
+
+.publication-title a {
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.06em !important;
+  text-underline-offset: 0.13em !important;
+}
+
+.publication-meta {
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem !important;
+  font-size: 0.95em !important;
+  line-height: 1.4 !important;
   color: #555555 !important;
 }
 
-.project-meta strong {
-  color: #333333 !important;
-  font-weight: 600 !important;
+.publication-note {
+  margin-top: 0.15rem !important;
+  font-size: 0.9em !important;
+  line-height: 1.4 !important;
+  color: #666666 !important;
 }
 
 /* ============================================================
-   11. PRESENTATION AND AWARD IMAGES
-   Figure width, image crop, rounded corners, and captions
+   12. PRESENTATION AND AWARD IMAGES
+   Kept for legacy figures if used elsewhere
    ============================================================ */
 
 .presentation-figure {
@@ -563,7 +696,7 @@ body,
 }
 
 /* ============================================================
-   12. FOOTER
+   13. FOOTER
    Remove dock appearance and keep centred copyright sentence
    ============================================================ */
 
@@ -596,51 +729,7 @@ body,
 }
 
 /* ============================================================
-   PUBLICATIONS AND BIO LINKS
-   Compact publication entries and profile links in bio
-   ============================================================ */
-
-.bio-links {
-  margin-top: 1rem !important;
-  font-size: 0.92em !important;
-  line-height: 1.45 !important;
-}
-
-.bio-links a {
-  white-space: nowrap !important;
-}
-
-.bio-links span {
-  margin: 0 0.25rem !important;
-  color: #777777 !important;
-}
-
-.publication-item {
-  margin-bottom: 1.15rem !important;
-}
-
-.publication-title {
-  margin-bottom: 0.15rem !important;
-  line-height: 1.35 !important;
-}
-
-.publication-meta {
-  margin-top: 0 !important;
-  margin-bottom: 0.25rem !important;
-  font-size: 0.95em !important;
-  line-height: 1.4 !important;
-  color: #555555 !important;
-}
-
-.publication-note {
-  margin-top: 0.15rem !important;
-  font-size: 0.9em !important;
-  line-height: 1.4 !important;
-  color: #666666 !important;
-}
-
-/* ============================================================
-   13. DARK MODE
+   14. DARK MODE
    Backgrounds, headings, navigation, bio, research projects
    ============================================================ */
 
@@ -784,6 +873,14 @@ html.dark-mode .page__content h2 {
   border-bottom-color: #444444 !important;
 }
 
+html.dark-mode .bio-links i {
+  color: #d6d6d6 !important;
+}
+
+html.dark-mode .bio-links span {
+  color: #b8b8b8 !important;
+}
+
 html.dark-mode .project-authors {
   color: #d6d6d6 !important;
 }
@@ -797,6 +894,28 @@ html.dark-mode .research-project summary:hover,
 html.dark-mode .abstract-toggle,
 html.dark-mode .abstract-toggle::before {
   color: #ffffff !important;
+}
+
+html.dark-mode .project-meta {
+  color: #cccccc !important;
+}
+
+html.dark-mode .project-meta strong {
+  color: #ffffff !important;
+}
+
+html.dark-mode .project-meta--events,
+html.dark-mode .project-meta--award {
+  background: #262626 !important;
+  border-left-color: #555555 !important;
+}
+
+html.dark-mode .project-event::before {
+  background: #b8b8b8 !important;
+}
+
+html.dark-mode .project-event-detail {
+  color: #c8c8c8 !important;
 }
 
 html.dark-mode .paper-link,
@@ -815,12 +934,12 @@ html.dark-mode .project-abstract p {
   color: #e6e6e6 !important;
 }
 
-html.dark-mode .project-meta {
-  color: #cccccc !important;
+html.dark-mode .publication-meta {
+  color: #d6d6d6 !important;
 }
 
-html.dark-mode .project-meta strong {
-  color: #ffffff !important;
+html.dark-mode .publication-note {
+  color: #c8c8c8 !important;
 }
 
 html.dark-mode .presentation-figure figcaption,
@@ -841,20 +960,8 @@ html.dark-mode td {
   border-color: #444444 !important;
 }
 
-html.dark-mode .bio-links span {
-  color: #b8b8b8 !important;
-}
-
-html.dark-mode .publication-meta {
-  color: #d6d6d6 !important;
-}
-
-html.dark-mode .publication-note {
-  color: #c8c8c8 !important;
-}
-
 /* ============================================================
-   14. MOBILE LAYOUT
+   15. MOBILE LAYOUT
    Stack bio and photo cleanly on small screens
    ============================================================ */
 
@@ -918,12 +1025,30 @@ html.dark-mode .publication-note {
     max-height: 180px !important;
   }
 
+  .bio-links {
+    gap: 0.2rem 0.5rem !important;
+    font-size: 0.9em !important;
+  }
+
+  .bio-links span {
+    display: none !important;
+  }
+
   .page__content h2 {
     font-size: 1.18rem !important;
   }
 
   .page__content h3 {
     font-size: 0.98rem !important;
+  }
+
+  .project-meta--events,
+  .project-meta--award {
+    padding: 0.4rem 0.5rem !important;
+  }
+
+  .project-event-detail {
+    white-space: normal !important;
   }
 
   .project-abstract > p:first-child {
