@@ -221,6 +221,7 @@ body,
   border-radius: 5px !important;
   font-weight: 400 !important;
   transition: none !important;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 .section-nav a:hover,
@@ -570,6 +571,7 @@ body,
   cursor: pointer !important;
   appearance: none !important;
   -webkit-appearance: none !important;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 .abstract-toggle::after {
@@ -658,11 +660,20 @@ body,
    Compact publication entries with journal metadata inline
    ============================================================ */
 
+.publications-section h2 {
+  margin-bottom: 0.45rem !important;
+}
+
+.publications-section .publication-item:first-of-type {
+  margin-top: 0 !important;
+}
+
 .publication-item {
   margin-bottom: 1.15rem !important;
 }
 
 .publication-title {
+  margin-top: 0 !important;
   margin-bottom: 0.15rem !important;
   line-height: 1.35 !important;
 }
@@ -686,6 +697,10 @@ body,
   font-size: 0.9em !important;
   line-height: 1.4 !important;
   color: #666666 !important;
+}
+
+.section-end-spacer {
+  height: 35vh !important;
 }
 
 /* ============================================================
@@ -1076,6 +1091,67 @@ html.dark-mode td {
   }
 
   #publications {
-    padding-bottom: 28vh !important;
+    padding-bottom: 0 !important;
+  }
+
+  .section-end-spacer {
+    height: 28vh !important;
+  }
+}
+
+/* ============================================================
+   16. TOUCH-SCREEN NAVIGATION FIX
+   Prevent stale tap-hover highlights on mobile devices
+   ============================================================ */
+
+@media (hover: none), (pointer: coarse) {
+  .section-nav a:hover:not(.active-nav-link),
+  .section-nav a:focus:not(.active-nav-link),
+  .section-nav a:focus-visible:not(.active-nav-link),
+  .section-nav a:active:not(.active-nav-link),
+  .page__content .section-nav a:hover:not(.active-nav-link),
+  .page__content .section-nav a:focus:not(.active-nav-link),
+  .page__content .section-nav a:focus-visible:not(.active-nav-link),
+  .page__content .section-nav a:active:not(.active-nav-link) {
+    color: #333333 !important;
+    background: transparent !important;
+    text-decoration: none !important;
+    border: none !important;
+    border-bottom: none !important;
+    outline: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
+
+  .section-nav a.active-nav-link,
+  .page__content .section-nav a.active-nav-link {
+    color: #111111 !important;
+    background: #eeeeee !important;
+    font-weight: 500 !important;
+  }
+
+  html.dark-mode .section-nav a:hover:not(.active-nav-link),
+  html.dark-mode .section-nav a:focus:not(.active-nav-link),
+  html.dark-mode .section-nav a:focus-visible:not(.active-nav-link),
+  html.dark-mode .section-nav a:active:not(.active-nav-link),
+  html.dark-mode .page__content .section-nav a:hover:not(.active-nav-link),
+  html.dark-mode .page__content .section-nav a:focus:not(.active-nav-link),
+  html.dark-mode .page__content .section-nav a:focus-visible:not(.active-nav-link),
+  html.dark-mode .page__content .section-nav a:active:not(.active-nav-link) {
+    color: #ffffff !important;
+    background: transparent !important;
+    text-decoration: none !important;
+    border: none !important;
+    border-bottom: none !important;
+    outline: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
+
+  html.dark-mode .section-nav a.active-nav-link,
+  html.dark-mode .page__content .section-nav a.active-nav-link {
+    color: #ffffff !important;
+    background: #3a3a3a !important;
+    font-weight: 500 !important;
   }
 }
