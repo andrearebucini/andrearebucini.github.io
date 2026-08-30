@@ -14,8 +14,6 @@ author_profile: false
     <a href="#working-papers">Working papers</a>
     <a href="#work-in-progress">Work in progress</a>
     <a href="#publications">Publications</a>
-    <a href="#awards">Awards</a>
-    <a href="#presentations">Presentations</a>
     <a href="#contact">Contact</a>
     <a href="/files/CV_Andrea_Rebucini.pdf" target="_blank" rel="noopener noreferrer">CV</a>
   </nav>
@@ -149,28 +147,6 @@ Summary of findings published in *Il Sole 24 Ore* [here](https://www.ilsole24ore
 </section>
 
 <section id="awards" class="homepage-section" markdown="1">
-
-## Awards and honours
-
-**María Jesús San Segundo Award 2026**  
-Second Best Paper Award for Young Researchers for the paper *“Parental beliefs, STEM, and gendered track choices: Correcting misperceptions in early educational decisions”*, presented during the XXXIV Meeting of the Economics of Education Association (AEDE), held in Logroño, Spain, 8-9 July 2026.
-
-<figure class="presentation-figure">
-  <img src="/images/presentation_aede_2026.jpg" alt="Presenting at the XXXIV Meeting of the Economics of Education Association (AEDE), 2026">
-  <figcaption>Presenting at the XXXIV Meeting of the Economics of Education Association (AEDE), 2026.</figcaption>
-</figure>
-
-</section>
-
-<section id="presentations" class="homepage-section" markdown="1">
-
-## Presentations
-
-A full list of conference, workshop, and seminar presentations is available [here](/presentations/).
-
-</section>
-
-<section id="contact" class="homepage-section" markdown="1">
 
 ## Contact
 
