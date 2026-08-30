@@ -3,13 +3,19 @@
     return Array.from(document.querySelectorAll(".section-nav a[href^='#'], .section-nav a[href^='/#']"));
   }
 
-  function getTargetFromLink(link) {
+  function getHash(link) {
     const url = new URL(link.href, window.location.origin);
-    if (!url.hash) {
+    return url.hash;
+  }
+
+  function getTarget(link) {
+    const hash = getHash(link);
+
+    if (!hash) {
       return null;
     }
 
-    return document.querySelector(url.hash);
+    return document.querySelector(hash);
   }
 
   function getOffset() {
@@ -25,7 +31,7 @@
 
   function markActiveSection() {
     const links = getSectionNavLinks().filter(function (link) {
-      return getTargetFromLink(link);
+      return getTarget(link);
     });
 
     if (links.length === 0) {
@@ -33,63 +39,33 @@
     }
 
     const scrollPosition = window.scrollY + getOffset() + 10;
-    let activeHash = links[0].hash;
+    let activeHash = getHash(links[0]);
 
     links.forEach(function (link) {
-      const target = getTargetFromLink(link);
+      const target = getTarget(link);
 
       if (target && target.offsetTop <= scrollPosition) {
-        activeHash = link.hash;
+        activeHash = getHash(link);
       }
     });
 
     clearActiveLinks();
 
     links.forEach(function (link) {
-      if (link.hash === activeHash) {
+      if (getHash(link) === activeHash) {
         link.classList.add("active-nav-link");
       }
     });
   }
 
-  function handleSectionClicks() {
-    getSectionNavLinks().forEach(function (link) {
-      const target = getTargetFromLink(link);
-
-      if (!target) {
-        return;
-      }
-
-      link.addEventListener("click", function (event) {
-        const url = new URL(link.href, window.location.origin);
-
-        if (url.pathname !== window.location.pathname && url.pathname !== "/") {
-          return;
-        }
-
-        event.preventDefault();
-
-        const top = target.offsetTop - getOffset();
-
-        window.scrollTo({
-          top: top,
-          behavior: "smooth"
-        });
-
-        history.pushState(null, "", url.hash);
-
-        setTimeout(markActiveSection, 250);
-      });
-    });
-  }
-
   function initialise() {
-    handleSectionClicks();
     markActiveSection();
 
     window.addEventListener("scroll", markActiveSection, { passive: true });
     window.addEventListener("resize", markActiveSection);
-    window.addEventListener("hashchange", markActiveSection);
+    window.addEventListener("hashchange", function () {
+      window.setTimeout(markActiveSection, 120);
+    });
   }
 
   if (document.readyState === "loading") {
