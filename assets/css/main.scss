@@ -15,30 +15,13 @@ html {
 }
 
 body {
-  color: #333333;
+  color: #333333 !important;
+  background: #ffffff !important;
 }
 
 .page__content {
   font-size: 0.8em !important;
   line-height: 1.5 !important;
-}
-
-.masthead {
-  font-size: 0.94rem !important;
-}
-
-.page__content h1 {
-  margin-top: 0.5em;
-}
-
-.page__content h2 {
-  margin-top: 1.7em;
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 0.2em;
-}
-
-.page__content h3 {
-  margin-top: 1.2em;
 }
 
 .page__content h1,
@@ -53,7 +36,7 @@ body {
 
 /* ============================================================
    02. SINGLE-PAGE LAYOUT
-   Centred content, no theme sidebar, no theme top navigation
+   Centred content, no sidebar, no Minimal Mistakes top bar
    ============================================================ */
 
 .initial-content {
@@ -72,8 +55,8 @@ body {
   max-width: 900px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 1.25rem !important;
-  padding-right: 1.25rem !important;
+  padding-left: 1.35rem !important;
+  padding-right: 1.35rem !important;
 }
 
 .page__inner-wrap,
@@ -84,45 +67,86 @@ body {
 
 /* ============================================================
    03. SITE HERO
-   Centred name, subtitle, and main identity block
+   Centred name and subtitle at the top of the homepage
    ============================================================ */
 
 .site-hero {
+  position: relative !important;
   text-align: center !important;
-  margin: 2.2rem auto 1.4rem auto !important;
-  padding-bottom: 0.8rem !important;
+  margin: 2.4rem auto 0.85rem auto !important;
+  padding-bottom: 0.4rem !important;
 }
 
 .site-hero h1 {
   margin: 0 !important;
-  font-size: 2rem !important;
-  line-height: 1.15 !important;
+  font-size: 2.15rem !important;
+  line-height: 1.12 !important;
   font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
   color: #333333 !important;
 }
 
 .site-hero p {
-  margin: 0.35rem 0 1rem 0 !important;
-  font-size: 0.95rem !important;
+  margin: 0.4rem 0 0 0 !important;
+  font-size: 0.98rem !important;
+  line-height: 1.35 !important;
   color: #555555 !important;
 }
 
 /* ============================================================
-   04. INTERNAL SECTION NAVIGATION
-   Centred one-page navigation below the name
+   04. DARK-MODE TOGGLE
+   Small button positioned near the top-right of the hero area
+   ============================================================ */
+
+#dark-mode-toggle {
+  position: absolute !important;
+  top: 0.1rem !important;
+  right: 0 !important;
+  width: 1.8rem !important;
+  height: 1.8rem !important;
+  padding: 0 !important;
+  border: 1px solid #dddddd !important;
+  border-radius: 50% !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  background: #ffffff !important;
+  color: #333333 !important;
+  font-size: 0.92rem !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+  opacity: 1 !important;
+}
+
+#dark-mode-toggle:hover,
+#dark-mode-toggle:focus {
+  background: #f2f2f2 !important;
+  color: #333333 !important;
+  border-color: #cfcfcf !important;
+}
+
+/* ============================================================
+   05. INTERNAL SECTION NAVIGATION
+   Sticky centred one-page navigation
    ============================================================ */
 
 .section-nav {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
   display: flex !important;
   flex-wrap: wrap !important;
   justify-content: center !important;
-  gap: 0.35rem 0.8rem !important;
-  max-width: 760px !important;
-  margin: 0 auto !important;
-  padding: 0.75rem 0 !important;
+  align-items: center !important;
+  gap: 0.35rem 0.75rem !important;
+  max-width: 820px !important;
+  margin: 0 auto 1.8rem auto !important;
+  padding: 0.65rem 0.4rem !important;
   border-top: 1px solid #e5e5e5 !important;
   border-bottom: 1px solid #e5e5e5 !important;
-  font-size: 0.86rem !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  font-size: 0.84rem !important;
   line-height: 1.3 !important;
 }
 
@@ -131,28 +155,32 @@ body {
   text-decoration: none !important;
   border-bottom: none !important;
   background-image: none !important;
-  padding: 0.12rem 0.2rem !important;
+  padding: 0.14rem 0.25rem !important;
+  border-radius: 4px !important;
 }
 
 .section-nav a:hover,
 .section-nav a:focus {
   color: #333333 !important;
-  text-decoration: underline !important;
-  text-decoration-thickness: 0.06em !important;
-  text-underline-offset: 0.14em !important;
+  background: #eeeeee !important;
+  text-decoration: none !important;
+}
+
+.section-nav a.active-nav-link {
+  box-shadow: inset 0 -2px 0 #333333 !important;
 }
 
 /* ============================================================
-   05. BIO SECTION
-   Short bio with compact round photo on the right
+   06. BIO SECTION
+   Bio text with larger round profile photo on the right
    ============================================================ */
 
 .bio-section {
   display: grid !important;
-  grid-template-columns: minmax(0, 1fr) 145px !important;
-  gap: 1.4rem !important;
+  grid-template-columns: minmax(0, 1fr) 190px !important;
+  gap: 1.8rem !important;
   align-items: start !important;
-  margin: 1.6rem 0 2rem 0 !important;
+  margin: 1.8rem 0 2.3rem 0 !important;
 }
 
 .bio-text p:first-child {
@@ -164,10 +192,10 @@ body {
 }
 
 .bio-photo img {
-  width: 135px !important;
-  height: 135px !important;
-  max-width: 135px !important;
-  max-height: 135px !important;
+  width: 170px !important;
+  height: 170px !important;
+  max-width: 170px !important;
+  max-height: 170px !important;
   object-fit: cover !important;
   border-radius: 50% !important;
   display: block !important;
@@ -175,33 +203,37 @@ body {
 }
 
 /* ============================================================
-   06. HOMEPAGE SECTIONS
-   Centred section titles and clean vertical rhythm
+   07. HOMEPAGE SECTIONS
+   Centred section titles and cleaner vertical rhythm
    ============================================================ */
 
 .homepage-section,
 .page__content section {
-  scroll-margin-top: 2rem !important;
+  scroll-margin-top: 4.1rem !important;
 }
 
 .homepage-section {
-  margin-top: 2.2rem !important;
+  margin-top: 2.3rem !important;
 }
 
 .page__content h2 {
-  margin-top: 2.2rem !important;
-  margin-bottom: 1.1rem !important;
+  margin-top: 2.4rem !important;
+  margin-bottom: 1.15rem !important;
   padding-bottom: 0.35rem !important;
   border-bottom: 1px solid #e5e5e5 !important;
   text-align: center !important;
-  font-size: 1.25rem !important;
+  font-size: 1.28rem !important;
+  line-height: 1.25 !important;
   font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
 }
 
 .page__content h3 {
-  margin-top: 1.3rem !important;
+  margin-top: 1.35rem !important;
+  margin-bottom: 0.7rem !important;
   text-align: center !important;
   font-size: 1rem !important;
+  line-height: 1.3 !important;
   font-weight: 600 !important;
 }
 
@@ -283,426 +315,12 @@ body {
 }
 
 /* ============================================================
-   10. GLOBAL DARK MODE
-   Backgrounds, text, headings, links, tables, and code blocks
-   ============================================================ */
-
-html.dark-mode,
-html.dark-mode body {
-  background: #1f1f1f !important;
-  color: #e6e6e6 !important;
-}
-
-html.dark-mode .masthead,
-html.dark-mode .masthead__inner-wrap,
-html.dark-mode .greedy-nav,
-html.dark-mode .page,
-html.dark-mode .archive,
-html.dark-mode .page__footer,
-html.dark-mode .section-nav {
-  background: #1f1f1f !important;
-  color: #e6e6e6 !important;
-}
-
-html.dark-mode .masthead {
-  border-bottom-color: #444444 !important;
-}
-
-html.dark-mode .section-nav {
-  border-bottom-color: #444444 !important;
-}
-
-html.dark-mode .page__content,
-html.dark-mode .page__content p,
-html.dark-mode .page__content li,
-html.dark-mode .page__content td,
-html.dark-mode .page__content th {
-  color: #e6e6e6 !important;
-}
-
-html.dark-mode .page__content a {
-  color: inherit !important;
-  text-decoration: underline !important;
-  text-decoration-thickness: 0.06em !important;
-  text-underline-offset: 0.13em !important;
-  text-decoration-color: currentColor !important;
-  border-bottom: none !important;
-  background-image: none !important;
-}
-
-html.dark-mode .page__content a:hover,
-html.dark-mode .page__content a:focus {
-  color: inherit !important;
-  text-decoration: underline !important;
-  text-decoration-thickness: 0.08em !important;
-  text-underline-offset: 0.13em !important;
-  text-decoration-color: currentColor !important;
-  border-bottom: none !important;
-  background-image: none !important;
-}
-
-html.dark-mode .page__title,
-html.dark-mode .page__title a,
-html.dark-mode .page__content h1,
-html.dark-mode .page__content h2,
-html.dark-mode .page__content h3,
-html.dark-mode .page__content h4,
-html.dark-mode .page__content h5,
-html.dark-mode .page__content h6,
-html.dark-mode .page__content h1 a,
-html.dark-mode .page__content h2 a,
-html.dark-mode .page__content h3 a,
-html.dark-mode .page__content h4 a,
-html.dark-mode .page__content h5 a,
-html.dark-mode .page__content h6 a {
-  color: #ffffff !important;
-  text-decoration: none !important;
-}
-
-html.dark-mode .page__content h2 {
-  border-bottom-color: #444444 !important;
-}
-
-html.dark-mode .greedy-nav .site-title,
-html.dark-mode .greedy-nav .site-title:hover,
-html.dark-mode .greedy-nav .visible-links a,
-html.dark-mode .greedy-nav .visible-links a:hover,
-html.dark-mode #dark-mode-toggle,
-html.dark-mode #dark-mode-toggle:hover,
-html.dark-mode #dark-mode-toggle:focus,
-html.dark-mode #dark-mode-toggle:active {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-html.dark-mode .section-nav a,
-html.dark-mode .section-nav a:hover,
-html.dark-mode .section-nav a:focus {
-  color: #ffffff !important;
-}
-
-html.dark-mode .top-profile {
-  border-bottom-color: #444444 !important;
-}
-
-html.dark-mode .top-profile__content h1,
-html.dark-mode .top-profile__subtitle,
-html.dark-mode .top-profile__links {
-  color: #ffffff !important;
-}
-
-html.dark-mode .top-profile__meta {
-  color: #cccccc !important;
-}
-
-html.dark-mode code,
-html.dark-mode pre {
-  background: #2a2a2a !important;
-  color: #f0f0f0 !important;
-}
-
-html.dark-mode table,
-html.dark-mode th,
-html.dark-mode td {
-  border-color: #444444 !important;
-}
-
-/* ============================================================
-   DARK MODE: SITE HERO, NAVIGATION, AND BIO
-   ============================================================ */
-
-html.dark-mode .site-hero h1 {
-  color: #ffffff !important;
-}
-
-html.dark-mode .site-hero p {
-  color: #cccccc !important;
-}
-
-html.dark-mode .section-nav {
-  border-top-color: #444444 !important;
-  border-bottom-color: #444444 !important;
-}
-
-html.dark-mode .section-nav a,
-html.dark-mode .section-nav a:hover,
-html.dark-mode .section-nav a:focus {
-  color: #ffffff !important;
-}
-
-html.dark-mode .page__content h2 {
-  border-bottom-color: #444444 !important;
-}
-
-/* ============================================================
-   11. FOOTER
-   Remove dock appearance and keep centred copyright sentence
-   ============================================================ */
-
-.page__footer {
-  background: transparent !important;
-  border-top: none !important;
-  margin-top: 3rem !important;
-  padding: 1.5rem 0 1rem 0 !important;
-  color: #666666 !important;
-}
-
-.page__footer footer {
-  max-width: none !important;
-  margin: 0 auto !important;
-  padding: 0 1rem !important;
-  text-align: center !important;
-}
-
-.page__footer-copyright {
-  float: none !important;
-  display: block !important;
-  margin: 0 auto !important;
-  text-align: center !important;
-  font-size: 0.75rem !important;
-  color: #666666 !important;
-}
-
-.page__footer-follow {
-  display: none !important;
-}
-
-html.dark-mode .page__footer {
-  background: transparent !important;
-  border-top: none !important;
-  color: #b8b8b8 !important;
-}
-
-html.dark-mode .page__footer-copyright {
-  color: #b8b8b8 !important;
-}
-
-/* ============================================================
-   12. NAVIGATION HOVER AND ACTIVE PAGE STATE
-   Shaded hover cell and active-page underline
-   ============================================================ */
-
-.greedy-nav .visible-links a,
-.greedy-nav .visible-links a:link,
-.greedy-nav .visible-links a:visited,
-.greedy-nav .visible-links a:hover,
-.greedy-nav .visible-links a:focus,
-.greedy-nav .visible-links a:active {
-  text-decoration: none !important;
-  border: none !important;
-  border-bottom: 0 !important;
-  background-image: none !important;
-  background-size: 0 0 !important;
-  background-repeat: no-repeat !important;
-}
-
-.greedy-nav .visible-links a::before,
-.greedy-nav .visible-links a::after,
-.greedy-nav .visible-links li::before,
-.greedy-nav .visible-links li::after {
-  content: none !important;
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-  border: 0 !important;
-  background: none !important;
-  background-color: transparent !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  transform: none !important;
-}
-
-.greedy-nav .visible-links a {
-  border-radius: 4px !important;
-  padding-left: 0.25rem !important;
-  padding-right: 0.25rem !important;
-  box-shadow: none !important;
-  transition: background-color 0.12s ease-in-out !important;
-}
-
-.greedy-nav .visible-links a.active-nav-link {
-  color: #333333 !important;
-  box-shadow: inset 0 -2px 0 #333333 !important;
-  background-color: transparent !important;
-}
-
-.greedy-nav .visible-links a:not(.active-nav-link):hover,
-.greedy-nav .visible-links a:not(.active-nav-link):focus,
-.greedy-nav .visible-links a:not(.active-nav-link):active {
-  color: #333333 !important;
-  background-color: #eeeeee !important;
-  box-shadow: none !important;
-}
-
-.greedy-nav .visible-links a.active-nav-link:hover,
-.greedy-nav .visible-links a.active-nav-link:focus,
-.greedy-nav .visible-links a.active-nav-link:active {
-  color: #333333 !important;
-  background-color: #eeeeee !important;
-  box-shadow: inset 0 -2px 0 #333333 !important;
-}
-
-html.dark-mode .greedy-nav .visible-links a,
-html.dark-mode .greedy-nav .visible-links a:link,
-html.dark-mode .greedy-nav .visible-links a:visited,
-html.dark-mode .greedy-nav .visible-links a:hover,
-html.dark-mode .greedy-nav .visible-links a:focus,
-html.dark-mode .greedy-nav .visible-links a:active {
-  text-decoration: none !important;
-  border: none !important;
-  border-bottom: 0 !important;
-  background-image: none !important;
-}
-
-html.dark-mode .greedy-nav .visible-links a::before,
-html.dark-mode .greedy-nav .visible-links a::after,
-html.dark-mode .greedy-nav .visible-links li::before,
-html.dark-mode .greedy-nav .visible-links li::after {
-  content: none !important;
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-  border: 0 !important;
-  background: none !important;
-  background-color: transparent !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  transform: none !important;
-}
-
-html.dark-mode .greedy-nav .visible-links a.active-nav-link {
-  color: #ffffff !important;
-  box-shadow: inset 0 -2px 0 #ffffff !important;
-  background-color: transparent !important;
-}
-
-html.dark-mode .greedy-nav .visible-links a:not(.active-nav-link):hover,
-html.dark-mode .greedy-nav .visible-links a:not(.active-nav-link):focus,
-html.dark-mode .greedy-nav .visible-links a:not(.active-nav-link):active {
-  color: #ffffff !important;
-  background-color: #343434 !important;
-  box-shadow: none !important;
-}
-
-html.dark-mode .greedy-nav .visible-links a.active-nav-link:hover,
-html.dark-mode .greedy-nav .visible-links a.active-nav-link:focus,
-html.dark-mode .greedy-nav .visible-links a.active-nav-link:active {
-  color: #ffffff !important;
-  background-color: #343434 !important;
-  box-shadow: inset 0 -2px 0 #ffffff !important;
-}
-
-/* ============================================================
-   13. PRESENTATION AND AWARD IMAGES
-   Figure width, image crop, rounded corners, and captions
-   ============================================================ */
-
-.presentation-figure {
-  margin: 0 0 2rem 0 !important;
-  max-width: 850px !important;
-}
-
-.presentation-figure img {
-  width: 100% !important;
-  max-height: 520px !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  border-radius: 6px !important;
-}
-
-.presentation-figure figcaption {
-  margin-top: 0.4rem !important;
-  font-size: 0.75rem !important;
-  color: #666666 !important;
-  text-align: left !important;
-}
-
-html.dark-mode .presentation-figure figcaption {
-  color: #b8b8b8 !important;
-}
-
-/* ============================================================
-   MOBILE LAYOUT
-   Stack bio text and profile photo cleanly on small screens
-   ============================================================ */
-
-@media (max-width: 64em) {
-  .page,
-  .page__inner-wrap,
-  .page__content {
-    width: 100% !important;
-    max-width: none !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 0.55rem !important;
-    padding-right: 0.55rem !important;
-  }
-
-  .site-hero {
-    margin-top: 1.5rem !important;
-  }
-
-  .site-hero h1 {
-    font-size: 1.65rem !important;
-  }
-
-  .section-nav {
-    gap: 0.35rem 0.65rem !important;
-    font-size: 0.8rem !important;
-    padding: 0.65rem 0 !important;
-  }
-
-  .bio-section {
-    display: flex !important;
-    flex-direction: column-reverse !important;
-    gap: 1rem !important;
-    text-align: left !important;
-    margin-top: 1.4rem !important;
-  }
-
-  .bio-photo img {
-    width: 120px !important;
-    height: 120px !important;
-    max-width: 120px !important;
-    max-height: 120px !important;
-  }
-
-  .page__content h2 {
-    font-size: 1.18rem !important;
-  }
-
-  .page__content h3 {
-    font-size: 0.98rem !important;
-  }
-}
-
-/* ============================================================
-   15. MOBILE DARK MODE
-   Dark-mode adjustments for mobile menu and section navigation
-   ============================================================ */
-
-@media (max-width: 64em) {
-  html.dark-mode .greedy-nav .hidden-links {
-    background: #1f1f1f !important;
-  }
-
-  html.dark-mode .greedy-nav .hidden-links a {
-    color: #ffffff !important;
-  }
-
-  html.dark-mode .greedy-nav .hidden-links a:hover,
-  html.dark-mode .greedy-nav .hidden-links a:focus {
-    background-color: #343434 !important;
-  }
-}
-
-/* ============================================================
-   16. RESEARCH PROJECTS
+   10. RESEARCH PROJECTS
    Working papers and work-in-progress expandable abstracts
    ============================================================ */
 
 .research-project {
-  margin-bottom: 1rem !important;
+  margin-bottom: 1.15rem !important;
   padding-bottom: 0.25rem !important;
   border-bottom: none !important;
 }
@@ -825,17 +443,156 @@ html.dark-mode .presentation-figure figcaption {
 }
 
 /* ============================================================
-   17. RESEARCH PROJECTS: DARK MODE
-   Dark-mode colours for abstracts, metadata, and PDF links
+   11. PRESENTATION AND AWARD IMAGES
+   Figure width, image crop, rounded corners, and captions
    ============================================================ */
 
-html.dark-mode .research-project {
-  border-bottom: none !important;
+.presentation-figure {
+  margin: 0 auto 2rem auto !important;
+  max-width: 760px !important;
 }
 
-html.dark-mode .research-project summary,
-html.dark-mode .research-project summary:hover {
+.presentation-figure img {
+  width: 100% !important;
+  max-height: 500px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 6px !important;
+}
+
+.presentation-figure figcaption {
+  margin-top: 0.4rem !important;
+  font-size: 0.75rem !important;
+  color: #666666 !important;
+  text-align: left !important;
+}
+
+/* ============================================================
+   12. FOOTER
+   Remove dock appearance and keep centred copyright sentence
+   ============================================================ */
+
+.page__footer {
+  background: transparent !important;
+  border-top: none !important;
+  margin-top: 3rem !important;
+  padding: 1.5rem 0 1rem 0 !important;
+  color: #666666 !important;
+}
+
+.page__footer footer {
+  max-width: none !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+  text-align: center !important;
+}
+
+.page__footer-copyright {
+  float: none !important;
+  display: block !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  font-size: 0.75rem !important;
+  color: #666666 !important;
+}
+
+.page__footer-follow {
+  display: none !important;
+}
+
+/* ============================================================
+   13. DARK MODE
+   Backgrounds, headings, navigation, bio, research projects
+   ============================================================ */
+
+html.dark-mode,
+html.dark-mode body {
+  background: #1f1f1f !important;
+  color: #e6e6e6 !important;
+}
+
+html.dark-mode .page,
+html.dark-mode .archive,
+html.dark-mode .page__footer {
+  background: #1f1f1f !important;
+  color: #e6e6e6 !important;
+}
+
+html.dark-mode .site-hero h1,
+html.dark-mode .page__title,
+html.dark-mode .page__content h1,
+html.dark-mode .page__content h2,
+html.dark-mode .page__content h3,
+html.dark-mode .page__content h4,
+html.dark-mode .page__content h5,
+html.dark-mode .page__content h6 {
   color: #ffffff !important;
+}
+
+html.dark-mode .site-hero p {
+  color: #cccccc !important;
+}
+
+html.dark-mode #dark-mode-toggle {
+  background: #1f1f1f !important;
+  color: #ffffff !important;
+  border-color: #555555 !important;
+}
+
+html.dark-mode #dark-mode-toggle:hover,
+html.dark-mode #dark-mode-toggle:focus {
+  background: #343434 !important;
+  border-color: #666666 !important;
+}
+
+html.dark-mode .section-nav {
+  background: rgba(31, 31, 31, 0.96) !important;
+  border-top-color: #444444 !important;
+  border-bottom-color: #444444 !important;
+}
+
+html.dark-mode .section-nav a,
+html.dark-mode .section-nav a:hover,
+html.dark-mode .section-nav a:focus {
+  color: #ffffff !important;
+}
+
+html.dark-mode .section-nav a:hover,
+html.dark-mode .section-nav a:focus {
+  background: #343434 !important;
+}
+
+html.dark-mode .section-nav a.active-nav-link {
+  box-shadow: inset 0 -2px 0 #ffffff !important;
+}
+
+html.dark-mode .page__content,
+html.dark-mode .page__content p,
+html.dark-mode .page__content li,
+html.dark-mode .page__content td,
+html.dark-mode .page__content th {
+  color: #e6e6e6 !important;
+}
+
+html.dark-mode .page__content a {
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.06em !important;
+  text-underline-offset: 0.13em !important;
+  text-decoration-color: currentColor !important;
+  border-bottom: none !important;
+  background-image: none !important;
+}
+
+html.dark-mode .page__content a:hover,
+html.dark-mode .page__content a:focus {
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.08em !important;
+}
+
+html.dark-mode .page__content h2 {
+  border-bottom-color: #444444 !important;
 }
 
 html.dark-mode .project-authors {
@@ -846,14 +603,11 @@ html.dark-mode .project-status {
   color: #c8c8c8 !important;
 }
 
+html.dark-mode .research-project summary,
+html.dark-mode .research-project summary:hover,
 html.dark-mode .abstract-toggle,
 html.dark-mode .abstract-toggle::before {
   color: #ffffff !important;
-}
-
-html.dark-mode .abstract-toggle:hover {
-  color: #ffffff !important;
-  text-decoration: none !important;
 }
 
 html.dark-mode .paper-link,
@@ -880,12 +634,92 @@ html.dark-mode .project-meta strong {
   color: #ffffff !important;
 }
 
+html.dark-mode .presentation-figure figcaption,
+html.dark-mode .page__footer,
+html.dark-mode .page__footer-copyright {
+  color: #b8b8b8 !important;
+}
+
+html.dark-mode code,
+html.dark-mode pre {
+  background: #2a2a2a !important;
+  color: #f0f0f0 !important;
+}
+
+html.dark-mode table,
+html.dark-mode th,
+html.dark-mode td {
+  border-color: #444444 !important;
+}
+
 /* ============================================================
-   18. RESEARCH PROJECTS: MOBILE
-   Disable justified abstracts on narrow screens
+   14. MOBILE LAYOUT
+   Stack bio and photo cleanly on small screens
    ============================================================ */
 
 @media (max-width: 64em) {
+  .page,
+  .page__inner-wrap,
+  .page__content {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0.55rem !important;
+    padding-right: 0.55rem !important;
+  }
+
+  .site-hero {
+    margin-top: 1.5rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .site-hero h1 {
+    font-size: 1.7rem !important;
+  }
+
+  .site-hero p {
+    font-size: 0.9rem !important;
+  }
+
+  #dark-mode-toggle {
+    right: 0.25rem !important;
+    width: 1.7rem !important;
+    height: 1.7rem !important;
+    font-size: 0.86rem !important;
+  }
+
+  .section-nav {
+    gap: 0.3rem 0.55rem !important;
+    font-size: 0.76rem !important;
+    padding: 0.55rem 0.3rem !important;
+    margin-bottom: 1.35rem !important;
+  }
+
+  .bio-section {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 1rem !important;
+    text-align: left !important;
+    margin-top: 1.4rem !important;
+  }
+
+  .bio-photo img {
+    width: 145px !important;
+    height: 145px !important;
+    max-width: 145px !important;
+    max-height: 145px !important;
+  }
+
+  .page__content h2 {
+    font-size: 1.18rem !important;
+  }
+
+  .page__content h3 {
+    font-size: 0.98rem !important;
+  }
+
   .project-abstract > p:first-child {
     text-align: left !important;
   }
