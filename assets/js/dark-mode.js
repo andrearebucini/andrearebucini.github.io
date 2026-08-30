@@ -7,9 +7,12 @@
   }
 
   function createDarkModeButton() {
-    const nav = document.querySelector(".greedy-nav");
+    const container =
+      document.querySelector(".site-hero") ||
+      document.querySelector(".greedy-nav") ||
+      document.body;
 
-    if (!nav || document.querySelector("#dark-mode-toggle")) {
+    if (!container || document.querySelector("#dark-mode-toggle")) {
       return;
     }
 
@@ -25,7 +28,7 @@
       updateButtonSymbol(button);
     });
 
-    nav.appendChild(button);
+    container.appendChild(button);
   }
 
   if (document.readyState === "loading") {
