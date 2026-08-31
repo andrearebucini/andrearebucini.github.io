@@ -1636,7 +1636,6 @@ html.dark-mode .page__content .section-nav a.active-nav-link {
    ============================================================ */
 
 .presentations-section {
-  max-width: 920px !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -1705,4 +1704,24 @@ html.dark-mode .presentation-photo-strip img {
   .presentation-photo-strip img {
     height: 190px !important;
   }
+}
+
+/* ============================================================
+   22. PRESENTATIONS WIDTH FIX
+   Make selected presentations use the same width as other sections
+   ============================================================ */
+
+.presentations-section {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.presentation-item {
+  width: 100% !important;
+}
+
+.presentation-photo-strip {
+  width: 100% !important;
 }
