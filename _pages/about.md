@@ -110,13 +110,13 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
     <span class="project-meta project-meta-inline">
       <strong>Presented at:</strong>
-      <span class="project-event-inline">MIFE Early Career Workshop <span class="project-event-detail">(November 2025)</span></span>
+      <span class="project-event-inline">MIFE Early Career Workshop 2025 <span class="project-event-detail">(November 2025)</span></span>
       <span class="event-separator">|</span>
-      <span class="project-event-inline">2nd-Year Internal Economics PhD Workshop <span class="project-event-detail">(January 2026)</span></span>
+      <span class="project-event-inline"> UniBG 2nd-Year Internal Economics PhD Workshop <span class="project-event-detail">(January 2026)</span></span>
       <span class="event-separator">|</span>
       <span class="project-event-inline">SEHO 2026 <span class="project-event-detail">(June 2026)</span></span>
       <span class="event-separator">|</span>
-      <span class="project-event-inline">G53 Rising Scholars Workshop <span class="project-event-detail">(July 2026)</span></span>
+      <span class="project-event-inline">1st International Workshop of the G53 Network Rising Scholars <span class="project-event-detail">(July 2026)</span></span>
     </span>
 
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
@@ -197,7 +197,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
       <strong>Presented at:</strong>
       <span class="project-event-inline">Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(September 2026, forthcoming)</span></span>
       <span class="event-separator">|</span>
-      <span class="project-event-inline">Brown Bag Seminar <span class="project-event-detail">(September 2026, forthcoming)</span></span>
+      <span class="project-event-inline">UniBG Brown Bag Seminar <span class="project-event-detail">(September 2026, forthcoming)</span></span>
     </span>
 
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
