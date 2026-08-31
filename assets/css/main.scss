@@ -1725,3 +1725,211 @@ html.dark-mode .presentation-photo-strip img {
 .presentation-photo-strip {
   width: 100% !important;
 }
+
+/* ============================================================
+   23. SECTION TITLES AND CONTENT SEPARATORS
+   Framed section headings and clearer separation between entries
+   ============================================================ */
+
+/* Section titles: ---- Title ---- */
+
+.page__content h2 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.85rem !important;
+
+  margin-top: 2.7rem !important;
+  margin-bottom: 1.25rem !important;
+  padding-bottom: 0 !important;
+
+  border-bottom: none !important;
+  text-align: center !important;
+
+  font-size: 1.28rem !important;
+  line-height: 1.25 !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  color: #333333 !important;
+}
+
+.page__content h2::before,
+.page__content h2::after {
+  content: "" !important;
+  display: block !important;
+  flex: 1 1 0 !important;
+  max-width: 310px !important;
+  border-top: 1px solid #e2e2e2 !important;
+}
+
+/* Keep section heading lines proportionate on narrow screens */
+
+@media (max-width: 64em) {
+  .page__content h2 {
+    gap: 0.55rem !important;
+    font-size: 1.12rem !important;
+    margin-top: 2.25rem !important;
+    margin-bottom: 1.05rem !important;
+  }
+
+  .page__content h2::before,
+  .page__content h2::after {
+    max-width: 90px !important;
+  }
+}
+
+/* Working papers and work-in-progress entries */
+
+#working-papers .research-project,
+#work-in-progress .research-project {
+  margin-bottom: 1.35rem !important;
+  padding-bottom: 1.05rem !important;
+  border-bottom: 1px solid #eeeeee !important;
+}
+
+#working-papers .research-project:last-of-type,
+#work-in-progress .research-project:last-of-type {
+  border-bottom: none !important;
+  padding-bottom: 0.25rem !important;
+}
+
+/* Slightly increase title-to-metadata clarity */
+
+.project-title {
+  margin-bottom: 0.12rem !important;
+}
+
+.project-authors,
+.project-status,
+.project-meta {
+  margin-top: 0.25rem !important;
+}
+
+/* Publications entries */
+
+.publications-section h3 {
+  margin-top: 1.05rem !important;
+  margin-bottom: 0.45rem !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+  text-align: left !important;
+  font-size: 0.93rem !important;
+  line-height: 1.3 !important;
+  font-weight: 600 !important;
+}
+
+.publications-section h2 + h3 {
+  margin-top: 0.2rem !important;
+}
+
+.publication-item {
+  margin-bottom: 1.1rem !important;
+  padding-bottom: 0.95rem !important;
+  border-bottom: 1px solid #eeeeee !important;
+}
+
+.publication-item:last-of-type {
+  border-bottom: none !important;
+}
+
+/* Selected presentations entries */
+
+.presentations-section {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.presentation-item {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 1.05rem !important;
+  padding-bottom: 0.9rem !important;
+  border-bottom: 1px solid #eeeeee !important;
+}
+
+.presentation-item:last-of-type {
+  border-bottom: none !important;
+}
+
+.presentation-title {
+  display: block !important;
+  margin-bottom: 0.2rem !important;
+  color: #333333 !important;
+  font-size: 0.98em !important;
+  line-height: 1.35 !important;
+}
+
+.presentation-meta {
+  display: block !important;
+  color: #555555 !important;
+  font-size: 0.9em !important;
+  line-height: 1.4 !important;
+}
+
+/* Photo strip: separated from formal presentation list */
+
+.presentation-photo-strip {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 0.75rem !important;
+  margin-top: 1.35rem !important;
+  padding-top: 0.4rem !important;
+}
+
+.presentation-photo-strip img {
+  display: block !important;
+  width: 100% !important;
+  height: 155px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 5px !important;
+  background: #f5f5f5 !important;
+}
+
+/* Dark mode */
+
+html.dark-mode .page__content h2 {
+  color: #ffffff !important;
+  border-bottom: none !important;
+}
+
+html.dark-mode .page__content h2::before,
+html.dark-mode .page__content h2::after {
+  border-top-color: #444444 !important;
+}
+
+html.dark-mode #working-papers .research-project,
+html.dark-mode #work-in-progress .research-project,
+html.dark-mode .publication-item,
+html.dark-mode .presentation-item {
+  border-bottom-color: #3a3a3a !important;
+}
+
+html.dark-mode .publications-section h3,
+html.dark-mode .presentation-title {
+  color: #ffffff !important;
+}
+
+html.dark-mode .presentation-meta {
+  color: #cccccc !important;
+}
+
+html.dark-mode .presentation-photo-strip img {
+  background: #2a2a2a !important;
+}
+
+/* Mobile presentation photos */
+
+@media (max-width: 64em) {
+  .presentation-photo-strip {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 0.65rem !important;
+  }
+
+  .presentation-photo-strip img {
+    height: 190px !important;
+  }
+}
