@@ -78,9 +78,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
     <span class="project-meta project-meta-inline">
       <strong>Presented at:</strong>
-      <span class="project-event-inline">3rd Milan PhD Economics Workshop <span class="project-event-detail">(June 2025)</span></span>
-      <span class="event-separator">|</span>
-      <span class="project-event-inline">III Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(September 2025)</span></span>
+      <span class="project-event-inline">3rd Milan PhD Economics Workshop <span class="project-event-detail">(June 2025)</span></span><span class="event-separator">|</span><span class="project-event-inline">III Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(September 2025)</span></span>
     </span>
 
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
@@ -94,10 +92,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes: D14, G51, J14.</strong>
+      <strong>JEL codes:</strong> D14, G51, J14.
     </p>
     <p class="project-classification">
-      <strong>Keywords: Widowhood; Spousal death; Household finance; Europe; SHARE.</strong>
+      <strong>Keywords:</strong> Widowhood; spousal death; household finance; Europe; SHARE.
     </p>
   </div>
 </div>
@@ -110,13 +108,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
     <span class="project-meta project-meta-inline">
       <strong>Presented at:</strong>
-      <span class="project-event-inline">MIFE Early Career Workshop 2025 <span class="project-event-detail">(November 2025)</span></span>
-      <span class="event-separator">|</span>
-      <span class="project-event-inline"> UniBG 2nd-Year Internal Economics PhD Workshop <span class="project-event-detail">(January 2026)</span></span>
-      <span class="event-separator">|</span>
-      <span class="project-event-inline">SEHO 2026 <span class="project-event-detail">(June 2026)</span></span>
-      <span class="event-separator">|</span>
-      <span class="project-event-inline">1st International Workshop of the G53 Network Rising Scholars <span class="project-event-detail">(July 2026)</span></span>
+      <span class="project-event-inline">MIFE Early Career Workshop 2025 <span class="project-event-detail">(November 2025)</span></span><span class="event-separator">|</span><span class="project-event-inline">UniBG 2nd-Year Internal Economics PhD Workshop <span class="project-event-detail">(January 2026)</span></span><span class="event-separator">|</span><span class="project-event-inline">SEHO 2026 <span class="project-event-detail">(June 2026)</span></span><span class="event-separator">|</span><span class="project-event-inline">1st International Workshop of the G53 Network Rising Scholars <span class="project-event-detail">(July 2026)</span></span>
     </span>
 
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
@@ -130,10 +122,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes: G51, G53, J14.</strong>
+      <strong>JEL codes:</strong> G51, G53, J14.
     </p>
     <p class="project-classification">
-      <strong>Keywords: Spousal death; Household finance; Financial literacy; Financial responsibility; Europe; SHARE.</strong>
+      <strong>Keywords:</strong> Spousal death; household finance; financial literacy; financial responsibility; Europe; SHARE.
     </p>
   </div>
 </div>
@@ -169,10 +161,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes: I21, I24, J16, D83.</strong>
+      <strong>JEL codes:</strong> I21, I24, J16, D83.
     </p>
     <p class="project-classification">
-      <strong>Keywords: STEM education; Gender stereotypes; Parental beliefs; Information experiment; Upper-secondary school choice.</strong>
+      <strong>Keywords:</strong> STEM education; gender stereotypes; parental beliefs; information experiment; upper-secondary school choice.
     </p>
   </div>
 </div>
@@ -195,9 +187,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
     <span class="project-meta project-meta-inline">
       <strong>Presented at:</strong>
-      <span class="project-event-inline">Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(September 2026, forthcoming)</span></span>
-      <span class="event-separator">|</span>
-      <span class="project-event-inline">UniBG Brown Bag Seminar <span class="project-event-detail">(September 2026, forthcoming)</span></span>
+      <span class="project-event-inline">Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(September 2026, forthcoming)</span></span><span class="event-separator">|</span><span class="project-event-inline">UniBG Brown Bag Seminar <span class="project-event-detail">(September 2026, forthcoming)</span></span>
     </span>
 
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
@@ -211,10 +201,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes: I12, I18, I21, J13.</strong>
+      <strong>JEL codes:</strong> I12, I18, I21, J13.
     </p>
     <p class="project-classification">
-      <strong>Keywords: Mandatory sex education; adolescent fertility; adolescent births; abortion; sexually transmitted infections; Europe.</strong>
+      <strong>Keywords:</strong> Mandatory sex education; adolescent fertility; adolescent births; abortion; sexually transmitted infections; Europe.
     </p>
   </div>
 </div>
