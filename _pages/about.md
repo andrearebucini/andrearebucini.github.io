@@ -222,7 +222,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 </section>
 
 <section id="publications" class="homepage-section publications-section" markdown="1">
+
 ## Publications
+
+### Peer-reviewed journal articles
 
 <div class="publication-item">
   <p class="publication-title">
@@ -234,6 +237,8 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     A. Rebucini, <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3333" target="_blank" rel="noopener noreferrer">F. Origo</a>, <a href="https://www.unimib.it/francesca-schionato" target="_blank" rel="noopener noreferrer">F. Schionato</a>, and <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F80828" target="_blank" rel="noopener noreferrer">F.S. Romolo</a> · <em>International Journal of Drug Policy</em>, 122, 104238, 2023
   </p>
 </div>
+
+### Other publications
 
 <div class="publication-item">
   <p class="publication-title">
