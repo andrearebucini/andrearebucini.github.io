@@ -240,7 +240,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     with <a href="https://www.unimi.it/it/ugov/person/marina-brambilla" target="_blank" rel="noopener noreferrer">M. Brambilla</a> and L. Schionato · <em>Nuova Professionalità</em>, V(2), 48–68, 2024
   </p>
   <p class="publication-note">
-    Summary of findings published in <a href="https://www.ilsole24ore.com/art/universita-milano-entro-3-anni-titolo-accademico-70percento-laureati-trova-impiego-AGalgh4" target="_blank" rel="noopener noreferrer"><em>Il Sole 24 Ore</em></a>.
+    Summary of findings published in <a href="https://www.ilsole24ore.com/art/universita-milano-entro-3-anni-titolo-accademico-70percento-laureati-trova-impiego-AGalgh4" target="_blank" rel="noopener noreferrer"><em>Il Sole 24 Ore</em></a>
   </p>
 </div>
 
