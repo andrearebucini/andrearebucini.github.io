@@ -14,8 +14,8 @@ author_profile: false
   <a href="#about">About</a>
   <a href="#working-papers">Working papers</a>
   <a href="#work-in-progress">Work in progress</a>
-  <a href="#presentations">Presentations</a>
   <a href="#publications">Publications</a>
+  <a href="#presentations">Presentations</a>
   <a class="nav-cv-link" href="/files/CV_Andrea_Rebucini.pdf" target="_blank" rel="noopener noreferrer" onclick="this.blur();">CV</a>
 </nav>
 
@@ -186,60 +186,6 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
 </section>
 
-<section id="presentations" class="homepage-section presentations-section" markdown="1">
-
-## Presentations
-
-<div class="research-project">
-  <div class="project-header">
-    <span class="project-title">
-      <strong>Spousal death, financial literacy, and economic resilience</strong>
-    </span>
-    <span class="project-meta project-meta-inline">
-      <strong>5th MIFE Early Career Workshop</strong>
-      <span class="project-event-detail">(November 2025)</span>
-    </span>
-  </div>
-</div>
-
-<div class="research-project">
-  <div class="project-header">
-    <span class="project-title">
-      <strong>Spousal death, financial literacy, and economic resilience</strong>
-    </span>
-    <span class="project-meta project-meta-inline">
-      <strong>10th SEHO Meeting</strong>
-      <span class="project-event-detail">(June 2026)</span>
-    </span>
-  </div>
-</div>
-
-<div class="research-project">
-  <div class="project-header">
-    <span class="project-title">
-      <strong>Parental beliefs, STEM, and gendered track choices: Correcting misperceptions in early educational decisions</strong>
-    </span>
-    <span class="project-meta project-meta-inline">
-      <strong>XXXIV AEDE Meeting</strong>
-      <span class="project-event-detail">(July 2026)</span>
-    </span>
-  </div>
-</div>
-
-<div class="research-project">
-  <div class="project-header">
-    <span class="project-title">
-      <strong>Spousal death, financial literacy, and economic resilience</strong>
-    </span>
-    <span class="project-meta project-meta-inline">
-      <strong>1st International Workshop of the G53 Network Rising Scholars</strong>
-      <span class="project-event-detail">(July 2026)</span>
-    </span>
-  </div>
-</div>
-
-</section>
-
 <section id="publications" class="homepage-section publications-section" markdown="1">
 
 ## Publications
@@ -272,6 +218,56 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
     <strong>Media coverage:</strong>
     <span class="project-event-inline"><a href="https://www.ilsole24ore.com/art/universita-milano-entro-3-anni-titolo-accademico-70percento-laureati-trova-impiego-AGalgh4" target="_blank" rel="noopener noreferrer"><em>Il Sole 24 Ore</em></a></span>
   </p>
+</div>
+
+</section>
+
+<section id="presentations" class="homepage-section presentations-section" markdown="1">
+
+## Presentations
+
+<div class="research-project">
+  <div class="project-header">
+    <span class="project-title">
+      <strong>5th MIFE Early Career Workshop</strong>
+    </span>
+    <span class="project-meta project-meta-inline">
+      Mannheim, Germany · November 2025
+    </span>
+  </div>
+</div>
+
+<div class="research-project">
+  <div class="project-header">
+    <span class="project-title">
+      <strong>10th SEHO Meeting</strong>
+    </span>
+    <span class="project-meta project-meta-inline">
+      Pavia, Italy · June 2026
+    </span>
+  </div>
+</div>
+
+<div class="research-project">
+  <div class="project-header">
+    <span class="project-title">
+      <strong>XXXIV AEDE Meeting</strong>
+    </span>
+    <span class="project-meta project-meta-inline">
+      Logroño, Spain · July 2026
+    </span>
+  </div>
+</div>
+
+<div class="research-project">
+  <div class="project-header">
+    <span class="project-title">
+      <strong>1st International Workshop of the G53 Network Rising Scholars</strong>
+    </span>
+    <span class="project-meta project-meta-inline">
+      Reggio Calabria, Italy · July 2026
+    </span>
+  </div>
 </div>
 
 <div class="section-end-spacer"></div>
