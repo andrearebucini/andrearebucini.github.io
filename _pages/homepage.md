@@ -127,7 +127,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
     <span class="project-meta project-meta-inline">
       <strong>Award:</strong>
-      <span class="project-event-inline">María Jesús San Segundo Award 2026, Second Best Paper Award for Young Researchers</span>
+      <span class="project-event-inline"><a href="https://economicsofeducation.com/es/m-j-san-segundo-2/" target="_blank" rel="noopener noreferrer">María Jesús San Segundo Award 2026</a>, Second Best Paper Award for Young Researchers</span>
     </span>
 
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
