@@ -14,6 +14,7 @@ author_profile: false
   <a href="#about">About</a>
   <a href="#working-papers">Working papers</a>
   <a href="#work-in-progress">Work in progress</a>
+  <a href="#presentations">Presentations</a>
   <a href="#publications">Publications</a>
   <a class="nav-cv-link" href="/files/CV_Andrea_Rebucini.pdf" target="_blank" rel="noopener noreferrer" onclick="this.blur();">CV</a>
 </nav>
@@ -70,11 +71,6 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       Status: Submitted
     </span>
 
-    <span class="project-meta project-meta-inline">
-      <strong>Presented at:</strong>
-      <span class="project-event-inline">3rd Milan PhD Economics Workshop <span class="project-event-detail">(June 2025)</span></span><span class="event-separator">|</span><span class="project-event-inline">III Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(September 2025)</span></span>
-    </span>
-
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
       Abstract
     </button>
@@ -98,11 +94,6 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
   <div class="project-header">
     <span class="project-title">
       <strong>Spousal death, financial literacy, and economic resilience</strong>
-    </span>
-
-    <span class="project-meta project-meta-inline">
-      <strong>Presented at:</strong>
-      <span class="project-event-inline">5th MIFE Early Career Workshop <span class="project-event-detail">(November 2025)</span></span><span class="event-separator">|</span><span class="project-event-inline">UniBG 2nd-Year Internal Economics PhD Workshop <span class="project-event-detail">(January 2026)</span></span><span class="event-separator">|</span><span class="project-event-inline">10th SEHO Meeting <span class="project-event-detail">(June 2026)</span></span><span class="event-separator">|</span><span class="project-event-inline">1st International Workshop of the G53 Network Rising Scholars <span class="project-event-detail">(July 2026)</span></span>
     </span>
 
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
@@ -132,11 +123,6 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
     <span class="project-authors">
       with <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3083" target="_blank" rel="noopener">A. Cristini</a> and <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3333" target="_blank" rel="noopener">F. Origo</a>
-    </span>
-
-    <span class="project-meta project-meta-inline">
-      <strong>Presented at:</strong>
-      <span class="project-event-inline">XXXIV AEDE Meeting <span class="project-event-detail">(July 2026)</span></span>
     </span>
 
     <span class="project-meta project-meta-inline">
@@ -179,11 +165,6 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       with <a href="https://elisabaldazzi.github.io/" target="_blank" rel="noopener">E. Baldazzi</a> and <a href="https://www.unibz.it/en/faculties/economics-management/phd-economics-finance/phd-students/phd/48805-chiara-gastaldi" target="_blank" rel="noopener">C. Gastaldi</a>
     </span>
 
-    <span class="project-meta project-meta-inline">
-      <strong>Presented at:</strong>
-      <span class="project-event-inline">IV Sapienza PhD Conference in Social Sciences and Economics <span class="project-event-detail">(September 2026, forthcoming)</span></span><span class="event-separator">|</span><span class="project-event-inline">UniBG Brown Bag Seminar <span class="project-event-detail">(September 2026, forthcoming)</span></span>
-    </span>
-
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
       Abstract
     </button>
@@ -200,6 +181,60 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
     <p class="project-classification">
       <strong>Keywords:</strong> Mandatory sex education; adolescent fertility; adolescent births; abortion; sexually transmitted infections; Europe.
     </p>
+  </div>
+</div>
+
+</section>
+
+<section id="presentations" class="homepage-section presentations-section" markdown="1">
+
+## Presentations
+
+<div class="research-project">
+  <div class="project-header">
+    <span class="project-title">
+      <strong>Spousal death, financial literacy, and economic resilience</strong>
+    </span>
+    <span class="project-meta project-meta-inline">
+      <strong>5th MIFE Early Career Workshop</strong>
+      <span class="project-event-detail">(November 2025)</span>
+    </span>
+  </div>
+</div>
+
+<div class="research-project">
+  <div class="project-header">
+    <span class="project-title">
+      <strong>Spousal death, financial literacy, and economic resilience</strong>
+    </span>
+    <span class="project-meta project-meta-inline">
+      <strong>10th SEHO Meeting</strong>
+      <span class="project-event-detail">(June 2026)</span>
+    </span>
+  </div>
+</div>
+
+<div class="research-project">
+  <div class="project-header">
+    <span class="project-title">
+      <strong>Parental beliefs, STEM, and gendered track choices: Correcting misperceptions in early educational decisions</strong>
+    </span>
+    <span class="project-meta project-meta-inline">
+      <strong>XXXIV AEDE Meeting</strong>
+      <span class="project-event-detail">(July 2026)</span>
+    </span>
+  </div>
+</div>
+
+<div class="research-project">
+  <div class="project-header">
+    <span class="project-title">
+      <strong>Spousal death, financial literacy, and economic resilience</strong>
+    </span>
+    <span class="project-meta project-meta-inline">
+      <strong>1st International Workshop of the G53 Network Rising Scholars</strong>
+      <span class="project-event-detail">(July 2026)</span>
+    </span>
   </div>
 </div>
 
