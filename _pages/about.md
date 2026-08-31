@@ -28,6 +28,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 Before joining the PhD programme, I worked as a research assistant at the [University of Milano-Bicocca](https://en.unimib.it/){:target="_blank" rel="noopener noreferrer"} and as a data analyst at [PTS](https://pts-spa.com/){:target="_blank" rel="noopener noreferrer"}.
 
 <p class="bio-links">
+  <strong class="bio-links-label">Contact:</strong>
   <a href="mailto:andrea.rebucini@unibg.it">
     <i class="fas fa-envelope" aria-hidden="true"></i>
     andrea.rebucini@unibg.it
@@ -239,8 +240,9 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
   <p class="publication-meta">
     with <a href="https://www.unimi.it/it/ugov/person/marina-brambilla" target="_blank" rel="noopener noreferrer">M. Brambilla</a> and L. Schionato · <em>Nuova Professionalità</em>, V(2), 48–68, 2024
   </p>
-  <p class="publication-note">
-    Summary of findings published in <a href="https://www.ilsole24ore.com/art/universita-milano-entro-3-anni-titolo-accademico-70percento-laureati-trova-impiego-AGalgh4" target="_blank" rel="noopener noreferrer"><em>Il Sole 24 Ore</em></a>
+  <p class="project-meta project-meta-inline publication-coverage">
+    <strong>Media coverage:</strong>
+    <span class="project-event-inline"><a href="https://www.ilsole24ore.com/art/universita-milano-entro-3-anni-titolo-accademico-70percento-laureati-trova-impiego-AGalgh4" target="_blank" rel="noopener noreferrer"><em>Il Sole 24 Ore</em></a></span>
   </p>
 </div>
 
