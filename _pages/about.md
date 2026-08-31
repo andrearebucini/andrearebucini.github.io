@@ -169,7 +169,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
 <section id="work-in-progress" class="homepage-section" markdown="1">
 
-## Selected work in progress
+## Work in progress
 
 <div class="research-project">
   <div class="project-header">
