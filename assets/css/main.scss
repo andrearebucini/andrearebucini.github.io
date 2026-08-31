@@ -1629,3 +1629,89 @@ html.dark-mode .page__content .section-nav a.active-nav-link {
   text-decoration: none !important;
   font-weight: 500 !important;
 }
+
+/* ============================================================
+   21. SELECTED PRESENTATIONS
+   Compact conference entries with optional academic photo thumbnails
+   ============================================================ */
+
+.presentations-section {
+  max-width: 920px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.presentation-item {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 0.9rem !important;
+  align-items: center !important;
+  margin-bottom: 1.1rem !important;
+  padding-bottom: 1rem !important;
+  border-bottom: 1px solid #eeeeee !important;
+}
+
+.presentation-item-with-image {
+  grid-template-columns: minmax(0, 1fr) 145px !important;
+}
+
+.presentation-title {
+  display: block !important;
+  margin-bottom: 0.18rem !important;
+  color: #333333 !important;
+  font-size: 0.98em !important;
+  line-height: 1.35 !important;
+}
+
+.presentation-meta {
+  display: block !important;
+  color: #555555 !important;
+  font-size: 0.9em !important;
+  line-height: 1.4 !important;
+}
+
+.presentation-image {
+  width: 145px !important;
+  height: 92px !important;
+  overflow: hidden !important;
+  border-radius: 5px !important;
+  background: #f5f5f5 !important;
+}
+
+.presentation-image img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+html.dark-mode .presentation-item {
+  border-bottom-color: #3a3a3a !important;
+}
+
+html.dark-mode .presentation-title {
+  color: #ffffff !important;
+}
+
+html.dark-mode .presentation-meta {
+  color: #cccccc !important;
+}
+
+html.dark-mode .presentation-image {
+  background: #2a2a2a !important;
+}
+
+@media (max-width: 64em) {
+  .presentation-item,
+  .presentation-item-with-image {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 0.65rem !important;
+  }
+
+  .presentation-image {
+    width: 100% !important;
+    max-width: 260px !important;
+    height: 145px !important;
+  }
+}
