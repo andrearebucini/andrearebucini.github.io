@@ -94,10 +94,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes:</strong>
+      <strong>JEL codes: D14, G51, J14.</strong>
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong>
+      <strong>Keywords: Widowhood; Spousal death; Household finance; Europe; SHARE.</strong>
     </p>
   </div>
 </div>
@@ -130,10 +130,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes:</strong>
+      <strong>JEL codes: G51, G53, J14.</strong>
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong>
+      <strong>Keywords: Spousal death; Household finance; Financial literacy; Financial responsibility; Europe; SHARE.</strong>
     </p>
   </div>
 </div>
@@ -165,14 +165,14 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
 
   <div class="project-abstract">
     <p>
-      Europe is facing persistent shortages of STEM skills alongside large and enduring gender gaps in STEM participation. This paper shows that part of this gap can open before high school even begins, when families in early-tracking systems decide which upper-secondary pathway a child will attend. We study Italy, where 13–14 year-old students choose among academic, technical, and vocational programmes that differ sharply in STEM content and progression opportunities. We field a household-level survey experiment with 348 Italian couples, corresponding to 696 parents, of 8th-grade students immediately before the enrolment window. Parents are surveyed separately and, prior to treatment, complete a Gender-Science Implicit Association Test. We first document a sizeable “daughter penalty”. Conditional on grades, perceived non-cognitive traits, stereotypes, and school recommendations, parents remain about 10 percentage points less likely to prefer a STEM-oriented track for daughters than for sons. Treated households watch a short video providing evidence-based information on early labour-market outcomes across STEM and non-STEM pathways. The intervention increases knowledge of returns by 0.71–0.73 points on a 0–3 score and raises parents’ stated STEM preference by 12–15 percentage points. Preference responses are concentrated among parents of daughters and are strong even among implicitly stereotyped parents. The treatment also shifts reported decision-making towards discussion and increases within-couple alignment in STEM preferences without increasing disagreement. The results suggest that embedding concise, credible returns to education information into guidance and enrolment channels can improve decision quality and help narrow gender gaps in STEM-oriented pathways at low cost.
+      Europe faces persistent STEM-skill shortages alongside enduring gender gaps in STEM participation. We examine whether these gaps emerge before high school, when families in early-tracking systems choose among educational pathways. We study Italy, where students aged 13–14 select academic, technical, or vocational programmes that differ in STEM content and progression opportunities. We conduct a household-level survey experiment with 348 couples (696 parents) of eighth-grade students immediately before enrolment. Parents are surveyed separately and complete a pre-treatment Gender–Science Implicit Association Test. Conditional on achievement, perceived non-cognitive traits, stereotypes, and school recommendations, parents are approximately 10 percentage points less likely to prefer a STEM-oriented track for daughters than for sons. Treated households watch a short video primarily providing evidence-based information on labour market outcomes across educational pathways. The intervention increases knowledge by 0.71–0.73 points on a 0–3 score and raises stated STEM preferences by 12–15 percentage points. Preference responses are concentrated among parents of daughters and remain strong even among implicitly stereotyped parents. The treatment also promotes discussion and increases within-couple alignment in STEM preferences without increasing disagreement. Embedding returns information into guidance and enrolment channels may therefore help narrow gender gaps in intended STEM pathways.
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes:</strong>
+      <strong>JEL codes: I21, I24, J16, D83.</strong>
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong>
+      <strong>Keywords: STEM education; Gender stereotypes; Parental beliefs; Information experiment; Upper-secondary school choice.</strong>
     </p>
   </div>
 </div>
@@ -211,10 +211,10 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes:</strong>
+      <strong>JEL codes: I12, I18, I21, J13.</strong>
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong>
+      <strong>Keywords: Mandatory sex education; adolescent fertility; adolescent births; abortion; sexually transmitted infections; Europe.</strong>
     </p>
   </div>
 </div>
