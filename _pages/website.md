@@ -15,7 +15,7 @@ author_profile: false
   <a href="#working-papers">Working papers</a>
   <a href="#work-in-progress">Work in progress</a>
   <a href="#publications">Publications</a>
-  <a class="nav-cv-link" href="/files/CV_Andrea_Rebucini.pdf" target="_blank" rel="noopener noreferrer" onclick="this.blur();">CV</a>
+  <a href="/files/CV_Andrea_Rebucini.pdf" target="_blank" rel="noopener noreferrer">CV</a>
 </nav>
 
 <section class="bio-section homepage-section" id="research-profile">
