@@ -232,7 +232,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>5th MIFE Early Career Workshop</strong>
     </span>
     <span class="project-meta project-meta-inline">
-      Mannheim, Germany · November 2025
+      University of Mannheim / ZEW, Mannheim, Germany · November 2025
     </span>
   </div>
 </div>
@@ -243,7 +243,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>10th SEHO Meeting</strong>
     </span>
     <span class="project-meta project-meta-inline">
-      Pavia, Italy · June 2026
+      University of Pavia, Pavia, Italy · June 2026
     </span>
   </div>
 </div>
@@ -254,7 +254,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>XXXIV AEDE Meeting</strong>
     </span>
     <span class="project-meta project-meta-inline">
-      Logroño, Spain · July 2026
+      University of La Rioja, Logroño, Spain · July 2026
     </span>
   </div>
 </div>
@@ -265,7 +265,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>1st International Workshop of the G53 Network Rising Scholars</strong>
     </span>
     <span class="project-meta project-meta-inline">
-      Reggio Calabria, Italy · July 2026
+      Regional Council of Calabria, Reggio Calabria, Italy · July 2026
     </span>
   </div>
 </div>
