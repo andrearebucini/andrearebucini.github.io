@@ -224,49 +224,69 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
 <section id="presentations" class="homepage-section presentations-section" markdown="1">
 
-## Presentations
+## Selected presentations
 
-<div class="research-project">
-  <div class="project-header">
-    <span class="project-title">
-      <strong>5th MIFE Early Career Workshop</strong>
+<div class="presentation-item presentation-item-with-image">
+  <div class="presentation-text">
+    <span class="presentation-title">
+      <strong>1st International Workshop of the G53 Network Rising Scholars</strong>
     </span>
-    <span class="project-meta project-meta-inline">
-      University of Mannheim / ZEW, Mannheim, Germany · November 2025
+    <span class="presentation-meta">
+      Regional Council of Calabria, Reggio Calabria, Italy · July 2026
     </span>
+  </div>
+  <div class="presentation-image">
+    <img src="/images/presentation_g53_2026.jpg" alt="Andrea Rebucini presenting at the 1st International Workshop of the G53 Network Rising Scholars">
   </div>
 </div>
 
-<div class="research-project">
-  <div class="project-header">
-    <span class="project-title">
+<div class="presentation-item presentation-item-with-image">
+  <div class="presentation-text">
+    <span class="presentation-title">
+      <strong>XXXIV AEDE Meeting</strong>
+    </span>
+    <span class="presentation-meta">
+      University of La Rioja, Logroño, Spain · July 2026
+    </span>
+  </div>
+  <div class="presentation-image">
+    <img src="/images/presentation_aede_2026.jpg" alt="Andrea Rebucini presenting at the XXXIV AEDE Meeting">
+  </div>
+</div>
+
+<div class="presentation-item">
+  <div class="presentation-text">
+    <span class="presentation-title">
       <strong>10th SEHO Meeting</strong>
     </span>
-    <span class="project-meta project-meta-inline">
+    <span class="presentation-meta">
       University of Pavia, Pavia, Italy · June 2026
     </span>
   </div>
 </div>
 
-<div class="research-project">
-  <div class="project-header">
-    <span class="project-title">
-      <strong>XXXIV AEDE Meeting</strong>
+<div class="presentation-item">
+  <div class="presentation-text">
+    <span class="presentation-title">
+      <strong>5th MIFE Early Career Workshop</strong>
     </span>
-    <span class="project-meta project-meta-inline">
-      University of La Rioja, Logroño, Spain · July 2026
+    <span class="presentation-meta">
+      University of Mannheim / ZEW, Mannheim, Germany · November 2025
     </span>
   </div>
 </div>
 
-<div class="research-project">
-  <div class="project-header">
-    <span class="project-title">
-      <strong>1st International Workshop of the G53 Network Rising Scholars</strong>
+<div class="presentation-item presentation-item-with-image">
+  <div class="presentation-text">
+    <span class="presentation-title">
+      <strong>3rd Milan PhD Economics Workshop</strong>
     </span>
-    <span class="project-meta project-meta-inline">
-      Regional Council of Calabria, Reggio Calabria, Italy · July 2026
+    <span class="presentation-meta">
+      Milan, Italy · June 2025
     </span>
+  </div>
+  <div class="presentation-image">
+    <img src="/images/presentation_milan_2025.jpeg" alt="Andrea Rebucini presenting at the 3rd Milan PhD Economics Workshop">
   </div>
 </div>
 
