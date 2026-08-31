@@ -224,7 +224,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </a>
   </p>
   <p class="publication-meta">
-    A. Rebucini, <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3333" target="_blank" rel="noopener noreferrer">F. Origo</a>, <a href="https://www.unimib.it/francesca-schionato" target="_blank" rel="noopener noreferrer">F. Schionato</a>, and <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F80828" target="_blank" rel="noopener noreferrer">F.S. Romolo</a> · <em>International Journal of Drug Policy</em>, 122, 104238, 2023
+    with <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3333" target="_blank" rel="noopener noreferrer">F. Origo</a>, <a href="https://www.unimib.it/francesca-schionato" target="_blank" rel="noopener noreferrer">F. Schionato</a>, and <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F80828" target="_blank" rel="noopener noreferrer">F.S. Romolo</a> · <em>International Journal of Drug Policy</em>, 122, 104238, 2023
   </p>
 </div>
 
@@ -237,7 +237,7 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
     </a>
   </p>
   <p class="publication-meta">
-    <a href="https://www.unimi.it/it/ugov/person/marina-brambilla" target="_blank" rel="noopener noreferrer">M. Brambilla</a>, L. Schionato, and A. Rebucini · <em>Nuova Professionalità</em>, V(2), 48–68, 2024
+    with <a href="https://www.unimi.it/it/ugov/person/marina-brambilla" target="_blank" rel="noopener noreferrer">M. Brambilla</a> and L. Schionato · <em>Nuova Professionalità</em>, V(2), 48–68, 2024
   </p>
   <p class="publication-note">
     Summary of findings published in <em>Il Sole 24 Ore</em> <a href="https://www.ilsole24ore.com/art/universita-milano-entro-3-anni-titolo-accademico-70percento-laureati-trova-impiego-AGalgh4" target="_blank" rel="noopener noreferrer">here</a>.
