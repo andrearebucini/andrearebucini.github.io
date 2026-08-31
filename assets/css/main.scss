@@ -113,25 +113,42 @@ body,
    Centred name and subtitle at the top of the homepage
    ============================================================ */
 
-  .site-hero {
-    width: 100% !important;
-    max-width: none !important;
-    margin-top: 1.5rem !important;
-    padding-left: 0.35rem !important;
-    padding-right: 0.35rem !important;
-  }
+.site-hero {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  margin: 2.4rem auto 0.85rem auto !important;
+  padding: 0 2.2rem 0.4rem 2.2rem !important;
+  overflow: visible !important;
+}
 
-  .site-hero h1 {
-    font-size: clamp(1.45rem, 7vw, 1.7rem) !important;
-    line-height: 1.12 !important;
-    white-space: nowrap !important;
-  }
+.site-hero h1 {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  font-size: 2.15rem !important;
+  line-height: 1.12 !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  color: #333333 !important;
+  white-space: nowrap !important;
+}
 
-  .site-hero p {
-    font-size: clamp(0.78rem, 4.2vw, 0.9rem) !important;
-    line-height: 1.3 !important;
-    white-space: nowrap !important;
-  }
+.site-hero p {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0.4rem auto 0 auto !important;
+  text-align: center !important;
+  font-size: 0.98rem !important;
+  line-height: 1.35 !important;
+  color: #555555 !important;
+  white-space: nowrap !important;
+}
 
 /* ============================================================
    04. DARK-MODE TOGGLE
@@ -299,6 +316,11 @@ body,
   margin-bottom: 0 !important;
   font-size: 0.92em !important;
   line-height: 1.45 !important;
+}
+
+.bio-links-label {
+  font-weight: 600 !important;
+  color: #333333 !important;
 }
 
 .bio-links a {
@@ -503,7 +525,7 @@ body,
   font-style: italic !important;
 }
 
-/* Presentation and award metadata: compact inline style */
+/* Presentation, award, and media metadata */
 
 .project-meta {
   display: block !important;
@@ -705,9 +727,14 @@ body,
   color: #666666 !important;
 }
 
+.publication-coverage {
+  margin-top: 0.18rem !important;
+}
+
 .section-end-spacer {
   height: 35vh !important;
 }
+
 /* ============================================================
    12. PRESENTATION AND AWARD IMAGES
    Kept for legacy figures if used elsewhere
@@ -906,6 +933,7 @@ html.dark-mode .page__content h2 {
   border-bottom-color: #444444 !important;
 }
 
+html.dark-mode .bio-links-label,
 html.dark-mode .bio-links i {
   color: #d6d6d6 !important;
 }
@@ -1017,24 +1045,48 @@ html.dark-mode .publications-section h3 {
   }
 
   .site-hero {
-    margin-top: 1.5rem !important;
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 1.45rem auto 0.75rem auto !important;
+    padding-left: 0.45rem !important;
+    padding-right: 0.45rem !important;
+    padding-bottom: 0.4rem !important;
+    text-align: center !important;
+    overflow: visible !important;
   }
 
   .site-hero h1 {
-    font-size: 1.7rem !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: calc(100vw - 1.6rem) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: clamp(1.28rem, 6.2vw, 1.55rem) !important;
+    line-height: 1.12 !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    letter-spacing: -0.025em !important;
   }
 
   .site-hero p {
-    font-size: 0.9rem !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: calc(100vw - 1.6rem) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: clamp(0.78rem, 4vw, 0.9rem) !important;
+    line-height: 1.3 !important;
+    white-space: nowrap !important;
+    text-align: center !important;
   }
 
   #dark-mode-toggle {
-    right: 0.25rem !important;
-    width: 1.7rem !important;
-    height: 1.7rem !important;
-    font-size: 0.86rem !important;
+    top: -0.15rem !important;
+    right: 0.45rem !important;
+    width: 1.55rem !important;
+    height: 1.55rem !important;
+    font-size: 0.78rem !important;
   }
 
   .section-nav {
@@ -1052,9 +1104,17 @@ html.dark-mode .publications-section h3 {
   .bio-section {
     display: flex !important;
     flex-direction: column-reverse !important;
+    align-items: center !important;
     gap: 1.1rem !important;
     text-align: left !important;
     margin-top: 1.4rem !important;
+  }
+
+  .bio-photo {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
   }
 
   .bio-photo img {
@@ -1062,6 +1122,13 @@ html.dark-mode .publications-section h3 {
     height: 180px !important;
     max-width: 180px !important;
     max-height: 180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .bio-text {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .bio-links {
@@ -1088,7 +1155,7 @@ html.dark-mode .publications-section h3 {
   }
 
   .event-separator {
-    margin: 0 0.22rem !important;
+    margin: 0 0.12rem !important;
   }
 
   .project-event-detail {
@@ -1166,10 +1233,10 @@ html.dark-mode .publications-section h3 {
    Prevent ordinary links from remaining visually highlighted after click/tap
    ============================================================ */
 
-.page__content a:visited,
-.page__content a:focus,
-.page__content a:focus-visible,
-.page__content a:active,
+.page__content a:not(.active-nav-link):visited,
+.page__content a:not(.active-nav-link):focus,
+.page__content a:not(.active-nav-link):focus-visible,
+.page__content a:not(.active-nav-link):active,
 .bio-links a:visited,
 .bio-links a:focus,
 .bio-links a:focus-visible,
@@ -1205,19 +1272,15 @@ html.dark-mode .publications-section h3 {
   -webkit-tap-highlight-color: transparent !important;
 }
 
-/* Keep ordinary text links visually stable after click */
-
-.page__content a:focus,
-.page__content a:focus-visible,
-.page__content a:active,
-.page__content a:visited {
+.page__content a:not(.active-nav-link):focus,
+.page__content a:not(.active-nav-link):focus-visible,
+.page__content a:not(.active-nav-link):active,
+.page__content a:not(.active-nav-link):visited {
   text-decoration: underline !important;
   text-decoration-thickness: 0.06em !important;
   text-underline-offset: 0.13em !important;
   text-decoration-color: currentColor !important;
 }
-
-/* Contact links should not stay underlined after click */
 
 .bio-links a:focus,
 .bio-links a:focus-visible,
@@ -1225,8 +1288,6 @@ html.dark-mode .publications-section h3 {
 .bio-links a:visited {
   text-decoration: none !important;
 }
-
-/* Paper, publication, and metadata links keep only their normal underline */
 
 .paper-link:focus,
 .paper-link:focus-visible,
@@ -1253,8 +1314,6 @@ html.dark-mode .publications-section h3 {
   text-underline-offset: 0.13em !important;
   text-decoration-color: currentColor !important;
 }
-
-/* Mobile/touch devices: remove sticky tap-hover effects for ordinary links */
 
 @media (hover: none), (pointer: coarse) {
   .page__content a:hover:not(.active-nav-link),
