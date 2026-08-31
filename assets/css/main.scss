@@ -113,28 +113,25 @@ body,
    Centred name and subtitle at the top of the homepage
    ============================================================ */
 
-.site-hero {
-  position: relative !important;
-  text-align: center !important;
-  margin: 2.4rem auto 0.85rem auto !important;
-  padding-bottom: 0.4rem !important;
-}
+  .site-hero {
+    width: 100% !important;
+    max-width: none !important;
+    margin-top: 1.5rem !important;
+    padding-left: 0.35rem !important;
+    padding-right: 0.35rem !important;
+  }
 
-.site-hero h1 {
-  margin: 0 !important;
-  font-size: 2.15rem !important;
-  line-height: 1.12 !important;
-  font-weight: 600 !important;
-  letter-spacing: -0.02em !important;
-  color: #333333 !important;
-}
+  .site-hero h1 {
+    font-size: clamp(1.45rem, 7vw, 1.7rem) !important;
+    line-height: 1.12 !important;
+    white-space: nowrap !important;
+  }
 
-.site-hero p {
-  margin: 0.4rem 0 0 0 !important;
-  font-size: 0.98rem !important;
-  line-height: 1.35 !important;
-  color: #555555 !important;
-}
+  .site-hero p {
+    font-size: clamp(0.78rem, 4.2vw, 0.9rem) !important;
+    line-height: 1.3 !important;
+    white-space: nowrap !important;
+  }
 
 /* ============================================================
    04. DARK-MODE TOGGLE
