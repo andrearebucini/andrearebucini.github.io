@@ -28,15 +28,15 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 Before joining the PhD programme, I worked as a research assistant at the [University of Milano-Bicocca](https://en.unimib.it/){:target="_blank" rel="noopener noreferrer"} and as a data analyst at [PTS](https://pts-spa.com/){:target="_blank" rel="noopener noreferrer"}.
 
 <p class="bio-links">
-  <strong class="bio-links-label">Contact:</strong>
+  <strong class="bio-links-label">Contacts:</strong>
   <a href="mailto:andrea.rebucini@unibg.it">
     <i class="fas fa-envelope" aria-hidden="true"></i>
     andrea.rebucini@unibg.it
   </a>
   <span>·</span>
-  <a href="/files/CV_Andrea_Rebucini.pdf" target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-file-pdf" aria-hidden="true"></i>
-    CV
+  <a href="https://www.linkedin.com/in/andrea-rebucini/" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin" aria-hidden="true"></i>
+    LinkedIn
   </a>
   <span>·</span>
   <a href="https://scholar.google.com/citations?user=hVfaDXwAAAAJ&hl" target="_blank" rel="noopener noreferrer">
@@ -47,11 +47,6 @@ Before joining the PhD programme, I worked as a research assistant at the [Unive
   <a href="https://github.com/andrearebucini" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-github" aria-hidden="true"></i>
     GitHub
-  </a>
-  <span>·</span>
-  <a href="https://www.linkedin.com/in/andrea-rebucini/" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-linkedin" aria-hidden="true"></i>
-    LinkedIn
   </a>
 </p>
 
