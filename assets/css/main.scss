@@ -1163,3 +1163,148 @@ html.dark-mode .publications-section h3 {
     font-weight: 500 !important;
   }
 }
+
+/* ============================================================
+   17. LINK FOCUS AND VISITED-STATE RESET
+   Prevent ordinary links from remaining visually highlighted after click/tap
+   ============================================================ */
+
+.page__content a:visited,
+.page__content a:focus,
+.page__content a:focus-visible,
+.page__content a:active,
+.bio-links a:visited,
+.bio-links a:focus,
+.bio-links a:focus-visible,
+.bio-links a:active,
+.paper-link:visited,
+.paper-link:focus,
+.paper-link:focus-visible,
+.paper-link:active,
+.publication-title a:visited,
+.publication-title a:focus,
+.publication-title a:focus-visible,
+.publication-title a:active,
+.publication-meta a:visited,
+.publication-meta a:focus,
+.publication-meta a:focus-visible,
+.publication-meta a:active,
+.project-meta a:visited,
+.project-meta a:focus,
+.project-meta a:focus-visible,
+.project-meta a:active,
+.project-authors a:visited,
+.project-authors a:focus,
+.project-authors a:focus-visible,
+.project-authors a:active {
+  color: inherit !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Keep ordinary text links visually stable after click */
+
+.page__content a:focus,
+.page__content a:focus-visible,
+.page__content a:active,
+.page__content a:visited {
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.06em !important;
+  text-underline-offset: 0.13em !important;
+  text-decoration-color: currentColor !important;
+}
+
+/* Contact links should not stay underlined after click */
+
+.bio-links a:focus,
+.bio-links a:focus-visible,
+.bio-links a:active,
+.bio-links a:visited {
+  text-decoration: none !important;
+}
+
+/* Paper, publication, and metadata links keep only their normal underline */
+
+.paper-link:focus,
+.paper-link:focus-visible,
+.paper-link:active,
+.paper-link:visited,
+.publication-title a:focus,
+.publication-title a:focus-visible,
+.publication-title a:active,
+.publication-title a:visited,
+.publication-meta a:focus,
+.publication-meta a:focus-visible,
+.publication-meta a:active,
+.publication-meta a:visited,
+.project-meta a:focus,
+.project-meta a:focus-visible,
+.project-meta a:active,
+.project-meta a:visited,
+.project-authors a:focus,
+.project-authors a:focus-visible,
+.project-authors a:active,
+.project-authors a:visited {
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.06em !important;
+  text-underline-offset: 0.13em !important;
+  text-decoration-color: currentColor !important;
+}
+
+/* Mobile/touch devices: remove sticky tap-hover effects for ordinary links */
+
+@media (hover: none), (pointer: coarse) {
+  .page__content a:hover:not(.active-nav-link),
+  .page__content a:focus:not(.active-nav-link),
+  .page__content a:focus-visible:not(.active-nav-link),
+  .page__content a:active:not(.active-nav-link) {
+    color: inherit !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-bottom: none !important;
+    background-image: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  .bio-links a:hover,
+  .bio-links a:focus,
+  .bio-links a:focus-visible,
+  .bio-links a:active {
+    text-decoration: none !important;
+  }
+
+  .paper-link:hover,
+  .paper-link:focus,
+  .paper-link:focus-visible,
+  .paper-link:active,
+  .publication-title a:hover,
+  .publication-title a:focus,
+  .publication-title a:focus-visible,
+  .publication-title a:active,
+  .publication-meta a:hover,
+  .publication-meta a:focus,
+  .publication-meta a:focus-visible,
+  .publication-meta a:active,
+  .project-meta a:hover,
+  .project-meta a:focus,
+  .project-meta a:focus-visible,
+  .project-meta a:active,
+  .project-authors a:hover,
+  .project-authors a:focus,
+  .project-authors a:focus-visible,
+  .project-authors a:active {
+    text-decoration: underline !important;
+    text-decoration-thickness: 0.06em !important;
+    text-underline-offset: 0.13em !important;
+    text-decoration-color: currentColor !important;
+  }
+}
