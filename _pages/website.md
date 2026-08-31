@@ -231,7 +231,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
     </a>
   </p>
   <p class="publication-meta">
-    with <a href="https://www.unimi.it/it/ugov/person/marina-brambilla" target="_blank" rel="noopener noreferrer">M. Brambilla</a> and L. Schionato · <em>Nuova Professionalità</em>, V(2), 48–68, 2024
+    with <a href="https://www.unimi.it/it/ugov/person/marina-brambilla" target="_blank" rel="noopener noreferrer">M. Brambilla</a> and <a href="https://www.linkedin.com/in/lucaschionato/" target="_blank" rel="noopener noreferrer">L. Schionato</a> · <em>Nuova Professionalità</em>, V(2), 48–68, 2024
   </p>
   <p class="project-meta project-meta-inline publication-coverage">
     <strong>Media coverage:</strong>
