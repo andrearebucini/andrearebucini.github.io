@@ -226,21 +226,18 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
 ## Selected presentations
 
-<div class="presentation-item presentation-item-with-image">
+<div class="presentation-item">
   <div class="presentation-text">
     <span class="presentation-title">
       <strong>1st International Workshop of the G53 Network Rising Scholars</strong>
     </span>
     <span class="presentation-meta">
-      Regional Council of Calabria, Reggio Calabria, Italy · July 2026
+      Regional Venue of Calabria, Reggio Calabria, Italy · July 2026
     </span>
-  </div>
-  <div class="presentation-image">
-    <img src="/images/presentation_g53_2026.jpg" alt="Andrea Rebucini presenting at the 1st International Workshop of the G53 Network Rising Scholars">
   </div>
 </div>
 
-<div class="presentation-item presentation-item-with-image">
+<div class="presentation-item">
   <div class="presentation-text">
     <span class="presentation-title">
       <strong>XXXIV AEDE Meeting</strong>
@@ -248,9 +245,6 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
     <span class="presentation-meta">
       University of La Rioja, Logroño, Spain · July 2026
     </span>
-  </div>
-  <div class="presentation-image">
-    <img src="/images/presentation_aede_2026.jpg" alt="Andrea Rebucini presenting at the XXXIV AEDE Meeting">
   </div>
 </div>
 
@@ -276,18 +270,10 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
   </div>
 </div>
 
-<div class="presentation-item presentation-item-with-image">
-  <div class="presentation-text">
-    <span class="presentation-title">
-      <strong>3rd Milan PhD Economics Workshop</strong>
-    </span>
-    <span class="presentation-meta">
-      Milan, Italy · June 2025
-    </span>
-  </div>
-  <div class="presentation-image">
-    <img src="/images/presentation_milan_2025.jpeg" alt="Andrea Rebucini presenting at the 3rd Milan PhD Economics Workshop">
-  </div>
+<div class="presentation-photo-strip" aria-label="Presentation photos">
+  <img src="/images/presentation_aede_2026.jpg" alt="">
+  <img src="/images/presentation_g53_2026.jpg" alt="">
+  <img src="/images/presentation_milan_2025.jpeg" alt="">
 </div>
 
 <div class="section-end-spacer"></div>
