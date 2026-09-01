@@ -96,6 +96,10 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>Spousal death, financial literacy, and economic resilience</strong>
     </span>
 
+    <span class="project-status">
+      Status: Finalising draft
+    </span>
+    
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
       Abstract
     </button>
@@ -123,6 +127,10 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
     <span class="project-authors">
       with <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3083" target="_blank" rel="noopener">A. Cristini</a> and <a href="https://unibg.unifind.cineca.it/individual?uri=http%3A%2F%2Firises.unibg.it%2Fresource%2Fperson%2F3333" target="_blank" rel="noopener">F. Origo</a>
+    </span>
+
+        <span class="project-status">
+      Status: Finalising draft
     </span>
 
     <span class="project-meta project-meta-inline">
