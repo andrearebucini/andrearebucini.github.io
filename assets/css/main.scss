@@ -31,6 +31,34 @@
   --site-photo-shadow: rgba(53, 45, 35, 0.16);
 }
 
+/* Automatic dark-mode fallback when no explicit light/dark class is set */
+
+@media (prefers-color-scheme: dark) {
+  html:not(.light-mode) {
+    --site-bg: #171615;
+    --site-surface: #1f1e1c;
+    --site-surface-soft: #25231f;
+    --site-nav-bg: rgba(31, 30, 28, 0.96);
+
+    --site-text: #ebe7df;
+    --site-muted: #c8c1b5;
+    --site-muted-2: #aaa296;
+
+    --site-rule: #403d38;
+    --site-rule-soft: #302e2a;
+
+    --site-accent: #8fbad0;
+    --site-accent-soft: #24343c;
+
+    --site-nav-hover: #2b2925;
+    --site-nav-active: #38352f;
+
+    --site-photo-shadow: rgba(0, 0, 0, 0.36);
+  }
+}
+
+/* Explicit dark mode, used by the toggle */
+
 html.dark-mode {
   --site-bg: #171615;
   --site-surface: #1f1e1c;
@@ -83,8 +111,8 @@ body {
 }
 
 .page__content {
-  font-size: 0.8em !important;
-  line-height: 1.55 !important;
+  font-size: 0.82em !important;
+  line-height: 1.56 !important;
   color: var(--site-text) !important;
 }
 
@@ -112,10 +140,15 @@ body {
 .bio-links a,
 .bio-links a *,
 .paper-link,
+.paper-link *,
 .publication-title a,
+.publication-title a *,
 .publication-meta a,
+.publication-meta a *,
 .project-meta a,
+.project-meta a *,
 .project-authors a,
+.project-authors a *,
 .section-nav a,
 .abstract-toggle,
 .abstract-toggle::after {
@@ -138,7 +171,6 @@ body {
 
 /* ============================================================
    03. SINGLE-PAGE LAYOUT
-   Wider centred content, no sidebar, no Minimal Mistakes top bar
    ============================================================ */
 
 .initial-content {
@@ -235,6 +267,7 @@ body {
   opacity: 1 !important;
   appearance: none !important;
   -webkit-appearance: none !important;
+  z-index: 5 !important;
 }
 
 #dark-mode-toggle:hover,
@@ -256,262 +289,7 @@ body {
 }
 
 /* ============================================================
-   06. BIO SECTION
-   ============================================================ */
-
-.bio-section {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) 285px !important;
-  gap: 2.05rem !important;
-  align-items: start !important;
-  margin: 1.95rem 0 1.8rem 0 !important;
-}
-
-.bio-text p:first-child {
-  margin-top: 0 !important;
-}
-
-.bio-text p {
-  margin-bottom: 0.88rem !important;
-}
-
-.bio-photo {
-  text-align: center !important;
-}
-
-.bio-photo img {
-  width: 255px !important;
-  height: 255px !important;
-  max-width: 255px !important;
-  max-height: 255px !important;
-  object-fit: cover !important;
-  border-radius: 50% !important;
-  display: block !important;
-  margin: 0 auto !important;
-  box-shadow: 0 10px 28px var(--site-photo-shadow) !important;
-}
-
-/* Profile/contact links */
-
-.bio-links {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  align-items: center !important;
-  gap: 0.25rem 0.55rem !important;
-  margin-top: 1.08rem !important;
-  margin-bottom: 0 !important;
-  font-size: 0.92em !important;
-  line-height: 1.45 !important;
-}
-
-.bio-links-label {
-  font-weight: 650 !important;
-  color: var(--site-text) !important;
-}
-
-.bio-links a {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 0.28rem !important;
-  white-space: nowrap !important;
-}
-
-.bio-links i {
-  width: 0.95rem !important;
-  text-align: center !important;
-  font-size: 0.9em !important;
-  color: var(--site-muted) !important;
-}
-
-.bio-links span {
-  margin: 0 0.05rem !important;
-  color: var(--site-muted-2) !important;
-}
-
-/* ============================================================
-   07. HOMEPAGE SECTIONS AND SECTION TITLES
-   ============================================================ */
-
-.homepage-section,
-.page__content section {
-  scroll-margin-top: 4.6rem !important;
-}
-
-.homepage-section {
-  margin-top: 1.75rem !important;
-}
-
-/* Section titles: ---- TITLE ---- */
-
-.page__content h2 {
-  display: grid !important;
-  grid-template-columns: minmax(1.8rem, 1fr) auto minmax(1.8rem, 1fr) !important;
-  align-items: center !important;
-  column-gap: 0.78rem !important;
-
-  width: 100% !important;
-  margin-top: 2.85rem !important;
-  margin-bottom: 1.3rem !important;
-  padding-bottom: 0 !important;
-
-  border-bottom: none !important;
-  text-align: center !important;
-
-  font-size: 0.86rem !important;
-  line-height: 1.3 !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.14em !important;
-  text-transform: uppercase !important;
-  color: var(--site-text) !important;
-  white-space: nowrap !important;
-}
-
-.page__content h2::before,
-.page__content h2::after {
-  content: "" !important;
-  display: block !important;
-  width: 100% !important;
-  max-width: none !important;
-  min-width: 0 !important;
-  border-top: 1px solid var(--site-rule) !important;
-}
-
-.page__content h2::before {
-  grid-column: 1 !important;
-}
-
-.page__content h2::after {
-  grid-column: 3 !important;
-}
-
-.page__content h3 {
-  margin-top: 1.2rem !important;
-  margin-bottom: 0.6rem !important;
-  text-align: left !important;
-  font-size: 0.93rem !important;
-  line-height: 1.3 !important;
-  font-weight: 650 !important;
-  color: var(--site-text) !important;
-}
-
-/* ============================================================
-   08. NORMAL PAGE LINKS
-   All non-navigation content links behave consistently
-   ============================================================ */
-
-.page__content a,
-.page__content a:visited,
-.bio-links a,
-.bio-links a:visited,
-.paper-link,
-.paper-link:visited,
-.publication-title a,
-.publication-title a:visited,
-.publication-meta a,
-.publication-meta a:visited,
-.project-meta a,
-.project-meta a:visited,
-.project-authors a,
-.project-authors a:visited {
-  color: inherit !important;
-  text-decoration: underline !important;
-  text-decoration-thickness: 0.055em !important;
-  text-underline-offset: 0.14em !important;
-  text-decoration-color: currentColor !important;
-  border: none !important;
-  border-bottom: none !important;
-  background: transparent !important;
-  background-image: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  -webkit-tap-highlight-color: transparent !important;
-}
-
-/* Mouse/trackpad hover: all content links become blue */
-
-@media (hover: hover) and (pointer: fine) {
-  .page__content a:hover:not(.presentation-photo),
-  .page__content a:focus-visible:not(.presentation-photo),
-  .bio-links a:hover,
-  .bio-links a:focus-visible,
-  .paper-link:hover,
-  .paper-link:focus-visible,
-  .publication-title a:hover,
-  .publication-title a:focus-visible,
-  .publication-meta a:hover,
-  .publication-meta a:focus-visible,
-  .project-meta a:hover,
-  .project-meta a:focus-visible,
-  .project-authors a:hover,
-  .project-authors a:focus-visible {
-    color: var(--site-accent) !important;
-    text-decoration: underline !important;
-    text-decoration-thickness: 0.11em !important;
-    text-decoration-color: var(--site-accent) !important;
-    border: none !important;
-    border-bottom: none !important;
-    background: transparent !important;
-    background-image: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-  }
-
-  .bio-links a:hover i,
-  .bio-links a:focus-visible i {
-    color: var(--site-accent) !important;
-  }
-}
-
-/* Clicked/focused links should not remain visually highlighted */
-
-.page__content a:focus:not(:focus-visible),
-.page__content a:active,
-.bio-links a:focus:not(:focus-visible),
-.bio-links a:active,
-.paper-link:focus:not(:focus-visible),
-.paper-link:active,
-.publication-title a:focus:not(:focus-visible),
-.publication-title a:active,
-.publication-meta a:focus:not(:focus-visible),
-.publication-meta a:active,
-.project-meta a:focus:not(:focus-visible),
-.project-meta a:active,
-.project-authors a:focus:not(:focus-visible),
-.project-authors a:active {
-  color: inherit !important;
-  background: transparent !important;
-  background-color: transparent !important;
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
-  text-decoration: underline !important;
-  text-decoration-thickness: 0.055em !important;
-  text-underline-offset: 0.14em !important;
-  text-decoration-color: currentColor !important;
-}
-
-/* Navigation links must never inherit ordinary link behaviour */
-
-.page__content .section-nav a,
-.page__content .section-nav a:hover,
-.page__content .section-nav a:focus,
-.page__content .section-nav a:focus-visible,
-.page__content .section-nav a:active,
-.page__content .section-nav a:visited,
-.page__content .section-nav a.active-nav-link {
-  text-decoration: none !important;
-  text-decoration-thickness: 0 !important;
-  text-underline-offset: 0 !important;
-  text-decoration-color: transparent !important;
-  border: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
-}
-
-/* ============================================================
-   09. INTERNAL SECTION NAVIGATION
+   06. INTERNAL SECTION NAVIGATION
    ============================================================ */
 
 .section-nav {
@@ -545,7 +323,9 @@ body {
 }
 
 .section-nav a,
-.page__content .section-nav a {
+.page__content .section-nav a,
+.section-nav a:visited,
+.page__content .section-nav a:visited {
   color: var(--site-text) !important;
   text-decoration: none !important;
   text-decoration-thickness: 0 !important;
@@ -606,8 +386,6 @@ body {
   font-weight: 650 !important;
 }
 
-/* CV behaves like other nav links on hover, but does not remain highlighted */
-
 .section-nav a.nav-cv-link:focus:not(:focus-visible),
 .section-nav a.nav-cv-link:active,
 .page__content .section-nav a.nav-cv-link:focus:not(:focus-visible),
@@ -616,6 +394,262 @@ body {
   background: transparent !important;
   text-decoration: none !important;
   box-shadow: none !important;
+}
+
+/* ============================================================
+   07. BIO SECTION
+   ============================================================ */
+
+.bio-section {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 285px !important;
+  gap: 2.05rem !important;
+  align-items: start !important;
+  margin: 1.95rem 0 1.8rem 0 !important;
+}
+
+.bio-text p:first-child {
+  margin-top: 0 !important;
+}
+
+.bio-text p {
+  margin-bottom: 0.88rem !important;
+}
+
+.bio-photo {
+  text-align: center !important;
+}
+
+.bio-photo img {
+  width: 255px !important;
+  height: 255px !important;
+  max-width: 255px !important;
+  max-height: 255px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  display: block !important;
+  margin: 0 auto !important;
+  box-shadow: 0 10px 28px var(--site-photo-shadow) !important;
+}
+
+.bio-links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 0.25rem 0.55rem !important;
+  margin-top: 1.08rem !important;
+  margin-bottom: 0 !important;
+  font-size: 0.92em !important;
+  line-height: 1.45 !important;
+}
+
+.bio-links-label {
+  font-weight: 650 !important;
+  color: var(--site-text) !important;
+}
+
+.bio-links a {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.28rem !important;
+  white-space: nowrap !important;
+}
+
+.bio-links i {
+  width: 0.95rem !important;
+  text-align: center !important;
+  font-size: 0.9em !important;
+  color: var(--site-muted) !important;
+}
+
+.bio-links span {
+  margin: 0 0.05rem !important;
+  color: var(--site-muted-2) !important;
+}
+
+/* ============================================================
+   08. HOMEPAGE SECTIONS AND SECTION TITLES
+   ============================================================ */
+
+.homepage-section,
+.page__content section {
+  scroll-margin-top: 4.6rem !important;
+}
+
+.homepage-section {
+  margin-top: 1.75rem !important;
+}
+
+/* Section titles: ---- TITLE ---- */
+
+.page__content h2 {
+  display: grid !important;
+  grid-template-columns: minmax(1.8rem, 1fr) auto minmax(1.8rem, 1fr) !important;
+  align-items: center !important;
+  column-gap: 0.78rem !important;
+
+  width: 100% !important;
+  margin-top: 2.85rem !important;
+  margin-bottom: 1.3rem !important;
+  padding-bottom: 0 !important;
+
+  border-bottom: none !important;
+  text-align: center !important;
+
+  font-size: 0.98rem !important;
+  line-height: 1.28 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.115em !important;
+  text-transform: uppercase !important;
+  color: var(--site-text) !important;
+  white-space: nowrap !important;
+}
+
+.page__content h2::before,
+.page__content h2::after {
+  content: "" !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  border-top: 1px solid var(--site-rule) !important;
+}
+
+.page__content h2::before {
+  grid-column: 1 !important;
+}
+
+.page__content h2::after {
+  grid-column: 3 !important;
+}
+
+.page__content h3 {
+  margin-top: 1.15rem !important;
+  margin-bottom: 0.58rem !important;
+  text-align: left !important;
+  font-size: 0.82rem !important;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.065em !important;
+  text-transform: uppercase !important;
+  color: var(--site-text) !important;
+}
+
+/* ============================================================
+   09. NORMAL PAGE LINKS
+   All non-navigation content links behave consistently
+   ============================================================ */
+
+.page__content a,
+.page__content a:visited,
+.bio-links a,
+.bio-links a:visited,
+.paper-link,
+.paper-link:visited,
+.publication-title a,
+.publication-title a:visited,
+.publication-meta a,
+.publication-meta a:visited,
+.project-meta a,
+.project-meta a:visited,
+.project-authors a,
+.project-authors a:visited {
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.055em !important;
+  text-underline-offset: 0.14em !important;
+  text-decoration-color: currentColor !important;
+  border: none !important;
+  border-bottom: none !important;
+  background: transparent !important;
+  background-image: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .page__content a:hover:not(.presentation-photo):not(.nav-cv-link),
+  .page__content a:focus-visible:not(.presentation-photo):not(.nav-cv-link),
+  .bio-section a:hover,
+  .bio-section a:focus-visible,
+  .bio-links a:hover,
+  .bio-links a:focus-visible,
+  .research-project a:hover,
+  .research-project a:focus-visible,
+  .project-authors a:hover,
+  .project-authors a:focus-visible,
+  .project-meta a:hover,
+  .project-meta a:focus-visible,
+  .publication-item a:hover,
+  .publication-item a:focus-visible,
+  .publication-title a:hover,
+  .publication-title a:focus-visible,
+  .publication-meta a:hover,
+  .publication-meta a:focus-visible {
+    color: var(--site-accent) !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 0.11em !important;
+    text-decoration-color: var(--site-accent) !important;
+    background: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+
+  .bio-section a:hover i,
+  .bio-section a:focus-visible i,
+  .bio-links a:hover i,
+  .bio-links a:focus-visible i {
+    color: var(--site-accent) !important;
+  }
+}
+
+.page__content a:focus:not(:focus-visible),
+.page__content a:active,
+.bio-links a:focus:not(:focus-visible),
+.bio-links a:active,
+.paper-link:focus:not(:focus-visible),
+.paper-link:active,
+.publication-title a:focus:not(:focus-visible),
+.publication-title a:active,
+.publication-meta a:focus:not(:focus-visible),
+.publication-meta a:active,
+.project-meta a:focus:not(:focus-visible),
+.project-meta a:active,
+.project-authors a:focus:not(:focus-visible),
+.project-authors a:active {
+  color: inherit !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.055em !important;
+  text-underline-offset: 0.14em !important;
+  text-decoration-color: currentColor !important;
+}
+
+/* Navigation links must never inherit ordinary link behaviour */
+
+.page__content .section-nav a,
+.page__content .section-nav a:hover,
+.page__content .section-nav a:focus,
+.page__content .section-nav a:focus-visible,
+.page__content .section-nav a:active,
+.page__content .section-nav a:visited,
+.page__content .section-nav a.active-nav-link {
+  text-decoration: none !important;
+  text-decoration-thickness: 0 !important;
+  text-underline-offset: 0 !important;
+  text-decoration-color: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
 }
 
 /* ============================================================
@@ -715,8 +749,6 @@ body {
   color: var(--site-muted) !important;
   font-style: italic !important;
 }
-
-/* Award and media metadata */
 
 .project-meta {
   display: block !important;
@@ -824,6 +856,13 @@ body {
   background: transparent !important;
 }
 
+.paper-link {
+  margin-left: 0.4rem !important;
+  font-size: 0.9em !important;
+  font-weight: normal !important;
+  white-space: nowrap !important;
+}
+
 .project-abstract {
   display: none !important;
   margin: 0.78rem 0 0 0 !important;
@@ -868,15 +907,6 @@ body {
 .publications-section h3 {
   margin-top: 1.05rem !important;
   margin-bottom: 0.48rem !important;
-  padding-bottom: 0 !important;
-  border-bottom: none !important;
-  text-align: left !important;
-  font-size: 0.79rem !important;
-  line-height: 1.3 !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.09em !important;
-  text-transform: uppercase !important;
-  color: var(--site-text) !important;
 }
 
 .publications-section h2 + h3 {
@@ -898,14 +928,6 @@ body {
   margin-top: 0 !important;
   margin-bottom: 0.13rem !important;
   line-height: 1.35 !important;
-}
-
-.publication-title a {
-  color: inherit !important;
-  text-decoration: underline !important;
-  text-decoration-thickness: 0.055em !important;
-  text-underline-offset: 0.14em !important;
-  text-decoration-color: currentColor !important;
 }
 
 .publication-meta {
@@ -1025,6 +1047,25 @@ body {
   box-shadow: 0 6px 16px var(--site-photo-shadow) !important;
 }
 
+/* Common image-viewer / lightbox controls, if used later */
+
+.presentation-photo-strip button,
+.presentation-photo-strip button:focus,
+.presentation-photo-strip button:active,
+.presentation-photo-strip button:focus-visible,
+button[class*="arrow"]:focus,
+button[class*="arrow"]:active,
+button[class*="arrow"]:focus-visible,
+button[class*="prev"]:focus,
+button[class*="prev"]:active,
+button[class*="prev"]:focus-visible,
+button[class*="next"]:focus,
+button[class*="next"]:active,
+button[class*="next"]:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* Legacy presentation figures, if used elsewhere */
 
 .presentation-figure {
@@ -1084,14 +1125,19 @@ body {
    ============================================================ */
 
 html.dark-mode,
-html.dark-mode body {
+html.dark-mode body,
+html.light-mode,
+html.light-mode body {
   background: var(--site-bg) !important;
   color: var(--site-text) !important;
 }
 
 html.dark-mode .page,
 html.dark-mode .archive,
-html.dark-mode .page__footer {
+html.dark-mode .page__footer,
+html.light-mode .page,
+html.light-mode .archive,
+html.light-mode .page__footer {
   background: transparent !important;
   color: var(--site-text) !important;
 }
@@ -1100,7 +1146,12 @@ html.dark-mode .page__content,
 html.dark-mode .page__content p,
 html.dark-mode .page__content li,
 html.dark-mode .page__content td,
-html.dark-mode .page__content th {
+html.dark-mode .page__content th,
+html.light-mode .page__content,
+html.light-mode .page__content p,
+html.light-mode .page__content li,
+html.light-mode .page__content td,
+html.light-mode .page__content th {
   color: var(--site-text) !important;
 }
 
@@ -1117,103 +1168,7 @@ html.dark-mode td {
 }
 
 /* ============================================================
-   16. FINAL HOVER CONSISTENCY FIX
-   Forces every non-navigation textual link to turn blue on hover
-   ============================================================ */
-
-@media (hover: hover) and (pointer: fine) {
-  .page__content a:hover:not(.presentation-photo):not(.nav-cv-link),
-  .page__content a:focus-visible:not(.presentation-photo):not(.nav-cv-link),
-  .bio-section a:hover,
-  .bio-section a:focus-visible,
-  .bio-links a:hover,
-  .bio-links a:focus-visible,
-  .research-project a:hover,
-  .research-project a:focus-visible,
-  .project-authors a:hover,
-  .project-authors a:focus-visible,
-  .project-meta a:hover,
-  .project-meta a:focus-visible,
-  .publication-item a:hover,
-  .publication-item a:focus-visible,
-  .publication-title a:hover,
-  .publication-title a:focus-visible,
-  .publication-meta a:hover,
-  .publication-meta a:focus-visible {
-    color: var(--site-accent) !important;
-    text-decoration: underline !important;
-    text-decoration-thickness: 0.11em !important;
-    text-decoration-color: var(--site-accent) !important;
-    background: transparent !important;
-    background-image: none !important;
-    border: none !important;
-    border-bottom: none !important;
-    box-shadow: none !important;
-  }
-
-  .bio-section a:hover i,
-  .bio-section a:focus-visible i,
-  .bio-links a:hover i,
-  .bio-links a:focus-visible i {
-    color: var(--site-accent) !important;
-  }
-}
-
-/* Restore navigation behaviour after all general link rules */
-
-.section-nav a,
-.section-nav a:visited,
-.page__content .section-nav a,
-.page__content .section-nav a:visited {
-  color: var(--site-text) !important;
-  background: transparent !important;
-  text-decoration: none !important;
-  text-decoration-thickness: 0 !important;
-  text-decoration-color: transparent !important;
-  border: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-
-.section-nav a:hover,
-.page__content .section-nav a:hover {
-  color: var(--site-text) !important;
-  background: var(--site-nav-hover) !important;
-  text-decoration: none !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.section-nav a:focus:not(:focus-visible),
-.section-nav a:active,
-.page__content .section-nav a:focus:not(:focus-visible),
-.page__content .section-nav a:active {
-  color: var(--site-text) !important;
-  background: transparent !important;
-  text-decoration: none !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.section-nav a:focus-visible,
-.page__content .section-nav a:focus-visible {
-  color: var(--site-text) !important;
-  background: var(--site-nav-hover) !important;
-  text-decoration: none !important;
-  border: none !important;
-  box-shadow: 0 0 0 2px var(--site-accent-soft) !important;
-}
-
-.section-nav a.active-nav-link,
-.page__content .section-nav a.active-nav-link {
-  color: var(--site-text) !important;
-  background: var(--site-nav-active) !important;
-  text-decoration: none !important;
-  font-weight: 650 !important;
-}
-
-/* ============================================================
-   17. TOUCH-SCREEN LINK AND NAVIGATION FIXES
+   16. TOUCH-SCREEN LINK AND NAVIGATION FIXES
    Prevent stale tap-hover highlights on mobile devices
    ============================================================ */
 
@@ -1305,7 +1260,7 @@ html.dark-mode td {
 }
 
 /* ============================================================
-   18. MOBILE LAYOUT
+   17. MOBILE LAYOUT
    ============================================================ */
 
 @media (max-width: 64em) {
@@ -1324,12 +1279,17 @@ html.dark-mode td {
     padding-right: 0.68rem !important;
   }
 
+  .page__content {
+    font-size: 0.83em !important;
+    line-height: 1.55 !important;
+  }
+
   .site-hero {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-    margin: 1.2rem auto 0.78rem auto !important;
-    padding: 2.05rem 0.45rem 0.42rem 0.45rem !important;
+    margin: 1.25rem auto 0.78rem auto !important;
+    padding: 0.45rem 2.25rem 0.46rem 2.25rem !important;
     text-align: center !important;
     overflow: visible !important;
   }
@@ -1337,34 +1297,35 @@ html.dark-mode td {
   .site-hero h1 {
     display: block !important;
     width: 100% !important;
-    max-width: calc(100vw - 1.6rem) !important;
+    max-width: calc(100vw - 4.9rem) !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    font-size: clamp(1.28rem, 6.1vw, 1.58rem) !important;
+    font-size: clamp(1.34rem, 6vw, 1.62rem) !important;
     line-height: 1.12 !important;
     white-space: nowrap !important;
     text-align: center !important;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.032em !important;
   }
 
   .site-hero p {
     display: block !important;
     width: 100% !important;
-    max-width: calc(100vw - 1.6rem) !important;
+    max-width: calc(100vw - 4.9rem) !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    font-size: clamp(0.78rem, 3.8vw, 0.9rem) !important;
+    font-size: clamp(0.8rem, 3.7vw, 0.92rem) !important;
     line-height: 1.3 !important;
     white-space: nowrap !important;
     text-align: center !important;
   }
 
   #dark-mode-toggle {
-    top: 0.15rem !important;
-    right: 0.65rem !important;
-    width: 1.55rem !important;
-    height: 1.55rem !important;
-    font-size: 0.78rem !important;
+    top: auto !important;
+    bottom: 0.42rem !important;
+    right: 0.62rem !important;
+    width: 1.48rem !important;
+    height: 1.48rem !important;
+    font-size: 0.74rem !important;
   }
 
   .section-nav {
@@ -1374,9 +1335,9 @@ html.dark-mode td {
     margin-left: calc(50% - 50vw) !important;
     margin-right: 0 !important;
     margin-bottom: 1.35rem !important;
-    gap: 0.26rem 0.42rem !important;
+    gap: 0.25rem 0.42rem !important;
     font-size: 0.61rem !important;
-    letter-spacing: 0.075em !important;
+    letter-spacing: 0.072em !important;
     padding: 0.52rem 0.44rem !important;
   }
 
@@ -1430,11 +1391,12 @@ html.dark-mode td {
   }
 
   .page__content h2 {
-    grid-template-columns: minmax(0.8rem, 1fr) auto minmax(0.8rem, 1fr) !important;
-    column-gap: 0.44rem !important;
+    grid-template-columns: minmax(0.72rem, 1fr) auto minmax(0.72rem, 1fr) !important;
+    column-gap: 0.38rem !important;
 
-    font-size: clamp(0.62rem, 3vw, 0.78rem) !important;
-    letter-spacing: 0.095em !important;
+    font-size: clamp(0.78rem, 3.75vw, 0.92rem) !important;
+    line-height: 1.25 !important;
+    letter-spacing: 0.07em !important;
     margin-top: 2.35rem !important;
     margin-bottom: 1.08rem !important;
     white-space: nowrap !important;
@@ -1448,7 +1410,9 @@ html.dark-mode td {
   }
 
   .page__content h3 {
-    font-size: 0.9rem !important;
+    font-size: 0.78rem !important;
+    line-height: 1.3 !important;
+    letter-spacing: 0.055em !important;
   }
 
   .project-meta {
@@ -1482,18 +1446,45 @@ html.dark-mode td {
     gap: 0.22rem 0.34rem !important;
   }
 
-  .page__content h2 {
-    grid-template-columns: minmax(0.55rem, 1fr) auto minmax(0.55rem, 1fr) !important;
-    column-gap: 0.32rem !important;
+  .site-hero {
+    padding-left: 2.05rem !important;
+    padding-right: 2.05rem !important;
+  }
 
-    font-size: clamp(0.54rem, 2.85vw, 0.68rem) !important;
-    letter-spacing: 0.075em !important;
+  .site-hero h1 {
+    max-width: calc(100vw - 4.5rem) !important;
+    font-size: clamp(1.24rem, 6.2vw, 1.48rem) !important;
+  }
+
+  .site-hero p {
+    max-width: calc(100vw - 4.5rem) !important;
+    font-size: clamp(0.76rem, 3.8vw, 0.86rem) !important;
+  }
+
+  #dark-mode-toggle {
+    right: 0.52rem !important;
+    bottom: 0.4rem !important;
+    width: 1.38rem !important;
+    height: 1.38rem !important;
+    font-size: 0.68rem !important;
+  }
+
+  .page__content h2 {
+    grid-template-columns: minmax(0.48rem, 1fr) auto minmax(0.48rem, 1fr) !important;
+    column-gap: 0.28rem !important;
+
+    font-size: clamp(0.7rem, 3.55vw, 0.8rem) !important;
+    letter-spacing: 0.052em !important;
   }
 
   .page__content h2::before,
   .page__content h2::after {
     min-width: 0 !important;
     max-width: none !important;
+  }
+
+  .page__content h3 {
+    font-size: 0.74rem !important;
   }
 
   .presentation-photo img,
