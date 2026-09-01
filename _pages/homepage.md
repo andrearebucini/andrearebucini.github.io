@@ -271,9 +271,15 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 </div>
 
 <div class="presentation-photo-strip" aria-label="Presentation photos">
-  <img src="/images/presentation_aede_2026.jpg" alt="">
-  <img src="/images/presentation_g53_2026.jpg" alt="">
-  <img src="/images/presentation_milan_2025.jpeg" alt="">
+  <a class="presentation-photo" href="/images/presentation_aede_2026.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open presentation photo">
+    <img src="/images/presentation_aede_2026.jpg" alt="">
+  </a>
+  <a class="presentation-photo" href="/images/presentation_g53_2026.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open presentation photo">
+    <img src="/images/presentation_g53_2026.jpg" alt="">
+  </a>
+  <a class="presentation-photo" href="/images/presentation_milan_2025.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open presentation photo">
+    <img src="/images/presentation_milan_2025.jpeg" alt="">
+  </a>
 </div>
 
 <div class="section-end-spacer"></div>
