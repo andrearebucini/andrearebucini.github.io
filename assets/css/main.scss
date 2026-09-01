@@ -5,13 +5,62 @@
 @import "minimal-mistakes";
 
 /* ============================================================
-   01. BASE TYPOGRAPHY
-   General font size, body colour, headings, and content spacing
+   01. DESIGN TOKENS
+   Warm academic palette for light mode and matching dark mode
+   ============================================================ */
+
+:root {
+  --site-bg: #f7f4ef;
+  --site-surface: #fffdfa;
+  --site-surface-soft: #f2eee7;
+  --site-nav-bg: rgba(255, 253, 250, 0.96);
+
+  --site-text: #292724;
+  --site-muted: #625d55;
+  --site-muted-2: #7a7368;
+
+  --site-rule: #d9d0c3;
+  --site-rule-soft: #e8e1d6;
+
+  --site-accent: #285f7f;
+  --site-accent-soft: #e4eef3;
+
+  --site-nav-hover: #ece5dc;
+  --site-nav-active: #ded3c5;
+
+  --site-photo-shadow: rgba(53, 45, 35, 0.16);
+}
+
+html.dark-mode {
+  --site-bg: #171615;
+  --site-surface: #1f1e1c;
+  --site-surface-soft: #25231f;
+  --site-nav-bg: rgba(31, 30, 28, 0.96);
+
+  --site-text: #ebe7df;
+  --site-muted: #c8c1b5;
+  --site-muted-2: #aaa296;
+
+  --site-rule: #403d38;
+  --site-rule-soft: #302e2a;
+
+  --site-accent: #8fbad0;
+  --site-accent-soft: #24343c;
+
+  --site-nav-hover: #2b2925;
+  --site-nav-active: #38352f;
+
+  --site-photo-shadow: rgba(0, 0, 0, 0.36);
+}
+
+/* ============================================================
+   02. BASE TYPOGRAPHY AND PAGE RESET
    ============================================================ */
 
 html {
   font-size: 20px !important;
   scroll-behavior: auto !important;
+  background: var(--site-bg) !important;
 }
 
 html,
@@ -21,24 +70,26 @@ body {
 }
 
 body {
-  color: #333333 !important;
-  background: #ffffff !important;
+  color: var(--site-text) !important;
+  background: var(--site-bg) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
-body,
-.page,
-.page__content,
-.site-hero,
-.section-nav,
-.bio-section,
-.research-project,
-.page__footer {
-  transition: none !important;
+::selection {
+  background: var(--site-accent-soft) !important;
+  color: var(--site-text) !important;
 }
 
 .page__content {
   font-size: 0.8em !important;
-  line-height: 1.5 !important;
+  line-height: 1.55 !important;
+  color: var(--site-text) !important;
+}
+
+.page__content p {
+  color: var(--site-text) !important;
 }
 
 .page__content h1,
@@ -48,37 +99,29 @@ body,
 .page__content h5,
 .page__content h6,
 .page__title {
-  color: #333333 !important;
+  color: var(--site-text) !important;
 }
 
-/* Prevent delayed colour transitions when switching theme */
+/* Controlled, short transitions for hover states only */
 
 .page__content a,
 .section-nav a,
 .paper-link,
 .abstract-toggle,
-.site-hero *,
-.bio-section *,
-.bio-links,
-.bio-links *,
-.project-title,
-.project-authors,
-.project-status,
-.project-meta,
-.project-meta *,
-.project-event-inline,
-.event-separator,
-.project-abstract,
-.project-abstract *,
-.project-classification,
-.publication-item,
-.publication-item *,
-#dark-mode-toggle {
-  transition: none !important;
+#dark-mode-toggle,
+.presentation-photo,
+.presentation-photo img {
+  transition:
+    color 0.12s ease,
+    background-color 0.12s ease,
+    border-color 0.12s ease,
+    box-shadow 0.12s ease,
+    transform 0.12s ease,
+    opacity 0.12s ease !important;
 }
 
 /* ============================================================
-   02. SINGLE-PAGE LAYOUT
+   03. SINGLE-PAGE LAYOUT
    Wider centred content, no sidebar, no Minimal Mistakes top bar
    ============================================================ */
 
@@ -100,17 +143,18 @@ body,
   margin-right: auto !important;
   padding-left: 1.6rem !important;
   padding-right: 1.6rem !important;
+  background: transparent !important;
 }
 
 .page__inner-wrap,
 .page__content {
   max-width: none !important;
   width: 100% !important;
+  background: transparent !important;
 }
 
 /* ============================================================
-   03. SITE HERO
-   Centred name and subtitle at the top of the homepage
+   04. SITE HERO
    ============================================================ */
 
 .site-hero {
@@ -119,9 +163,10 @@ body,
   max-width: 100% !important;
   box-sizing: border-box !important;
   text-align: center !important;
-  margin: 2.4rem auto 0.85rem auto !important;
-  padding: 0 2.2rem 0.4rem 2.2rem !important;
+  margin: 2.5rem auto 0.95rem auto !important;
+  padding: 0 2.2rem 0.45rem 2.2rem !important;
   overflow: visible !important;
+  background: transparent !important;
 }
 
 .site-hero h1 {
@@ -130,11 +175,11 @@ body,
   max-width: 100% !important;
   margin: 0 auto !important;
   text-align: center !important;
-  font-size: 2.15rem !important;
-  line-height: 1.12 !important;
-  font-weight: 600 !important;
-  letter-spacing: -0.02em !important;
-  color: #333333 !important;
+  font-size: 2.18rem !important;
+  line-height: 1.1 !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.035em !important;
+  color: var(--site-text) !important;
   white-space: nowrap !important;
 }
 
@@ -142,33 +187,33 @@ body,
   display: block !important;
   width: 100% !important;
   max-width: 100% !important;
-  margin: 0.4rem auto 0 auto !important;
+  margin: 0.42rem auto 0 auto !important;
   text-align: center !important;
-  font-size: 0.98rem !important;
+  font-size: 0.94rem !important;
   line-height: 1.35 !important;
-  color: #555555 !important;
+  font-weight: 400 !important;
+  color: var(--site-muted) !important;
   white-space: nowrap !important;
 }
 
 /* ============================================================
-   04. DARK-MODE TOGGLE
-   Small button positioned near the top-right of the hero area
+   05. DARK-MODE TOGGLE
    ============================================================ */
 
 #dark-mode-toggle {
   position: absolute !important;
-  top: 0.1rem !important;
+  top: 0.08rem !important;
   right: 0 !important;
-  width: 1.8rem !important;
-  height: 1.8rem !important;
+  width: 1.78rem !important;
+  height: 1.78rem !important;
   padding: 0 !important;
-  border: 1px solid #dddddd !important;
+  border: 1px solid var(--site-rule) !important;
   border-radius: 50% !important;
   outline: 0 !important;
   box-shadow: none !important;
-  background: #ffffff !important;
-  color: #333333 !important;
-  font-size: 0.92rem !important;
+  background: var(--site-surface) !important;
+  color: var(--site-muted) !important;
+  font-size: 0.9rem !important;
   line-height: 1 !important;
   cursor: pointer !important;
   opacity: 1 !important;
@@ -177,19 +222,25 @@ body,
 }
 
 #dark-mode-toggle:hover,
-#dark-mode-toggle:focus,
-#dark-mode-toggle:focus-visible,
+#dark-mode-toggle:focus-visible {
+  color: var(--site-accent) !important;
+  border-color: var(--site-accent) !important;
+  background: var(--site-surface) !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 3px var(--site-accent-soft) !important;
+}
+
+#dark-mode-toggle:focus:not(:focus-visible),
 #dark-mode-toggle:active {
-  background: #ffffff !important;
-  color: #333333 !important;
-  border-color: #dddddd !important;
+  color: var(--site-muted) !important;
+  border-color: var(--site-rule) !important;
+  background: var(--site-surface) !important;
   outline: 0 !important;
   box-shadow: none !important;
 }
 
 /* ============================================================
-   05. INTERNAL SECTION NAVIGATION
-   Full-width sticky navigation with centred minimalist links
+   06. INTERNAL SECTION NAVIGATION
    ============================================================ */
 
 .section-nav {
@@ -202,84 +253,109 @@ body,
   flex-wrap: wrap !important;
   justify-content: center !important;
   align-items: center !important;
-  gap: 0.3rem 0.8rem !important;
+  gap: 0.32rem 0.68rem !important;
 
   width: 100vw !important;
   max-width: none !important;
   box-sizing: border-box !important;
-  margin: 0 0 1.9rem calc(50% - 50vw) !important;
-  padding: 0.62rem 1.2rem !important;
+  margin: 0 0 1.95rem calc(50% - 50vw) !important;
+  padding: 0.58rem 1.2rem !important;
 
-  border-top: 1px solid #e5e5e5 !important;
-  border-bottom: 1px solid #e5e5e5 !important;
-  background: rgba(255, 255, 255, 0.97) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
+  border-top: 1px solid var(--site-rule-soft) !important;
+  border-bottom: 1px solid var(--site-rule-soft) !important;
+  background: var(--site-nav-bg) !important;
+  backdrop-filter: blur(9px) !important;
+  -webkit-backdrop-filter: blur(9px) !important;
 
-  font-size: 0.84rem !important;
-  line-height: 1.3 !important;
+  font-size: 0.69rem !important;
+  line-height: 1.35 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.095em !important;
 }
 
 .section-nav a,
 .page__content .section-nav a {
-  color: #333333 !important;
+  color: var(--site-text) !important;
   text-decoration: none !important;
   text-decoration-thickness: 0 !important;
   text-underline-offset: 0 !important;
+  text-decoration-color: transparent !important;
   border: none !important;
   border-bottom: none !important;
   outline: none !important;
   background-image: none !important;
   box-shadow: none !important;
-  padding: 0.16rem 0.34rem !important;
-  border-radius: 5px !important;
-  font-weight: 400 !important;
-  transition: none !important;
+  padding: 0.22rem 0.38rem !important;
+  border-radius: 6px !important;
+  font-weight: 550 !important;
   -webkit-tap-highlight-color: transparent !important;
 }
 
 .section-nav a:hover,
-.section-nav a:focus,
-.section-nav a:focus-visible,
-.section-nav a:active,
-.page__content .section-nav a:hover,
-.page__content .section-nav a:focus,
-.page__content .section-nav a:focus-visible,
-.page__content .section-nav a:active {
-  color: #333333 !important;
-  background: #f2f2f2 !important;
+.page__content .section-nav a:hover {
+  color: var(--site-text) !important;
+  background: var(--site-nav-hover) !important;
   text-decoration: none !important;
   border: none !important;
-  border-bottom: none !important;
   outline: none !important;
-  background-image: none !important;
+  box-shadow: none !important;
+}
+
+.section-nav a:focus-visible,
+.page__content .section-nav a:focus-visible {
+  color: var(--site-text) !important;
+  background: var(--site-nav-hover) !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px var(--site-accent-soft) !important;
+}
+
+.section-nav a:focus:not(:focus-visible),
+.section-nav a:active,
+.page__content .section-nav a:focus:not(:focus-visible),
+.page__content .section-nav a:active {
+  color: var(--site-text) !important;
+  background: transparent !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
   box-shadow: none !important;
 }
 
 .section-nav a.active-nav-link,
 .page__content .section-nav a.active-nav-link {
-  color: #111111 !important;
-  background: #eeeeee !important;
+  color: var(--site-text) !important;
+  background: var(--site-nav-active) !important;
   text-decoration: none !important;
   border: none !important;
-  border-bottom: none !important;
   outline: none !important;
-  background-image: none !important;
   box-shadow: none !important;
-  font-weight: 500 !important;
+  font-weight: 650 !important;
+}
+
+/* CV behaves like the other nav links on hover, but does not remain highlighted */
+
+.section-nav a.nav-cv-link:focus:not(:focus-visible),
+.section-nav a.nav-cv-link:active,
+.page__content .section-nav a.nav-cv-link:focus:not(:focus-visible),
+.page__content .section-nav a.nav-cv-link:active {
+  color: var(--site-text) !important;
+  background: transparent !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
 }
 
 /* ============================================================
-   06. BIO SECTION
-   Bio text with larger round profile photo on the right
+   07. BIO SECTION
    ============================================================ */
 
 .bio-section {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) 285px !important;
-  gap: 2rem !important;
+  gap: 2.05rem !important;
   align-items: start !important;
-  margin: 1.9rem 0 1.7rem 0 !important;
+  margin: 1.95rem 0 1.8rem 0 !important;
 }
 
 .bio-text p:first-child {
@@ -287,7 +363,7 @@ body,
 }
 
 .bio-text p {
-  margin-bottom: 0.85rem !important;
+  margin-bottom: 0.88rem !important;
 }
 
 .bio-photo {
@@ -303,24 +379,25 @@ body,
   border-radius: 50% !important;
   display: block !important;
   margin: 0 auto !important;
+  box-shadow: 0 10px 28px var(--site-photo-shadow) !important;
 }
 
-/* Profile/contact links inside bio */
+/* Profile/contact links */
 
 .bio-links {
   display: flex !important;
   flex-wrap: wrap !important;
   align-items: center !important;
   gap: 0.25rem 0.55rem !important;
-  margin-top: 1.05rem !important;
+  margin-top: 1.08rem !important;
   margin-bottom: 0 !important;
   font-size: 0.92em !important;
   line-height: 1.45 !important;
 }
 
 .bio-links-label {
-  font-weight: 600 !important;
-  color: #333333 !important;
+  font-weight: 650 !important;
+  color: var(--site-text) !important;
 }
 
 .bio-links a {
@@ -330,124 +407,168 @@ body,
   white-space: nowrap !important;
   color: inherit !important;
   text-decoration: underline !important;
-  text-decoration-thickness: 0.06em !important;
-  text-underline-offset: 0.13em !important;
+  text-decoration-thickness: 0.055em !important;
+  text-underline-offset: 0.14em !important;
   text-decoration-color: currentColor !important;
   border-bottom: none !important;
   background-image: none !important;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 .bio-links a:hover,
 .bio-links a:focus-visible {
-  color: #1f5f9f !important;
-  text-decoration: underline !important;
+  color: var(--site-accent) !important;
   text-decoration-thickness: 0.11em !important;
-  text-underline-offset: 0.13em !important;
-  text-decoration-color: #1f5f9f !important;
-  border-bottom: none !important;
-  background-image: none !important;
+  text-decoration-color: var(--site-accent) !important;
 }
 
-.bio-links a:hover i,
-.bio-links a:focus-visible i {
-  color: #1f5f9f !important;
+.bio-links a:focus:not(:focus-visible),
+.bio-links a:active,
+.bio-links a:visited {
+  color: inherit !important;
+  text-decoration-thickness: 0.055em !important;
+  text-decoration-color: currentColor !important;
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .bio-links i {
   width: 0.95rem !important;
   text-align: center !important;
   font-size: 0.9em !important;
-  color: #555555 !important;
+  color: var(--site-muted) !important;
+}
+
+.bio-links a:hover i,
+.bio-links a:focus-visible i {
+  color: var(--site-accent) !important;
 }
 
 .bio-links span {
   margin: 0 0.05rem !important;
-  color: #777777 !important;
+  color: var(--site-muted-2) !important;
 }
 
 /* ============================================================
-   07. HOMEPAGE SECTIONS
-   Centred section titles and scroll offset for sticky nav
+   08. HOMEPAGE SECTIONS AND SECTION TITLES
    ============================================================ */
 
 .homepage-section,
 .page__content section {
-  scroll-margin-top: 4.4rem !important;
+  scroll-margin-top: 4.6rem !important;
 }
 
 .homepage-section {
-  margin-top: 1.7rem !important;
+  margin-top: 1.75rem !important;
 }
 
+/* Section titles: ---- TITLE ---- */
+
 .page__content h2 {
-  margin-top: 2.5rem !important;
-  margin-bottom: 1.15rem !important;
-  padding-bottom: 0.35rem !important;
-  border-bottom: 1px solid #e5e5e5 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.78rem !important;
+
+  margin-top: 2.85rem !important;
+  margin-bottom: 1.3rem !important;
+  padding-bottom: 0 !important;
+
+  border-bottom: none !important;
   text-align: center !important;
-  font-size: 1.3rem !important;
-  line-height: 1.25 !important;
-  font-weight: 600 !important;
-  letter-spacing: -0.01em !important;
+
+  font-size: 0.86rem !important;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: var(--site-text) !important;
+  white-space: nowrap !important;
+}
+
+.page__content h2::before,
+.page__content h2::after {
+  content: "" !important;
+  display: block !important;
+  flex: 1 0 1.6rem !important;
+  min-width: 1.6rem !important;
+  max-width: 315px !important;
+  border-top: 1px solid var(--site-rule) !important;
 }
 
 .page__content h3 {
-  margin-top: 1.35rem !important;
-  margin-bottom: 0.7rem !important;
-  text-align: center !important;
-  font-size: 1rem !important;
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.6rem !important;
+  text-align: left !important;
+  font-size: 0.93rem !important;
   line-height: 1.3 !important;
-  font-weight: 600 !important;
+  font-weight: 650 !important;
+  color: var(--site-text) !important;
 }
 
 /* ============================================================
-   08. NORMAL PAGE LINKS
-   Links inherit text colour and are identified by underline
+   09. NORMAL PAGE LINKS
    ============================================================ */
 
 .page__content a {
   color: inherit !important;
   text-decoration: underline !important;
-  text-decoration-thickness: 0.06em !important;
-  text-underline-offset: 0.13em !important;
+  text-decoration-thickness: 0.055em !important;
+  text-underline-offset: 0.14em !important;
   text-decoration-color: currentColor !important;
   border-bottom: none !important;
   background-image: none !important;
-  transition: none !important;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 .page__content a:hover,
 .page__content a:focus-visible {
-  color: #1f5f9f !important;
+  color: var(--site-accent) !important;
   text-decoration: underline !important;
   text-decoration-thickness: 0.11em !important;
-  text-underline-offset: 0.13em !important;
-  text-decoration-color: #1f5f9f !important;
+  text-decoration-color: var(--site-accent) !important;
   border-bottom: none !important;
   background-image: none !important;
 }
 
-/* Navigation links must not inherit normal page-link underlines */
+.page__content a:focus:not(:focus-visible),
+.page__content a:active,
+.page__content a:visited {
+  color: inherit !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.055em !important;
+  text-underline-offset: 0.14em !important;
+  text-decoration-color: currentColor !important;
+}
+
+/* Navigation links must never inherit ordinary link behaviour */
 
 .page__content .section-nav a,
 .page__content .section-nav a:hover,
 .page__content .section-nav a:focus,
 .page__content .section-nav a:focus-visible,
 .page__content .section-nav a:active,
+.page__content .section-nav a:visited,
 .page__content .section-nav a.active-nav-link {
   text-decoration: none !important;
   text-decoration-thickness: 0 !important;
   text-underline-offset: 0 !important;
+  text-decoration-color: transparent !important;
   border: none !important;
   border-bottom: none !important;
-  outline: none !important;
   background-image: none !important;
-  box-shadow: none !important;
 }
 
 /* ============================================================
-   09. HEADING LINKS AND PAGE TITLE
-   Remove automatic heading anchors and hide internal page title
+   10. HEADING LINKS AND PAGE TITLE
    ============================================================ */
 
 .page__content .header-link,
@@ -477,7 +598,7 @@ body,
 .page__content h4 a,
 .page__content h5 a,
 .page__content h6 a {
-  color: #333333 !important;
+  color: var(--site-text) !important;
   text-decoration: none !important;
 }
 
@@ -497,60 +618,70 @@ body,
 }
 
 /* ============================================================
-   10. RESEARCH PROJECTS
-   Working papers and work-in-progress expandable abstracts
+   11. RESEARCH PROJECTS
    ============================================================ */
 
 .research-project {
-  margin-bottom: 1.2rem !important;
-  padding-bottom: 0.25rem !important;
+  margin-bottom: 1.25rem !important;
+  padding-bottom: 1.05rem !important;
+  border-bottom: 1px solid var(--site-rule-soft) !important;
+}
+
+#working-papers .research-project:last-of-type,
+#work-in-progress .research-project:last-of-type {
   border-bottom: none !important;
+  padding-bottom: 0.25rem !important;
 }
 
 .project-header {
-  color: #333333 !important;
-  line-height: 1.35 !important;
+  color: var(--site-text) !important;
+  line-height: 1.38 !important;
 }
 
 .project-title {
   display: block !important;
-  margin-bottom: 0.08rem !important;
+  margin-bottom: 0.13rem !important;
+  color: var(--site-text) !important;
+}
+
+.project-title strong {
+  font-weight: 700 !important;
 }
 
 .project-authors {
   display: block !important;
-  margin: 0.22rem 0 0 0 !important;
-  font-size: 0.95em !important;
+  margin: 0.24rem 0 0 0 !important;
+  font-size: 0.94em !important;
   font-weight: normal !important;
-  color: #555555 !important;
+  color: var(--site-muted) !important;
 }
 
 .project-status {
   display: block !important;
-  margin: 0.2rem 0 0 0 !important;
+  margin: 0.22rem 0 0 0 !important;
   font-size: 0.88em !important;
   font-weight: normal !important;
-  color: #666666 !important;
+  color: var(--site-muted) !important;
   font-style: italic !important;
 }
 
-/* Presentation, award, and media metadata */
+/* Award and media metadata */
 
 .project-meta {
   display: block !important;
-  margin: 0.26rem 0 0 0 !important;
+  margin: 0.28rem 0 0 0 !important;
   max-width: 900px !important;
   font-size: 0.86em !important;
   line-height: 1.45 !important;
   text-align: left !important;
-  color: #555555 !important;
+  color: var(--site-muted) !important;
 }
 
 .project-meta strong {
   display: inline !important;
   margin-right: 0.12rem !important;
-  color: #333333 !important;
-  font-weight: 600 !important;
+  color: var(--site-text) !important;
+  font-weight: 650 !important;
 }
 
 .project-meta-inline {
@@ -565,14 +696,14 @@ body,
 }
 
 .project-event-detail {
-  color: #666666 !important;
+  color: var(--site-muted) !important;
   white-space: normal !important;
 }
 
 .event-separator {
   display: inline-block !important;
   margin: 0 0.12rem !important;
-  color: #9a9a9a !important;
+  color: var(--site-muted-2) !important;
   font-weight: 300 !important;
 }
 
@@ -581,17 +712,19 @@ body,
 .abstract-toggle {
   display: block !important;
   width: fit-content !important;
-  margin: 0.38rem 0 0 0 !important;
+  margin: 0.42rem 0 0 0 !important;
   padding: 0 !important;
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
   background: transparent !important;
-  color: #333333 !important;
+  color: var(--site-muted) !important;
   font-family: inherit !important;
-  font-size: 0.86em !important;
-  font-weight: normal !important;
+  font-size: 0.82em !important;
+  font-weight: 650 !important;
   line-height: 1.35 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
   cursor: pointer !important;
   appearance: none !important;
   -webkit-appearance: none !important;
@@ -599,25 +732,25 @@ body,
 }
 
 .abstract-toggle::after {
-  content: "›";
+  content: "›" !important;
   display: inline-block !important;
-  margin-left: 0.25rem !important;
-  font-size: 1.25em !important;
+  margin-left: 0.28rem !important;
+  font-size: 1.35em !important;
   line-height: 0.8 !important;
-  font-weight: 700 !important;
-  color: #555555 !important;
-  transform: translateY(0.02rem) !important;
+  font-weight: 800 !important;
+  color: var(--site-muted) !important;
+  transform: translateY(0.035rem) !important;
 }
 
 .research-project.is-open .abstract-toggle::after {
-  content: "⌄";
-  font-size: 1.05em !important;
+  content: "⌄" !important;
+  font-size: 1.08em !important;
   transform: translateY(-0.02rem) !important;
 }
 
 .abstract-toggle:hover,
 .abstract-toggle:focus-visible {
-  color: #1f5f9f !important;
+  color: var(--site-accent) !important;
   text-decoration: none !important;
   border: none !important;
   outline: none !important;
@@ -627,11 +760,12 @@ body,
 
 .abstract-toggle:hover::after,
 .abstract-toggle:focus-visible::after {
-  color: #1f5f9f !important;
+  color: var(--site-accent) !important;
 }
 
-.abstract-toggle:focus,
+.abstract-toggle:focus:not(:focus-visible),
 .abstract-toggle:active {
+  color: var(--site-muted) !important;
   text-decoration: none !important;
   border: none !important;
   outline: none !important;
@@ -640,35 +774,45 @@ body,
 }
 
 .paper-link {
-  margin-left: 0.35rem !important;
+  margin-left: 0.4rem !important;
   font-size: 0.9em !important;
   font-weight: normal !important;
   white-space: nowrap !important;
   color: inherit !important;
   text-decoration: underline !important;
-  text-decoration-thickness: 0.06em !important;
-  text-underline-offset: 0.13em !important;
+  text-decoration-thickness: 0.055em !important;
+  text-underline-offset: 0.14em !important;
   text-decoration-color: currentColor !important;
   border-bottom: none !important;
   background-image: none !important;
-  transition: none !important;
 }
 
 .paper-link:hover,
 .paper-link:focus-visible {
-  color: #1f5f9f !important;
+  color: var(--site-accent) !important;
   text-decoration: underline !important;
   text-decoration-thickness: 0.11em !important;
-  text-decoration-color: #1f5f9f !important;
+  text-decoration-color: var(--site-accent) !important;
   border-bottom: none !important;
   background-image: none !important;
 }
 
+.paper-link:focus:not(:focus-visible),
+.paper-link:active,
+.paper-link:visited {
+  color: inherit !important;
+  text-decoration-thickness: 0.055em !important;
+  text-decoration-color: currentColor !important;
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .project-abstract {
   display: none !important;
-  margin: 0.7rem 0 0 0 !important;
-  padding-left: 0.75rem !important;
-  border-left: 2px solid #e5e5e5 !important;
+  margin: 0.78rem 0 0 0 !important;
+  padding-left: 0.82rem !important;
+  border-left: 2px solid var(--site-rule) !important;
 }
 
 .research-project.is-open .project-abstract {
@@ -676,11 +820,11 @@ body,
 }
 
 .project-abstract p {
-  color: #333333 !important;
+  color: var(--site-text) !important;
 }
 
 .project-abstract > p:first-child {
-  margin-bottom: 0.75rem !important;
+  margin-bottom: 0.78rem !important;
   text-align: justify !important;
   text-justify: inter-word !important;
 }
@@ -689,63 +833,78 @@ body,
   margin: 0.25rem 0 !important;
   font-size: 0.88em !important;
   line-height: 1.4 !important;
-  color: #555555 !important;
+  color: var(--site-muted) !important;
 }
 
 .project-classification strong {
-  color: #333333 !important;
-  font-weight: 600 !important;
+  color: var(--site-text) !important;
+  font-weight: 650 !important;
 }
 
 /* ============================================================
-   11. PUBLICATIONS
-   Compact publication entries with journal metadata inline
+   12. PUBLICATIONS
    ============================================================ */
 
 .publications-section h2 {
-  margin-bottom: 0.45rem !important;
+  margin-bottom: 1.1rem !important;
 }
 
 .publications-section h3 {
-  margin-top: 0.65rem !important;
-  margin-bottom: 0.35rem !important;
+  margin-top: 1.05rem !important;
+  margin-bottom: 0.48rem !important;
   padding-bottom: 0 !important;
   border-bottom: none !important;
   text-align: left !important;
-  font-size: 0.9rem !important;
+  font-size: 0.79rem !important;
   line-height: 1.3 !important;
-  font-weight: 600 !important;
-  color: #333333 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.09em !important;
+  text-transform: uppercase !important;
+  color: var(--site-text) !important;
 }
 
 .publications-section h2 + h3 {
-  margin-top: 0 !important;
+  margin-top: 0.1rem !important;
 }
 
 .publication-item {
   margin-top: 0 !important;
-  margin-bottom: 1.15rem !important;
+  margin-bottom: 1.05rem !important;
+  padding-bottom: 0.95rem !important;
+  border-bottom: 1px solid var(--site-rule-soft) !important;
+}
+
+.publication-item:last-of-type {
+  border-bottom: none !important;
 }
 
 .publication-title {
   margin-top: 0 !important;
-  margin-bottom: 0.12rem !important;
+  margin-bottom: 0.13rem !important;
   line-height: 1.35 !important;
 }
 
 .publication-title a {
   color: inherit !important;
   text-decoration: underline !important;
-  text-decoration-thickness: 0.06em !important;
-  text-underline-offset: 0.13em !important;
+  text-decoration-thickness: 0.055em !important;
+  text-underline-offset: 0.14em !important;
   text-decoration-color: currentColor !important;
 }
 
 .publication-title a:hover,
 .publication-title a:focus-visible {
-  color: #1f5f9f !important;
+  color: var(--site-accent) !important;
   text-decoration-thickness: 0.11em !important;
-  text-decoration-color: #1f5f9f !important;
+  text-decoration-color: var(--site-accent) !important;
+}
+
+.publication-title a:focus:not(:focus-visible),
+.publication-title a:active,
+.publication-title a:visited {
+  color: inherit !important;
+  text-decoration-thickness: 0.055em !important;
+  text-decoration-color: currentColor !important;
 }
 
 .publication-meta {
@@ -753,14 +912,14 @@ body,
   margin-bottom: 0.25rem !important;
   font-size: 0.95em !important;
   line-height: 1.4 !important;
-  color: #555555 !important;
+  color: var(--site-muted) !important;
 }
 
 .publication-note {
   margin-top: 0.15rem !important;
   font-size: 0.9em !important;
   line-height: 1.4 !important;
-  color: #666666 !important;
+  color: var(--site-muted) !important;
 }
 
 .publication-coverage {
@@ -768,13 +927,104 @@ body,
 }
 
 .section-end-spacer {
-  height: 35vh !important;
+  height: 34vh !important;
 }
 
 /* ============================================================
-   12. PRESENTATION AND AWARD IMAGES
-   Kept for legacy figures if used elsewhere
+   13. SELECTED PRESENTATIONS
    ============================================================ */
+
+.presentations-section {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.presentation-item {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 1.02rem !important;
+  padding-bottom: 0.9rem !important;
+  border-bottom: 1px solid var(--site-rule-soft) !important;
+}
+
+.presentation-title {
+  display: block !important;
+  margin-bottom: 0.18rem !important;
+  color: var(--site-text) !important;
+  font-size: 0.98em !important;
+  line-height: 1.35 !important;
+}
+
+.presentation-title strong {
+  font-weight: 700 !important;
+}
+
+.presentation-meta {
+  display: block !important;
+  color: var(--site-muted) !important;
+  font-size: 0.9em !important;
+  line-height: 1.4 !important;
+}
+
+.presentation-photo-strip {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 0.78rem !important;
+  margin-top: 1.35rem !important;
+  padding-top: 0.45rem !important;
+}
+
+.presentation-photo,
+.page__content .presentation-photo {
+  display: block !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  border: 1px solid var(--site-rule-soft) !important;
+  background: var(--site-surface-soft) !important;
+  box-shadow: 0 6px 16px var(--site-photo-shadow) !important;
+  cursor: zoom-in !important;
+}
+
+.presentation-photo img,
+.presentation-photo-strip img {
+  display: block !important;
+  width: 100% !important;
+  height: 155px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 5px !important;
+  background: var(--site-surface-soft) !important;
+  transform: scale(1) !important;
+}
+
+.presentation-photo:hover,
+.presentation-photo:focus-visible {
+  border-color: var(--site-accent) !important;
+  box-shadow: 0 9px 22px var(--site-photo-shadow) !important;
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+.presentation-photo:hover img,
+.presentation-photo:focus-visible img {
+  transform: scale(1.025) !important;
+}
+
+.presentation-photo:focus:not(:focus-visible),
+.presentation-photo:active,
+.presentation-photo:visited {
+  color: inherit !important;
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: 0 6px 16px var(--site-photo-shadow) !important;
+}
+
+/* Legacy presentation figures, if used elsewhere */
 
 .presentation-figure {
   margin: 0 auto 2rem auto !important;
@@ -792,13 +1042,12 @@ body,
 .presentation-figure figcaption {
   margin-top: 0.4rem !important;
   font-size: 0.75rem !important;
-  color: #666666 !important;
+  color: var(--site-muted) !important;
   text-align: left !important;
 }
 
 /* ============================================================
-   13. FOOTER
-   Remove dock appearance and keep centred copyright sentence
+   14. FOOTER
    ============================================================ */
 
 .page__footer {
@@ -806,7 +1055,7 @@ body,
   border-top: none !important;
   margin-top: 3rem !important;
   padding: 1.5rem 0 1rem 0 !important;
-  color: #666666 !important;
+  color: var(--site-muted) !important;
 }
 
 .page__footer footer {
@@ -821,8 +1070,8 @@ body,
   display: block !important;
   margin: 0 auto !important;
   text-align: center !important;
-  font-size: 0.75rem !important;
-  color: #666666 !important;
+  font-size: 0.73rem !important;
+  color: var(--site-muted) !important;
 }
 
 .page__footer-follow {
@@ -830,98 +1079,20 @@ body,
 }
 
 /* ============================================================
-   14. DARK MODE
-   Backgrounds, headings, navigation, bio, research projects
+   15. DARK MODE STRUCTURAL FIXES
    ============================================================ */
 
 html.dark-mode,
 html.dark-mode body {
-  background: #1f1f1f !important;
-  color: #e6e6e6 !important;
+  background: var(--site-bg) !important;
+  color: var(--site-text) !important;
 }
 
 html.dark-mode .page,
 html.dark-mode .archive,
 html.dark-mode .page__footer {
-  background: #1f1f1f !important;
-  color: #e6e6e6 !important;
-}
-
-html.dark-mode .site-hero h1,
-html.dark-mode .page__title,
-html.dark-mode .page__content h1,
-html.dark-mode .page__content h2,
-html.dark-mode .page__content h3,
-html.dark-mode .page__content h4,
-html.dark-mode .page__content h5,
-html.dark-mode .page__content h6 {
-  color: #ffffff !important;
-}
-
-html.dark-mode .site-hero p {
-  color: #cccccc !important;
-}
-
-html.dark-mode #dark-mode-toggle,
-html.dark-mode #dark-mode-toggle:hover,
-html.dark-mode #dark-mode-toggle:focus,
-html.dark-mode #dark-mode-toggle:focus-visible,
-html.dark-mode #dark-mode-toggle:active {
-  background: #1f1f1f !important;
-  color: #ffffff !important;
-  border-color: #555555 !important;
-  outline: 0 !important;
-  box-shadow: none !important;
-}
-
-html.dark-mode .section-nav {
-  background: rgba(31, 31, 31, 0.97) !important;
-  border-top-color: #444444 !important;
-  border-bottom-color: #444444 !important;
-}
-
-html.dark-mode .section-nav a,
-html.dark-mode .section-nav a:hover,
-html.dark-mode .section-nav a:focus,
-html.dark-mode .section-nav a:focus-visible,
-html.dark-mode .section-nav a:active,
-html.dark-mode .page__content .section-nav a,
-html.dark-mode .page__content .section-nav a:hover,
-html.dark-mode .page__content .section-nav a:focus,
-html.dark-mode .page__content .section-nav a:focus-visible,
-html.dark-mode .page__content .section-nav a:active {
-  color: #ffffff !important;
-  text-decoration: none !important;
-  border: none !important;
-  border-bottom: none !important;
-  outline: none !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  transition: none !important;
-}
-
-html.dark-mode .section-nav a:hover,
-html.dark-mode .section-nav a:focus,
-html.dark-mode .section-nav a:focus-visible,
-html.dark-mode .section-nav a:active,
-html.dark-mode .page__content .section-nav a:hover,
-html.dark-mode .page__content .section-nav a:focus,
-html.dark-mode .page__content .section-nav a:focus-visible,
-html.dark-mode .page__content .section-nav a:active {
-  background: #343434 !important;
-}
-
-html.dark-mode .section-nav a.active-nav-link,
-html.dark-mode .page__content .section-nav a.active-nav-link {
-  color: #ffffff !important;
-  background: #3a3a3a !important;
-  text-decoration: none !important;
-  border: none !important;
-  border-bottom: none !important;
-  outline: none !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  font-weight: 500 !important;
+  background: transparent !important;
+  color: var(--site-text) !important;
 }
 
 html.dark-mode .page__content,
@@ -929,180 +1100,122 @@ html.dark-mode .page__content p,
 html.dark-mode .page__content li,
 html.dark-mode .page__content td,
 html.dark-mode .page__content th {
-  color: #e6e6e6 !important;
-}
-
-html.dark-mode .page__content a {
-  color: inherit !important;
-  text-decoration: underline !important;
-  text-decoration-thickness: 0.06em !important;
-  text-underline-offset: 0.13em !important;
-  text-decoration-color: currentColor !important;
-  border-bottom: none !important;
-  background-image: none !important;
-}
-
-html.dark-mode .page__content a:hover,
-html.dark-mode .page__content a:focus-visible {
-  color: #8ab4f8 !important;
-  text-decoration: underline !important;
-  text-decoration-thickness: 0.11em !important;
-  text-decoration-color: #8ab4f8 !important;
-}
-
-html.dark-mode .page__content .section-nav a,
-html.dark-mode .page__content .section-nav a:hover,
-html.dark-mode .page__content .section-nav a:focus,
-html.dark-mode .page__content .section-nav a:focus-visible,
-html.dark-mode .page__content .section-nav a:active,
-html.dark-mode .page__content .section-nav a.active-nav-link {
-  text-decoration: none !important;
-  text-decoration-thickness: 0 !important;
-  text-underline-offset: 0 !important;
-  border: none !important;
-  border-bottom: none !important;
-  outline: none !important;
-  background-image: none !important;
-  box-shadow: none !important;
-}
-
-html.dark-mode .page__content h2 {
-  border-bottom-color: #444444 !important;
-}
-
-html.dark-mode .bio-links-label {
-  color: #d6d6d6 !important;
-}
-
-html.dark-mode .bio-links i {
-  color: #d6d6d6 !important;
-}
-
-html.dark-mode .bio-links a:hover,
-html.dark-mode .bio-links a:focus-visible {
-  color: #8ab4f8 !important;
-  text-decoration-color: #8ab4f8 !important;
-}
-
-html.dark-mode .bio-links a:hover i,
-html.dark-mode .bio-links a:focus-visible i {
-  color: #8ab4f8 !important;
-}
-
-html.dark-mode .bio-links span {
-  color: #b8b8b8 !important;
-}
-
-html.dark-mode .project-header,
-html.dark-mode .research-project,
-html.dark-mode .abstract-toggle,
-html.dark-mode .abstract-toggle::after {
-  color: #ffffff !important;
-}
-
-html.dark-mode .abstract-toggle:hover,
-html.dark-mode .abstract-toggle:focus-visible,
-html.dark-mode .abstract-toggle:hover::after,
-html.dark-mode .abstract-toggle:focus-visible::after {
-  color: #8ab4f8 !important;
-}
-
-html.dark-mode .project-authors {
-  color: #d6d6d6 !important;
-}
-
-html.dark-mode .project-status {
-  color: #c8c8c8 !important;
-}
-
-html.dark-mode .project-meta {
-  color: #cccccc !important;
-}
-
-html.dark-mode .project-meta strong {
-  color: #ffffff !important;
-}
-
-html.dark-mode .project-event-detail {
-  color: #c8c8c8 !important;
-}
-
-html.dark-mode .event-separator {
-  color: #777777 !important;
-}
-
-html.dark-mode .paper-link,
-html.dark-mode .paper-link:focus,
-html.dark-mode .paper-link:active {
-  color: inherit !important;
-  text-decoration: underline !important;
-  text-decoration-color: currentColor !important;
-}
-
-html.dark-mode .paper-link:hover,
-html.dark-mode .paper-link:focus-visible {
-  color: #8ab4f8 !important;
-  text-decoration-color: #8ab4f8 !important;
-}
-
-html.dark-mode .project-abstract {
-  border-left-color: #555555 !important;
-}
-
-html.dark-mode .project-abstract p {
-  color: #e6e6e6 !important;
-}
-
-html.dark-mode .project-classification {
-  color: #cccccc !important;
-}
-
-html.dark-mode .project-classification strong {
-  color: #ffffff !important;
-}
-
-html.dark-mode .publication-meta {
-  color: #d6d6d6 !important;
-}
-
-html.dark-mode .publication-note {
-  color: #c8c8c8 !important;
-}
-
-html.dark-mode .publication-title a:hover,
-html.dark-mode .publication-title a:focus-visible {
-  color: #8ab4f8 !important;
-  text-decoration-color: #8ab4f8 !important;
-}
-
-html.dark-mode .presentation-figure figcaption,
-html.dark-mode .page__footer,
-html.dark-mode .page__footer-copyright {
-  color: #b8b8b8 !important;
+  color: var(--site-text) !important;
 }
 
 html.dark-mode code,
 html.dark-mode pre {
-  background: #2a2a2a !important;
-  color: #f0f0f0 !important;
+  background: var(--site-surface-soft) !important;
+  color: var(--site-text) !important;
 }
 
 html.dark-mode table,
 html.dark-mode th,
 html.dark-mode td {
-  border-color: #444444 !important;
-}
-
-html.dark-mode .publications-section h3 {
-  color: #ffffff !important;
+  border-color: var(--site-rule) !important;
 }
 
 /* ============================================================
-   15. MOBILE LAYOUT
-   Stack bio and photo cleanly on small screens
+   16. TOUCH-SCREEN LINK AND NAVIGATION FIXES
+   Prevent stale tap-hover highlights on mobile devices
+   ============================================================ */
+
+@media (hover: none), (pointer: coarse) {
+  .page__content a:hover:not(.active-nav-link),
+  .page__content a:focus:not(.active-nav-link),
+  .page__content a:active:not(.active-nav-link),
+  .bio-links a:hover,
+  .bio-links a:focus,
+  .bio-links a:active,
+  .paper-link:hover,
+  .paper-link:focus,
+  .paper-link:active,
+  .publication-title a:hover,
+  .publication-title a:focus,
+  .publication-title a:active,
+  .publication-meta a:hover,
+  .publication-meta a:focus,
+  .publication-meta a:active,
+  .project-meta a:hover,
+  .project-meta a:focus,
+  .project-meta a:active,
+  .project-authors a:hover,
+  .project-authors a:focus,
+  .project-authors a:active {
+    color: inherit !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-bottom: none !important;
+    background-image: none !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 0.055em !important;
+    text-underline-offset: 0.14em !important;
+    text-decoration-color: currentColor !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  .section-nav a:hover:not(.active-nav-link),
+  .section-nav a:focus:not(.active-nav-link),
+  .section-nav a:active:not(.active-nav-link),
+  .page__content .section-nav a:hover:not(.active-nav-link),
+  .page__content .section-nav a:focus:not(.active-nav-link),
+  .page__content .section-nav a:active:not(.active-nav-link) {
+    color: var(--site-text) !important;
+    background: transparent !important;
+    text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .section-nav a.active-nav-link,
+  .page__content .section-nav a.active-nav-link {
+    color: var(--site-text) !important;
+    background: var(--site-nav-active) !important;
+    font-weight: 650 !important;
+  }
+
+  .abstract-toggle:hover,
+  .abstract-toggle:focus,
+  .abstract-toggle:active {
+    color: var(--site-muted) !important;
+    background: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .abstract-toggle:hover::after,
+  .abstract-toggle:focus::after,
+  .abstract-toggle:active::after {
+    color: var(--site-muted) !important;
+  }
+
+  .presentation-photo:hover,
+  .presentation-photo:focus,
+  .presentation-photo:active {
+    border-color: var(--site-rule-soft) !important;
+    box-shadow: 0 6px 16px var(--site-photo-shadow) !important;
+  }
+
+  .presentation-photo:hover img,
+  .presentation-photo:focus img,
+  .presentation-photo:active img {
+    transform: scale(1) !important;
+  }
+}
+
+/* ============================================================
+   17. MOBILE LAYOUT
    ============================================================ */
 
 @media (max-width: 64em) {
+  html {
+    font-size: 19px !important;
+  }
+
   .page,
   .page__inner-wrap,
   .page__content {
@@ -1110,16 +1223,16 @@ html.dark-mode .publications-section h3 {
     max-width: none !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-left: 0.65rem !important;
-    padding-right: 0.65rem !important;
+    padding-left: 0.68rem !important;
+    padding-right: 0.68rem !important;
   }
 
   .site-hero {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-    margin: 1.15rem auto 0.75rem auto !important;
-    padding: 2.05rem 0.45rem 0.4rem 0.45rem !important;
+    margin: 1.2rem auto 0.78rem auto !important;
+    padding: 2.05rem 0.45rem 0.42rem 0.45rem !important;
     text-align: center !important;
     overflow: visible !important;
   }
@@ -1130,11 +1243,11 @@ html.dark-mode .publications-section h3 {
     max-width: calc(100vw - 1.6rem) !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    font-size: clamp(1.28rem, 6.2vw, 1.55rem) !important;
+    font-size: clamp(1.28rem, 6.1vw, 1.58rem) !important;
     line-height: 1.12 !important;
     white-space: nowrap !important;
     text-align: center !important;
-    letter-spacing: -0.025em !important;
+    letter-spacing: -0.03em !important;
   }
 
   .site-hero p {
@@ -1143,7 +1256,7 @@ html.dark-mode .publications-section h3 {
     max-width: calc(100vw - 1.6rem) !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    font-size: clamp(0.78rem, 4vw, 0.9rem) !important;
+    font-size: clamp(0.78rem, 3.8vw, 0.9rem) !important;
     line-height: 1.3 !important;
     white-space: nowrap !important;
     text-align: center !important;
@@ -1164,16 +1277,22 @@ html.dark-mode .publications-section h3 {
     margin-left: calc(50% - 50vw) !important;
     margin-right: 0 !important;
     margin-bottom: 1.35rem !important;
-    gap: 0.28rem 0.5rem !important;
-    font-size: 0.74rem !important;
-    padding: 0.52rem 0.45rem !important;
+    gap: 0.26rem 0.42rem !important;
+    font-size: 0.61rem !important;
+    letter-spacing: 0.075em !important;
+    padding: 0.52rem 0.44rem !important;
+  }
+
+  .section-nav a,
+  .page__content .section-nav a {
+    padding: 0.2rem 0.28rem !important;
   }
 
   .bio-section {
     display: flex !important;
     flex-direction: column-reverse !important;
     align-items: center !important;
-    gap: 1.1rem !important;
+    gap: 1.15rem !important;
     text-align: left !important;
     margin-top: 1.4rem !important;
   }
@@ -1200,7 +1319,7 @@ html.dark-mode .publications-section h3 {
   }
 
   .bio-links {
-    gap: 0.2rem 0.5rem !important;
+    gap: 0.22rem 0.5rem !important;
     font-size: 0.9em !important;
   }
 
@@ -1208,12 +1327,29 @@ html.dark-mode .publications-section h3 {
     display: none !important;
   }
 
+  .homepage-section,
+  .page__content section {
+    scroll-margin-top: 4.25rem !important;
+  }
+
   .page__content h2 {
-    font-size: 1.18rem !important;
+    gap: 0.46rem !important;
+    font-size: clamp(0.66rem, 3.25vw, 0.82rem) !important;
+    letter-spacing: 0.105em !important;
+    margin-top: 2.35rem !important;
+    margin-bottom: 1.08rem !important;
+    white-space: nowrap !important;
+  }
+
+  .page__content h2::before,
+  .page__content h2::after {
+    flex: 1 0 0.95rem !important;
+    min-width: 0.95rem !important;
+    max-width: none !important;
   }
 
   .page__content h3 {
-    font-size: 0.98rem !important;
+    font-size: 0.9rem !important;
   }
 
   .project-meta {
@@ -1222,16 +1358,18 @@ html.dark-mode .publications-section h3 {
     line-height: 1.45 !important;
   }
 
-  .event-separator {
-    margin: 0 0.12rem !important;
-  }
-
-  .project-event-detail {
-    white-space: normal !important;
-  }
-
   .project-abstract > p:first-child {
     text-align: left !important;
+  }
+
+  .presentation-photo-strip {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+
+  .presentation-photo img,
+  .presentation-photo-strip img {
+    height: 195px !important;
   }
 
   .section-end-spacer {
@@ -1239,697 +1377,25 @@ html.dark-mode .publications-section h3 {
   }
 }
 
-/* ============================================================
-   16. TOUCH-SCREEN NAVIGATION FIX
-   Prevent stale tap-hover highlights on mobile devices
-   ============================================================ */
-
-@media (hover: none), (pointer: coarse) {
-  .section-nav a:hover:not(.active-nav-link),
-  .section-nav a:focus:not(.active-nav-link),
-  .section-nav a:focus-visible:not(.active-nav-link),
-  .section-nav a:active:not(.active-nav-link),
-  .page__content .section-nav a:hover:not(.active-nav-link),
-  .page__content .section-nav a:focus:not(.active-nav-link),
-  .page__content .section-nav a:focus-visible:not(.active-nav-link),
-  .page__content .section-nav a:active:not(.active-nav-link) {
-    color: #333333 !important;
-    background: transparent !important;
-    text-decoration: none !important;
-    border: none !important;
-    border-bottom: none !important;
-    outline: none !important;
-    background-image: none !important;
-    box-shadow: none !important;
+@media (max-width: 380px) {
+  .section-nav {
+    font-size: 0.56rem !important;
+    gap: 0.22rem 0.34rem !important;
   }
 
-  .section-nav a.active-nav-link,
-  .page__content .section-nav a.active-nav-link {
-    color: #111111 !important;
-    background: #eeeeee !important;
-    font-weight: 500 !important;
-  }
-
-  html.dark-mode .section-nav a:hover:not(.active-nav-link),
-  html.dark-mode .section-nav a:focus:not(.active-nav-link),
-  html.dark-mode .section-nav a:focus-visible:not(.active-nav-link),
-  html.dark-mode .section-nav a:active:not(.active-nav-link),
-  html.dark-mode .page__content .section-nav a:hover:not(.active-nav-link),
-  html.dark-mode .page__content .section-nav a:focus:not(.active-nav-link),
-  html.dark-mode .page__content .section-nav a:focus-visible:not(.active-nav-link),
-  html.dark-mode .page__content .section-nav a:active:not(.active-nav-link) {
-    color: #ffffff !important;
-    background: transparent !important;
-    text-decoration: none !important;
-    border: none !important;
-    border-bottom: none !important;
-    outline: none !important;
-    background-image: none !important;
-    box-shadow: none !important;
-  }
-
-  html.dark-mode .section-nav a.active-nav-link,
-  html.dark-mode .page__content .section-nav a.active-nav-link {
-    color: #ffffff !important;
-    background: #3a3a3a !important;
-    font-weight: 500 !important;
-  }
-}
-
-/* ============================================================
-   17. LINK FOCUS AND VISITED-STATE RESET
-   Prevent ordinary links from remaining visually highlighted after click/tap
-   ============================================================ */
-
-.page__content a:not(.active-nav-link):visited,
-.page__content a:not(.active-nav-link):focus,
-.page__content a:not(.active-nav-link):active,
-.bio-links a:visited,
-.bio-links a:focus,
-.bio-links a:active,
-.paper-link:visited,
-.paper-link:focus,
-.paper-link:active,
-.publication-title a:visited,
-.publication-title a:focus,
-.publication-title a:active,
-.publication-meta a:visited,
-.publication-meta a:focus,
-.publication-meta a:active,
-.project-meta a:visited,
-.project-meta a:focus,
-.project-meta a:active,
-.project-authors a:visited,
-.project-authors a:focus,
-.project-authors a:active {
-  color: inherit !important;
-  background: transparent !important;
-  background-color: transparent !important;
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important;
-  border-bottom: none !important;
-  background-image: none !important;
-  -webkit-tap-highlight-color: transparent !important;
-}
-
-.page__content a:not(.active-nav-link):focus,
-.page__content a:not(.active-nav-link):active,
-.page__content a:not(.active-nav-link):visited,
-.bio-links a:focus,
-.bio-links a:active,
-.bio-links a:visited,
-.paper-link:focus,
-.paper-link:active,
-.paper-link:visited,
-.publication-title a:focus,
-.publication-title a:active,
-.publication-title a:visited,
-.publication-meta a:focus,
-.publication-meta a:active,
-.publication-meta a:visited,
-.project-meta a:focus,
-.project-meta a:active,
-.project-meta a:visited,
-.project-authors a:focus,
-.project-authors a:active,
-.project-authors a:visited {
-  text-decoration: underline !important;
-  text-decoration-thickness: 0.06em !important;
-  text-underline-offset: 0.13em !important;
-  text-decoration-color: currentColor !important;
-}
-
-@media (hover: none), (pointer: coarse) {
-  .page__content a:hover:not(.active-nav-link),
-  .page__content a:focus:not(.active-nav-link),
-  .page__content a:active:not(.active-nav-link) {
-    color: inherit !important;
-    background: transparent !important;
-    background-color: transparent !important;
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
-    border-bottom: none !important;
-    background-image: none !important;
-    -webkit-tap-highlight-color: transparent !important;
-  }
-
-  .bio-links a:hover,
-  .bio-links a:focus,
-  .bio-links a:active,
-  .paper-link:hover,
-  .paper-link:focus,
-  .paper-link:active,
-  .publication-title a:hover,
-  .publication-title a:focus,
-  .publication-title a:active,
-  .publication-meta a:hover,
-  .publication-meta a:focus,
-  .publication-meta a:active,
-  .project-meta a:hover,
-  .project-meta a:focus,
-  .project-meta a:active,
-  .project-authors a:hover,
-  .project-authors a:focus,
-  .project-authors a:active {
-    text-decoration: underline !important;
-    text-decoration-thickness: 0.06em !important;
-    text-underline-offset: 0.13em !important;
-    text-decoration-color: currentColor !important;
-  }
-}
-
-/* ============================================================
-   18. CV NAVIGATION LINK RESET
-   Keep hover highlight, remove persistent post-click highlight
-   ============================================================ */
-
-.section-nav a.nav-cv-link:hover,
-.page__content .section-nav a.nav-cv-link:hover {
-  color: #333333 !important;
-  background: #f2f2f2 !important;
-  text-decoration: none !important;
-  border: none !important;
-  border-bottom: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  background-image: none !important;
-}
-
-.section-nav a.nav-cv-link:focus,
-.section-nav a.nav-cv-link:focus-visible,
-.section-nav a.nav-cv-link:active,
-.page__content .section-nav a.nav-cv-link:focus,
-.page__content .section-nav a.nav-cv-link:focus-visible,
-.page__content .section-nav a.nav-cv-link:active {
-  color: #333333 !important;
-  background: transparent !important;
-  text-decoration: none !important;
-  border: none !important;
-  border-bottom: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  background-image: none !important;
-}
-
-html.dark-mode .section-nav a.nav-cv-link:hover,
-html.dark-mode .page__content .section-nav a.nav-cv-link:hover {
-  color: #ffffff !important;
-  background: #343434 !important;
-  text-decoration: none !important;
-  border: none !important;
-  border-bottom: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  background-image: none !important;
-}
-
-html.dark-mode .section-nav a.nav-cv-link:focus,
-html.dark-mode .section-nav a.nav-cv-link:focus-visible,
-html.dark-mode .section-nav a.nav-cv-link:active,
-html.dark-mode .page__content .section-nav a.nav-cv-link:focus,
-html.dark-mode .page__content .section-nav a.nav-cv-link:focus-visible,
-html.dark-mode .page__content .section-nav a.nav-cv-link:active {
-  color: #ffffff !important;
-  background: transparent !important;
-  text-decoration: none !important;
-  border: none !important;
-  border-bottom: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  background-image: none !important;
-}
-
-/* ============================================================
-   19. FINAL NON-NAV LINK HOVER STATES
-   Blue hover for ordinary content links and abstract toggles
-   ============================================================ */
-
-.page__content a:hover:not(.active-nav-link):not(.nav-cv-link),
-.bio-links a:hover,
-.paper-link:hover,
-.publication-title a:hover,
-.publication-meta a:hover,
-.project-meta a:hover,
-.project-authors a:hover {
-  color: #1f5f9f !important;
-  text-decoration: underline !important;
-  text-decoration-thickness: 0.11em !important;
-  text-underline-offset: 0.13em !important;
-  text-decoration-color: #1f5f9f !important;
-  border: none !important;
-  border-bottom: none !important;
-  background: transparent !important;
-  background-image: none !important;
-  box-shadow: none !important;
-}
-
-.bio-links a:hover i {
-  color: #1f5f9f !important;
-}
-
-.abstract-toggle:hover,
-.abstract-toggle:focus-visible {
-  color: #1f5f9f !important;
-  text-decoration: none !important;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-.abstract-toggle:hover::after,
-.abstract-toggle:focus-visible::after {
-  color: #1f5f9f !important;
-}
-
-/* Restore navigation behaviour after the general link-hover rule */
-
-.page__content .section-nav a:hover,
-.page__content .section-nav a:focus,
-.page__content .section-nav a:focus-visible,
-.page__content .section-nav a:active {
-  color: #333333 !important;
-  background: #f2f2f2 !important;
-  text-decoration: none !important;
-  text-decoration-thickness: 0 !important;
-  border: none !important;
-  border-bottom: none !important;
-  outline: none !important;
-  background-image: none !important;
-  box-shadow: none !important;
-}
-
-.page__content .section-nav a.active-nav-link {
-  color: #111111 !important;
-  background: #eeeeee !important;
-  text-decoration: none !important;
-  font-weight: 500 !important;
-}
-
-html.dark-mode .page__content a:hover:not(.active-nav-link):not(.nav-cv-link),
-html.dark-mode .bio-links a:hover,
-html.dark-mode .paper-link:hover,
-html.dark-mode .publication-title a:hover,
-html.dark-mode .publication-meta a:hover,
-html.dark-mode .project-meta a:hover,
-html.dark-mode .project-authors a:hover {
-  color: #8ab4f8 !important;
-  text-decoration-color: #8ab4f8 !important;
-}
-
-html.dark-mode .bio-links a:hover i {
-  color: #8ab4f8 !important;
-}
-
-html.dark-mode .abstract-toggle:hover,
-html.dark-mode .abstract-toggle:focus-visible,
-html.dark-mode .abstract-toggle:hover::after,
-html.dark-mode .abstract-toggle:focus-visible::after {
-  color: #8ab4f8 !important;
-}
-
-html.dark-mode .page__content .section-nav a:hover,
-html.dark-mode .page__content .section-nav a:focus,
-html.dark-mode .page__content .section-nav a:focus-visible,
-html.dark-mode .page__content .section-nav a:active {
-  color: #ffffff !important;
-  background: #343434 !important;
-  text-decoration: none !important;
-}
-
-html.dark-mode .page__content .section-nav a.active-nav-link {
-  color: #ffffff !important;
-  background: #3a3a3a !important;
-  font-weight: 500 !important;
-}
-
-/* ============================================================
-   20. NAVIGATION LINK COLOUR OVERRIDE
-   Keep navigation links neutral on hover, not blue
-   ============================================================ */
-
-.section-nav a:hover,
-.section-nav a:focus-visible,
-.section-nav a:active,
-.page__content .section-nav a:hover,
-.page__content .section-nav a:focus-visible,
-.page__content .section-nav a:active,
-.page__content .section-nav a:hover:not(.active-nav-link):not(.nav-cv-link),
-.page__content .section-nav a:focus-visible:not(.active-nav-link):not(.nav-cv-link),
-.page__content .section-nav a:active:not(.active-nav-link):not(.nav-cv-link) {
-  color: #333333 !important;
-  background: #f2f2f2 !important;
-  text-decoration: none !important;
-  text-decoration-thickness: 0 !important;
-  text-underline-offset: 0 !important;
-  text-decoration-color: transparent !important;
-  border: none !important;
-  border-bottom: none !important;
-  outline: none !important;
-  background-image: none !important;
-  box-shadow: none !important;
-}
-
-.section-nav a.active-nav-link,
-.page__content .section-nav a.active-nav-link {
-  color: #111111 !important;
-  background: #eeeeee !important;
-  text-decoration: none !important;
-  font-weight: 500 !important;
-}
-
-html.dark-mode .section-nav a:hover,
-html.dark-mode .section-nav a:focus-visible,
-html.dark-mode .section-nav a:active,
-html.dark-mode .page__content .section-nav a:hover,
-html.dark-mode .page__content .section-nav a:focus-visible,
-html.dark-mode .page__content .section-nav a:active,
-html.dark-mode .page__content .section-nav a:hover:not(.active-nav-link):not(.nav-cv-link),
-html.dark-mode .page__content .section-nav a:focus-visible:not(.active-nav-link):not(.nav-cv-link),
-html.dark-mode .page__content .section-nav a:active:not(.active-nav-link):not(.nav-cv-link) {
-  color: #ffffff !important;
-  background: #343434 !important;
-  text-decoration: none !important;
-  text-decoration-thickness: 0 !important;
-  text-underline-offset: 0 !important;
-  text-decoration-color: transparent !important;
-  border: none !important;
-  border-bottom: none !important;
-  outline: none !important;
-  background-image: none !important;
-  box-shadow: none !important;
-}
-
-html.dark-mode .section-nav a.active-nav-link,
-html.dark-mode .page__content .section-nav a.active-nav-link {
-  color: #ffffff !important;
-  background: #3a3a3a !important;
-  text-decoration: none !important;
-  font-weight: 500 !important;
-}
-
-/* ============================================================
-   21. SELECTED PRESENTATIONS
-   Compact conference entries with uncaptained photo strip
-   ============================================================ */
-
-.presentations-section {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.presentation-item {
-  display: block !important;
-  margin-bottom: 0.85rem !important;
-  padding-bottom: 0.75rem !important;
-  border-bottom: 1px solid #eeeeee !important;
-}
-
-.presentation-title {
-  display: block !important;
-  margin-bottom: 0.18rem !important;
-  color: #333333 !important;
-  font-size: 0.98em !important;
-  line-height: 1.35 !important;
-}
-
-.presentation-meta {
-  display: block !important;
-  color: #555555 !important;
-  font-size: 0.9em !important;
-  line-height: 1.4 !important;
-}
-
-.presentation-photo-strip {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: 0.75rem !important;
-  margin-top: 1.4rem !important;
-}
-
-.presentation-photo-strip img {
-  display: block !important;
-  width: 100% !important;
-  height: 155px !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  border-radius: 5px !important;
-  background: #f5f5f5 !important;
-}
-
-html.dark-mode .presentation-item {
-  border-bottom-color: #3a3a3a !important;
-}
-
-html.dark-mode .presentation-title {
-  color: #ffffff !important;
-}
-
-html.dark-mode .presentation-meta {
-  color: #cccccc !important;
-}
-
-html.dark-mode .presentation-photo-strip img {
-  background: #2a2a2a !important;
-}
-
-@media (max-width: 64em) {
-  .presentation-photo-strip {
-    grid-template-columns: minmax(0, 1fr) !important;
-    gap: 0.65rem !important;
-  }
-
-  .presentation-photo-strip img {
-    height: 190px !important;
-  }
-}
-
-/* ============================================================
-   22. PRESENTATIONS WIDTH FIX
-   Make selected presentations use the same width as other sections
-   ============================================================ */
-
-.presentations-section {
-  width: 100% !important;
-  max-width: none !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.presentation-item {
-  width: 100% !important;
-}
-
-.presentation-photo-strip {
-  width: 100% !important;
-}
-
-/* ============================================================
-   23. SECTION TITLES AND CONTENT SEPARATORS
-   Framed section headings and clearer separation between entries
-   ============================================================ */
-
-/* Section titles: ---- Title ---- */
-
-.page__content h2 {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 0.85rem !important;
-
-  margin-top: 2.7rem !important;
-  margin-bottom: 1.25rem !important;
-  padding-bottom: 0 !important;
-
-  border-bottom: none !important;
-  text-align: center !important;
-
-  font-size: 1.28rem !important;
-  line-height: 1.25 !important;
-  font-weight: 600 !important;
-  letter-spacing: -0.01em !important;
-  color: #333333 !important;
-}
-
-.page__content h2::before,
-.page__content h2::after {
-  content: "" !important;
-  display: block !important;
-  flex: 1 1 0 !important;
-  max-width: 310px !important;
-  border-top: 1px solid #e2e2e2 !important;
-}
-
-/* Keep section heading lines proportionate on narrow screens */
-
-@media (max-width: 64em) {
   .page__content h2 {
-    gap: 0.55rem !important;
-    font-size: 1.12rem !important;
-    margin-top: 2.25rem !important;
-    margin-bottom: 1.05rem !important;
+    gap: 0.36rem !important;
+    font-size: clamp(0.58rem, 3.05vw, 0.72rem) !important;
+    letter-spacing: 0.085em !important;
   }
 
   .page__content h2::before,
   .page__content h2::after {
-    max-width: 90px !important;
-  }
-}
-
-/* Working papers and work-in-progress entries */
-
-#working-papers .research-project,
-#work-in-progress .research-project {
-  margin-bottom: 1.35rem !important;
-  padding-bottom: 1.05rem !important;
-  border-bottom: 1px solid #eeeeee !important;
-}
-
-#working-papers .research-project:last-of-type,
-#work-in-progress .research-project:last-of-type {
-  border-bottom: none !important;
-  padding-bottom: 0.25rem !important;
-}
-
-/* Slightly increase title-to-metadata clarity */
-
-.project-title {
-  margin-bottom: 0.12rem !important;
-}
-
-.project-authors,
-.project-status,
-.project-meta {
-  margin-top: 0.25rem !important;
-}
-
-/* Publications entries */
-
-.publications-section h3 {
-  margin-top: 1.05rem !important;
-  margin-bottom: 0.45rem !important;
-  padding-bottom: 0 !important;
-  border-bottom: none !important;
-  text-align: left !important;
-  font-size: 0.93rem !important;
-  line-height: 1.3 !important;
-  font-weight: 600 !important;
-}
-
-.publications-section h2 + h3 {
-  margin-top: 0.2rem !important;
-}
-
-.publication-item {
-  margin-bottom: 1.1rem !important;
-  padding-bottom: 0.95rem !important;
-  border-bottom: 1px solid #eeeeee !important;
-}
-
-.publication-item:last-of-type {
-  border-bottom: none !important;
-}
-
-/* Selected presentations entries */
-
-.presentations-section {
-  width: 100% !important;
-  max-width: none !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.presentation-item {
-  display: block !important;
-  width: 100% !important;
-  margin-bottom: 1.05rem !important;
-  padding-bottom: 0.9rem !important;
-  border-bottom: 1px solid #eeeeee !important;
-}
-
-.presentation-item:last-of-type {
-  border-bottom: none !important;
-}
-
-.presentation-title {
-  display: block !important;
-  margin-bottom: 0.2rem !important;
-  color: #333333 !important;
-  font-size: 0.98em !important;
-  line-height: 1.35 !important;
-}
-
-.presentation-meta {
-  display: block !important;
-  color: #555555 !important;
-  font-size: 0.9em !important;
-  line-height: 1.4 !important;
-}
-
-/* Photo strip: separated from formal presentation list */
-
-.presentation-photo-strip {
-  width: 100% !important;
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: 0.75rem !important;
-  margin-top: 1.35rem !important;
-  padding-top: 0.4rem !important;
-}
-
-.presentation-photo-strip img {
-  display: block !important;
-  width: 100% !important;
-  height: 155px !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  border-radius: 5px !important;
-  background: #f5f5f5 !important;
-}
-
-/* Dark mode */
-
-html.dark-mode .page__content h2 {
-  color: #ffffff !important;
-  border-bottom: none !important;
-}
-
-html.dark-mode .page__content h2::before,
-html.dark-mode .page__content h2::after {
-  border-top-color: #444444 !important;
-}
-
-html.dark-mode #working-papers .research-project,
-html.dark-mode #work-in-progress .research-project,
-html.dark-mode .publication-item,
-html.dark-mode .presentation-item {
-  border-bottom-color: #3a3a3a !important;
-}
-
-html.dark-mode .publications-section h3,
-html.dark-mode .presentation-title {
-  color: #ffffff !important;
-}
-
-html.dark-mode .presentation-meta {
-  color: #cccccc !important;
-}
-
-html.dark-mode .presentation-photo-strip img {
-  background: #2a2a2a !important;
-}
-
-/* Mobile presentation photos */
-
-@media (max-width: 64em) {
-  .presentation-photo-strip {
-    grid-template-columns: minmax(0, 1fr) !important;
-    gap: 0.65rem !important;
+    min-width: 0.75rem !important;
   }
 
+  .presentation-photo img,
   .presentation-photo-strip img {
-    height: 190px !important;
+    height: 175px !important;
   }
 }
