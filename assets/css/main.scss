@@ -652,6 +652,34 @@ body {
   background-image: none !important;
 }
 
+/* Strong override: navigation links must not turn blue */
+
+@media (hover: hover) and (pointer: fine) {
+  html body .page__content .section-nav a:hover,
+  html body .page__content .section-nav a:focus-visible,
+  html body .page__content .section-nav a:hover:not(.presentation-photo):not(.nav-cv-link),
+  html body .page__content .section-nav a:focus-visible:not(.presentation-photo):not(.nav-cv-link),
+  html body .section-nav a:hover,
+  html body .section-nav a:focus-visible {
+    color: var(--site-text) !important;
+    background: var(--site-nav-hover) !important;
+    text-decoration: none !important;
+    text-decoration-thickness: 0 !important;
+    text-decoration-color: transparent !important;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+
+  html body .page__content .section-nav a.active-nav-link,
+  html body .section-nav a.active-nav-link {
+    color: var(--site-text) !important;
+    background: var(--site-nav-active) !important;
+    text-decoration: none !important;
+    font-weight: 650 !important;
+  }
+}
+
 /* ============================================================
    10. HEADING LINKS AND PAGE TITLE
    ============================================================ */
@@ -1047,21 +1075,164 @@ body {
   box-shadow: 0 6px 16px var(--site-photo-shadow) !important;
 }
 
-/* Common image-viewer / lightbox controls, if used later */
+/* ============================================================
+   14. PHOTO VIEWER / LIGHTBOX CONTROLS
+   Fix close-button cursor and post-click highlight on close/arrows
+   ============================================================ */
 
-.presentation-photo-strip button,
-.presentation-photo-strip button:focus,
-.presentation-photo-strip button:active,
-.presentation-photo-strip button:focus-visible,
-button[class*="arrow"]:focus,
-button[class*="arrow"]:active,
-button[class*="arrow"]:focus-visible,
-button[class*="prev"]:focus,
-button[class*="prev"]:active,
-button[class*="prev"]:focus-visible,
-button[class*="next"]:focus,
-button[class*="next"]:active,
-button[class*="next"]:focus-visible {
+/* Magnific Popup, common in Minimal Mistakes */
+
+.mfp-wrap,
+.mfp-container,
+.mfp-content,
+.mfp-figure,
+.mfp-img {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close,
+.mfp-close {
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+  line-height: 2.25rem !important;
+  right: 0.2rem !important;
+  top: -2.35rem !important;
+  padding: 0 !important;
+  text-align: center !important;
+
+  cursor: pointer !important;
+  color: #ffffff !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  opacity: 0.9 !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.mfp-close:hover,
+.mfp-close:focus,
+.mfp-close:focus-visible,
+.mfp-close:active {
+  cursor: pointer !important;
+  color: #ffffff !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+}
+
+.mfp-arrow,
+.mfp-arrow:hover,
+.mfp-arrow:focus,
+.mfp-arrow:focus-visible,
+.mfp-arrow:active {
+  cursor: pointer !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.mfp-arrow::before,
+.mfp-arrow::after {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Generic lightbox/fancybox/glightbox/photoswipe-style controls */
+
+[class*="lightbox"] button,
+[class*="lightbox"] button:hover,
+[class*="lightbox"] button:focus,
+[class*="lightbox"] button:focus-visible,
+[class*="lightbox"] button:active,
+[class*="Lightbox"] button,
+[class*="Lightbox"] button:hover,
+[class*="Lightbox"] button:focus,
+[class*="Lightbox"] button:focus-visible,
+[class*="Lightbox"] button:active,
+.lb-close,
+.lb-close:hover,
+.lb-close:focus,
+.lb-close:focus-visible,
+.lb-close:active,
+.lb-prev,
+.lb-prev:hover,
+.lb-prev:focus,
+.lb-prev:focus-visible,
+.lb-prev:active,
+.lb-next,
+.lb-next:hover,
+.lb-next:focus,
+.lb-next:focus-visible,
+.lb-next:active,
+.gclose,
+.gclose:hover,
+.gclose:focus,
+.gclose:focus-visible,
+.gclose:active,
+.gprev,
+.gprev:hover,
+.gprev:focus,
+.gprev:focus-visible,
+.gprev:active,
+.gnext,
+.gnext:hover,
+.gnext:focus,
+.gnext:focus-visible,
+.gnext:active,
+.pswp__button,
+.pswp__button:hover,
+.pswp__button:focus,
+.pswp__button:focus-visible,
+.pswp__button:active,
+[data-fancybox-close],
+[data-fancybox-close]:hover,
+[data-fancybox-close]:focus,
+[data-fancybox-close]:focus-visible,
+[data-fancybox-close]:active,
+[data-fancybox-prev],
+[data-fancybox-prev]:hover,
+[data-fancybox-prev]:focus,
+[data-fancybox-prev]:focus-visible,
+[data-fancybox-prev]:active,
+[data-fancybox-next],
+[data-fancybox-next]:hover,
+[data-fancybox-next]:focus,
+[data-fancybox-next]:focus-visible,
+[data-fancybox-next]:active {
+  cursor: pointer !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Prevent whole-width focus bands around image-viewer controls */
+
+.mfp-image-holder button,
+.mfp-image-holder button:hover,
+.mfp-image-holder button:focus,
+.mfp-image-holder button:focus-visible,
+.mfp-image-holder button:active,
+.mfp-container button,
+.mfp-container button:hover,
+.mfp-container button:focus,
+.mfp-container button:focus-visible,
+.mfp-container button:active {
+  background-image: none !important;
   outline: none !important;
   box-shadow: none !important;
 }
@@ -1089,7 +1260,7 @@ button[class*="next"]:focus-visible {
 }
 
 /* ============================================================
-   14. FOOTER
+   15. FOOTER
    ============================================================ */
 
 .page__footer {
@@ -1121,7 +1292,7 @@ button[class*="next"]:focus-visible {
 }
 
 /* ============================================================
-   15. DARK MODE STRUCTURAL FIXES
+   16. DARK MODE STRUCTURAL FIXES
    ============================================================ */
 
 html.dark-mode,
@@ -1168,7 +1339,7 @@ html.dark-mode td {
 }
 
 /* ============================================================
-   16. TOUCH-SCREEN LINK AND NAVIGATION FIXES
+   17. TOUCH-SCREEN LINK AND NAVIGATION FIXES
    Prevent stale tap-hover highlights on mobile devices
    ============================================================ */
 
@@ -1257,10 +1428,27 @@ html.dark-mode td {
   .presentation-photo:active img {
     transform: scale(1) !important;
   }
+
+  .mfp-close,
+  .mfp-close:hover,
+  .mfp-close:focus,
+  .mfp-close:focus-visible,
+  .mfp-close:active,
+  .mfp-arrow,
+  .mfp-arrow:hover,
+  .mfp-arrow:focus,
+  .mfp-arrow:focus-visible,
+  .mfp-arrow:active {
+    cursor: pointer !important;
+    background: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
 }
 
 /* ============================================================
-   17. MOBILE LAYOUT
+   18. MOBILE LAYOUT
    ============================================================ */
 
 @media (max-width: 64em) {
