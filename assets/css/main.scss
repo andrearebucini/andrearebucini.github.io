@@ -1770,3 +1770,29 @@ html.dark-mode .page__footer-updated,
 html.light-mode .page__footer-updated {
   color: var(--site-muted) !important;
 }
+
+/* ============================================================
+   PRESENTATIONS SECTION SUBTITLE
+   ============================================================ */
+
+.section-subtitle {
+  margin: -0.65rem auto 1.25rem auto !important;
+  text-align: center !important;
+  font-size: 0.82rem !important;
+  line-height: 1.35 !important;
+  font-weight: 400 !important;
+  color: var(--site-muted) !important;
+}
+
+html.dark-mode .section-subtitle,
+html.light-mode .section-subtitle {
+  color: var(--site-muted) !important;
+}
+
+@media (max-width: 64em) {
+  .section-subtitle {
+    margin-top: -0.45rem !important;
+    margin-bottom: 1.1rem !important;
+    font-size: 0.78rem !important;
+  }
+}
