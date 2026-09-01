@@ -22,12 +22,12 @@ author_profile: false
 <section class="bio-section homepage-section" id="research-profile">
   <div class="bio-text" markdown="1">
 
-I am a third-year PhD student in Economics at the [University of Bergamo](https://www.unibg.it/en){:target="_blank" rel="noopener noreferrer"}, affiliated with the [Department of Economics](https://dse.unibg.it/en){:target="_blank" rel="noopener noreferrer"} and supervised by Prof. [Annalisa Cristini](https://unibg.unifind.cineca.it/individual?uri=http://irises.unibg.it/resource/person/3083){:target="_blank" rel="noopener noreferrer"}. My research is in applied microeconomics, with a focus on household economics, economics of education, and financial literacy.
+I am a third-year PhD student in Economics at the [University of Bergamo](https://www.unibg.it/en){:target="_blank" rel="noopener noreferrer"} (Italy), affiliated with the [Department of Economics](https://dse.unibg.it/en){:target="_blank" rel="noopener noreferrer"} and supervised by Prof. [Annalisa Cristini](https://unibg.unifind.cineca.it/individual?uri=http://irises.unibg.it/resource/person/3083){:target="_blank" rel="noopener noreferrer"}. I am an applied microeconomist and my research is in household economics, economics of education, and financial literacy.
 
 I spent the academic year 2025–26 visiting the [Department of Social Policy](https://www.lse.ac.uk/social-policy){:target="_blank" rel="noopener noreferrer"} at the [London School of Economics and Political Science](https://www.lse.ac.uk/){:target="_blank" rel="noopener noreferrer"}, where I was affiliated with the [Women in Social and Public Policy Research Hub](https://www.lse.ac.uk/social-policy/research/research-clusters/wispprh){:target="_blank" rel="noopener noreferrer"} and hosted by Prof. [Almudena Sevilla](https://www.lse.ac.uk/people/almudena-sevilla){:target="_blank" rel="noopener noreferrer"}. Since August 2026, I have been a member of the [G53 Network Rising Scholars](https://g53network.org/training-and-mentoring/g53-network-rising-scholars/){:target="_blank" rel="noopener noreferrer"}. From October 2026, I will undertake a doctoral research internship at the [Financial Education Directorate](https://www.bancaditalia.it/chi-siamo/organizzazione/ac/tutela-educazione-finanziaria/index.html?com.dotmarketing.htmlpage.language=1){:target="_blank" rel="noopener noreferrer"} of the Bank of Italy.
 
 <p class="bio-links">
-  <strong class="bio-links-label">Contact:</strong>
+  <strong class="bio-links-label">Contacts and profiles:</strong>
   <a href="mailto:andrea.rebucini@unibg.it">
     <i class="fas fa-envelope" aria-hidden="true"></i>
     andrea.rebucini@unibg.it
@@ -135,7 +135,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
     <span class="project-meta project-meta-inline">
       <strong>Award:</strong>
-      <span class="project-event-inline"><a href="https://economicsofeducation.com/es/m-j-san-segundo-2/" target="_blank" rel="noopener noreferrer">María Jesús San Segundo Award 2026</a>, Second Best Paper Award for Young Researchers</span>
+      <span class="project-event-inline"><a href="https://economicsofeducation.com/es/m-j-san-segundo-2/" target="_blank" rel="noopener noreferrer">María Jesús San Segundo Award 2026</a>: Second Best Paper Award for Young Researchers</span>
     </span>
 
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
