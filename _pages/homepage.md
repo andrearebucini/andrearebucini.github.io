@@ -232,7 +232,11 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
 <section id="presentations" class="homepage-section presentations-section" markdown="1">
 
-## Selected presentations
+## Presentations
+
+<p class="section-subtitle">
+  Selected conferences, workshops, and seminars
+</p>
 
 <div class="presentation-item">
   <div class="presentation-text">
