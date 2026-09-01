@@ -1751,3 +1751,22 @@ html.dark-mode td {
     -webkit-tap-highlight-color: transparent !important;
   }
 }
+
+/* ============================================================
+   FOOTER LAST UPDATED
+   ============================================================ */
+
+.page__footer-updated {
+  float: none !important;
+  display: block !important;
+  margin: 0.25rem auto 0 auto !important;
+  text-align: center !important;
+  font-size: 0.68rem !important;
+  line-height: 1.35 !important;
+  color: var(--site-muted) !important;
+}
+
+html.dark-mode .page__footer-updated,
+html.light-mode .page__footer-updated {
+  color: var(--site-muted) !important;
+}
