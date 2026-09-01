@@ -1731,3 +1731,23 @@ html.dark-mode td {
     font-size: 0.68rem !important;
   }
 }
+
+/* ============================================================
+   20. MOBILE DARK-MODE TOGGLE TAP-HIGHLIGHT FIX
+   Prevent persistent highlight after tapping the theme toggle
+   ============================================================ */
+
+@media (hover: none), (pointer: coarse) {
+  #dark-mode-toggle,
+  #dark-mode-toggle:hover,
+  #dark-mode-toggle:focus,
+  #dark-mode-toggle:focus-visible,
+  #dark-mode-toggle:active {
+    color: var(--site-muted) !important;
+    background: var(--site-surface) !important;
+    border-color: var(--site-rule) !important;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+}
