@@ -1680,3 +1680,54 @@ html.dark-mode td {
     height: 175px !important;
   }
 }
+
+/* ============================================================
+   19. MOBILE DARK-MODE TOGGLE POSITION FIX
+   Prevent overlap with title/subtitle on small screens
+   ============================================================ */
+
+@media (max-width: 64em) {
+  .site-hero {
+    padding: 0.45rem 0.65rem 0.55rem 0.65rem !important;
+  }
+
+  .site-hero h1,
+  .site-hero p {
+    max-width: calc(100vw - 1.6rem) !important;
+  }
+
+  #dark-mode-toggle {
+    position: static !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 1.48rem !important;
+    height: 1.48rem !important;
+    margin: 0.55rem auto 0 auto !important;
+    padding: 0 !important;
+
+    transform: none !important;
+    inset: auto !important;
+    font-size: 0.74rem !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-hero {
+    padding-left: 0.55rem !important;
+    padding-right: 0.55rem !important;
+  }
+
+  .site-hero h1,
+  .site-hero p {
+    max-width: calc(100vw - 1.4rem) !important;
+  }
+
+  #dark-mode-toggle {
+    width: 1.38rem !important;
+    height: 1.38rem !important;
+    margin-top: 0.5rem !important;
+    font-size: 0.68rem !important;
+  }
+}
