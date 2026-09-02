@@ -85,7 +85,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>JEL codes:</strong> D14, G51, J14.
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> Widowhood; spousal death; household finance; Europe; SHARE.
+      <strong>Keywords:</strong> widowhood; spousal death; household finance; Europe; SHARE.
     </p>
   </div>
 </div>
@@ -114,7 +114,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>JEL codes:</strong> G51, G53, J14.
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> Spousal death; household finance; financial literacy; financial responsibility; Europe; SHARE.
+      <strong>Keywords:</strong> spousal death; household finance; financial literacy; financial responsibility; Europe; SHARE.
     </p>
   </div>
 </div>
@@ -187,7 +187,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>JEL codes:</strong> I12, I18, I21, J13.
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> Mandatory sex education; adolescent fertility; adolescent births; abortion; sexually transmitted infections; Europe.
+      <strong>Keywords:</strong> mandatory sex education; adolescent fertility; adolescent births; abortion; sexually transmitted infections; Europe.
     </p>
   </div>
 </div>
