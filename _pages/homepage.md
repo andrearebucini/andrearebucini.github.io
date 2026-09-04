@@ -147,7 +147,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
     </span>
 
         <span class="project-status">
-      Status: Finalising draft
+      Status: Draft in progress
     </span>
 
     <span class="project-meta project-meta-inline">
