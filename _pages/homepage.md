@@ -24,7 +24,24 @@ author_profile: false
 
 I am a third-year PhD student in Economics at the [University of Bergamo](https://www.unibg.it/en){:target="_blank" rel="noopener noreferrer"} (Italy), affiliated with the [Department of Economics](https://dse.unibg.it/en){:target="_blank" rel="noopener noreferrer"} and supervised by Prof. [Annalisa Cristini](https://unibg.unifind.cineca.it/individual?uri=http://irises.unibg.it/resource/person/3083){:target="_blank" rel="noopener noreferrer"}. I am an applied microeconomist working in household economics, economics of education, financial literacy, gender economics, and health economics.
 
-I spent the academic year 2025–26 visiting the [Department of Social Policy](https://www.lse.ac.uk/social-policy){:target="_blank" rel="noopener noreferrer"} at the [London School of Economics and Political Science](https://www.lse.ac.uk/){:target="_blank" rel="noopener noreferrer"}, where I was affiliated with the [Women in Social and Public Policy Research Hub](https://www.lse.ac.uk/social-policy/research/research-clusters/wispprh){:target="_blank" rel="noopener noreferrer"} and hosted by Prof. [Almudena Sevilla](https://www.lse.ac.uk/people/almudena-sevilla){:target="_blank" rel="noopener noreferrer"}. Since August 2026, I have been a member of the [G53 Network Rising Scholars](https://g53network.org/training-and-mentoring/g53-network-rising-scholars/){:target="_blank" rel="noopener noreferrer"}. From October 2026, I will undertake a doctoral research internship at the [Financial Education Directorate](https://www.bancaditalia.it/chi-siamo/organizzazione/ac/tutela-educazione-finanziaria/index.html?com.dotmarketing.htmlpage.language=1){:target="_blank" rel="noopener noreferrer"} of the Bank of Italy.
+I spent the academic year 2025–26 visiting the [Department of Social Policy](https://www.lse.ac.uk/social-policy){:target="_blank" rel="noopener noreferrer"} at the [London School of Economics and Political Science](https://www.lse.ac.uk/){:target="_blank" rel="noopener noreferrer"}, where I was affiliated with the [Women in Social and Public Policy Research Hub](https://www.lse.ac.uk/social-policy/research/research-clusters/wispprh){:target="_blank" rel="noopener noreferrer"} and hosted by Prof. [Almudena Sevilla](https://www.lse.ac.uk/people/almudena-sevilla){:target="_blank" rel="noopener noreferrer"}. 
+I spent the academic year 2025–26 visiting the [Department of Social Policy](https://www.lse.ac.uk/social-policy){:target="_blank" rel="noopener noreferrer"} at the [London School of Economics and Political Science](https://www.lse.ac.uk/){:target="_blank" rel="noopener noreferrer"}, where I was affiliated with the [Women in Social and Public Policy Research Hub](https://www.lse.ac.uk/social-policy/research/research-clusters/wispprh){:target="_blank" rel="noopener noreferrer"} and hosted by Prof. [Almudena Sevilla](https://www.lse.ac.uk/people/almudena-sevilla){:target="_blank" rel="noopener noreferrer"}.
+
+<div class="news-list">
+  <div class="news-item">
+    <span class="news-label">News</span>
+    <span class="news-text">
+      Since August 2026, I have been a member of the <a href="https://g53network.org/training-and-mentoring/g53-network-rising-scholars/" target="_blank" rel="noopener noreferrer">G53 Network Rising Scholars</a>.
+    </span>
+  </div>
+
+  <div class="news-item">
+    <span class="news-label">News</span>
+    <span class="news-text">
+      From October 2026, I will undertake a doctoral research internship at the <a href="https://www.bancaditalia.it/chi-siamo/organizzazione/ac/tutela-educazione-finanziaria/index.html?com.dotmarketing.htmlpage.language=1" target="_blank" rel="noopener noreferrer">Financial Education Directorate</a> of the Bank of Italy.
+    </span>
+  </div>
+</div>
 
 <p class="bio-links">
   <strong class="bio-links-label">Contact:</strong>
