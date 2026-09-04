@@ -1865,3 +1865,41 @@ html.light-mode .news-text {
     font-size: 0.94em !important;
   }
 }
+
+/* ============================================================
+   NEWS THEME-SWITCH FIX
+   Make news badges and text update instantly in light/dark mode
+   ============================================================ */
+
+.news-list,
+.news-item,
+.news-label,
+.news-text,
+.news-text a,
+.news-text a *,
+.news-item a,
+.news-item a * {
+  transition: none !important;
+}
+
+.news-label {
+  background: var(--site-nav-active) !important;
+  color: var(--site-text) !important;
+}
+
+.news-text,
+.news-text a,
+.news-item a {
+  color: inherit !important;
+}
+
+html.dark-mode .news-label,
+html.light-mode .news-label {
+  background: var(--site-nav-active) !important;
+  color: var(--site-text) !important;
+}
+
+html.dark-mode .news-text,
+html.light-mode .news-text {
+  color: var(--site-text) !important;
+}
