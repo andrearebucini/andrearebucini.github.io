@@ -1796,3 +1796,72 @@ html.light-mode .section-subtitle {
     font-size: 0.78rem !important;
   }
 }
+
+/* ============================================================
+   BIO NEWS ITEMS
+   Compact news signals in the homepage bio
+   ============================================================ */
+
+.news-list {
+  display: grid !important;
+  gap: 0.38rem !important;
+  margin: 0.95rem 0 1rem 0 !important;
+}
+
+.news-item {
+  display: grid !important;
+  grid-template-columns: auto minmax(0, 1fr) !important;
+  column-gap: 0.55rem !important;
+  align-items: baseline !important;
+  line-height: 1.45 !important;
+}
+
+.news-label {
+  display: inline-block !important;
+  padding: 0.08rem 0.32rem !important;
+  border-radius: 4px !important;
+  background: var(--site-accent-soft) !important;
+  color: var(--site-accent) !important;
+  font-size: 0.68rem !important;
+  line-height: 1.25 !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+.news-text {
+  color: var(--site-text) !important;
+  font-size: 0.96em !important;
+}
+
+html.dark-mode .news-label,
+html.light-mode .news-label {
+  background: var(--site-accent-soft) !important;
+  color: var(--site-accent) !important;
+}
+
+html.dark-mode .news-text,
+html.light-mode .news-text {
+  color: var(--site-text) !important;
+}
+
+@media (max-width: 64em) {
+  .news-list {
+    gap: 0.45rem !important;
+    margin: 0.9rem 0 1rem 0 !important;
+  }
+
+  .news-item {
+    grid-template-columns: auto minmax(0, 1fr) !important;
+    column-gap: 0.5rem !important;
+  }
+
+  .news-label {
+    font-size: 0.62rem !important;
+    padding: 0.07rem 0.28rem !important;
+  }
+
+  .news-text {
+    font-size: 0.94em !important;
+  }
+}
