@@ -1820,8 +1820,8 @@ html.light-mode .section-subtitle {
   display: inline-block !important;
   padding: 0.08rem 0.32rem !important;
   border-radius: 4px !important;
-  background: var(--site-accent-soft) !important;
-  color: var(--site-accent) !important;
+  background: var(--site-nav-active) !important;
+  color: var(--site-text) !important;
   font-size: 0.68rem !important;
   line-height: 1.25 !important;
   font-weight: 800 !important;
@@ -1836,8 +1836,8 @@ html.light-mode .section-subtitle {
 
 html.dark-mode .news-label,
 html.light-mode .news-label {
-  background: var(--site-accent-soft) !important;
-  color: var(--site-accent) !important;
+  background: var(--site-nav-active) !important;
+  color: var(--site-text) !important;
 }
 
 html.dark-mode .news-text,
@@ -1856,7 +1856,7 @@ html.light-mode .news-text {
     column-gap: 0.5rem !important;
   }
 
-  .news-label {
+   .news-label {
     font-size: 0.62rem !important;
     padding: 0.07rem 0.28rem !important;
   }
