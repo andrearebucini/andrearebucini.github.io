@@ -80,7 +80,6 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
   <div class="project-header">
     <span class="project-title">
       <strong>Unexpected spousal death and economic security in later life</strong>
-      <a class="paper-link" href="/files/Paper_S1.pdf" target="_blank" rel="noopener">Latest version</a>
     </span>
 
     <span class="project-status">
