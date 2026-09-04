@@ -31,14 +31,14 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
   <div class="news-item">
     <span class="news-label">News</span>
     <span class="news-text">
-      I joined the <a href="https://g53network.org/training-and-mentoring/g53-network-rising-scholars/" target="_blank" rel="noopener noreferrer">G53 Network Rising Scholars</a> in August 2026.
+      August 2026: I joined the <a href="https://g53network.org/training-and-mentoring/g53-network-rising-scholars/" target="_blank" rel="noopener noreferrer">G53 Network Rising Scholars</a>, an early-career research community in financial literacy and personal finance.
     </span>
   </div>
 
   <div class="news-item">
     <span class="news-label">News</span>
     <span class="news-text">
-      I will start a doctoral research internship at the <a href="https://www.bancaditalia.it/chi-siamo/organizzazione/ac/tutela-educazione-finanziaria/index.html?com.dotmarketing.htmlpage.language=1" target="_blank" rel="noopener noreferrer">Financial Education Directorate</a> of the Bank of Italy in October 2026.
+      October 2026: I will start a doctoral research internship at the <a href="https://www.bancaditalia.it/chi-siamo/organizzazione/ac/tutela-educazione-finanziaria/index.html?com.dotmarketing.htmlpage.language=1" target="_blank" rel="noopener noreferrer">Financial Education Directorate</a> of the Bank of Italy, working on branch closures, microenterprise trust, and financial and digital literacy.
     </span>
   </div>
 </div>
