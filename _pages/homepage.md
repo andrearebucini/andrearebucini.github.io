@@ -83,7 +83,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
     </span>
 
     <span class="project-status">
-      Status: Submitted
+      Status: Finalising draft
     </span>
 
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
