@@ -79,6 +79,35 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 <div class="research-project">
   <div class="project-header">
     <span class="project-title">
+      <strong>Preparing for spousal loss: Financial responsibility and financial literacy before bereavement</strong>
+    </span>
+
+    <span class="project-status">
+      Status: Finalising draft
+    </span>
+    
+    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
+      Abstract
+    </button>
+  </div>
+
+  <div class="project-abstract">
+    <p>
+      This paper studies whether and how older individuals prepare financially for spousal loss. Using longitudinal data from the Survey of Health, Ageing and Retirement in Europe (SHARE) and end-of-life interviews documenting the circumstances surrounding death, I distinguish between spousal deaths preceded by substantial forewarning and deaths occurring with more limited scope for anticipatory adjustment. I examine how financial literacy and financial responsibility evolve in the years before bereavement. The results show that financial preparation is concentrated among individuals whose partner’s death is more foreseeable. In these cases, the probability of assuming primary responsibility for household finances increases as death approaches, while financial literacy also improves. No comparable pre-bereavement dynamics are observed before unexpected deaths. Formal comparisons indicate that the difference is particularly pronounced for financial responsibility. The evidence also suggests that taking on greater financial responsibility is associated with some subsequent improvement in financial literacy, although these gains are limited and the transfer of responsibility often occurs relatively late. The findings show that households respond to foreseeable spousal loss by partially unwinding financial specialisation, but that transferring financial responsibility appears easier than transferring financial knowledge. This distinction is particularly relevant given persistent gender differences in the allocation of financial tasks within older couples.
+    </p>
+
+    <p class="project-classification">
+      <strong>JEL codes:</strong> G51, G53, J14.
+    </p>
+    <p class="project-classification">
+      <strong>Keywords:</strong> spousal death; household finance; financial literacy; financial responsibility; Europe; SHARE.
+    </p>
+  </div>
+</div>
+
+<div class="research-project">
+  <div class="project-header">
+    <span class="project-title">
       <strong>Unexpected spousal death and economic security in later life</strong>
     </span>
 
@@ -93,7 +122,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
   <div class="project-abstract">
     <p>
-      Research on widowhood typically dates treatment at bereavement. Yet when death follows a period of illness, caregiving, and financial preparation, household outcomes may begin adjusting beforehand. Pre-event observations may therefore be partly treated, and conventional estimates may combine anticipatory adjustment with the consequences of spousal loss. This paper addresses this timing problem using longitudinal data from the Survey of Health, Ageing and Retirement in Europe (SHARE) for 2004–2022 and end-of-life interviews to identify unexpected deaths, meaning deaths preceded by limited forewarning. I combine this classification with propensity-score matching and difference-in-differences models in a staggered-treatment setting to estimate the effects of unexpected spousal death on survivors’ economic outcomes. The estimates show a large and persistent deterioration in late-life economic security: equivalised income falls by about 22%, expenditure rises by about 5%, financial distress increases, and net wealth declines gradually, primarily through real assets and long-term savings. These effects are substantially larger for widows than for widowers. The mechanisms analysis considers labour-market adjustment, survivor pensions, private life insurance, inheritance, portfolio responses, housing and living arrangements, and formal and informal support. Labour-market re-entry is limited and life insurance has no significant moderating effect, while income losses and increases in financial distress are smaller in countries characterised by more generous survivor provision. Inheritance information shows that wealth declines partly reflect transfers outside the surviving household, but also asset liquidation and post-bereavement housing adjustment. The findings demonstrate the importance of treatment timing and of assessing current resource flows and balance-sheet responses jointly.
+      Research on widowhood typically dates treatment at bereavement. Yet when death follows a period of illness, caregiving, and financial preparation, household outcomes may begin adjusting beforehand. Pre-event observations may therefore already reflect anticipatory responses, and conventional estimates may combine these changes with the consequences of spousal loss itself. This paper addresses this timing problem using longitudinal data from the Survey of Health, Ageing and Retirement in Europe (SHARE) and end-of-life interviews to identify spousal deaths preceded by limited forewarning. I combine this classification with propensity-score matching and difference-in-differences models in a staggered-treatment setting to estimate the effects of unexpected spousal death on survivors’ economic outcomes. The results show a substantial and persistent deterioration in late-life economic security, including lower income and wealth, greater financial distress, and important changes in household portfolios and living arrangements. These effects are more pronounced for women. I examine adjustment through labour supply, survivor pensions, private life insurance, inheritance, portfolio reallocation, housing, and formal and informal support. I also study whether post-bereavement economic trajectories differ according to financial literacy measured before the shock. Individuals with higher pre-existing financial literacy experience smaller losses along some dimensions and display different patterns of financial-asset adjustment. The findings highlight the importance of treatment timing and of jointly considering institutional protection, accumulated resources, financial capability, and household balance-sheet adjustment after bereavement.
     </p>
 
     <p class="project-classification">
@@ -101,35 +130,6 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
     </p>
     <p class="project-classification">
       <strong>Keywords:</strong> widowhood; spousal death; household finance; Europe; SHARE.
-    </p>
-  </div>
-</div>
-
-<div class="research-project">
-  <div class="project-header">
-    <span class="project-title">
-      <strong>Preparing for spousal loss: Financial literacy, household financial responsibility, and economic resilience</strong>
-    </span>
-
-    <span class="project-status">
-      Status: Finalising draft
-    </span>
-    
-    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
-      Abstract
-    </button>
-  </div>
-
-  <div class="project-abstract">
-    <p>
-      This paper investigates if and how older individuals prepare financially for spousal death and whether financially literate individuals are better equipped to face the economic consequences of bereavement. Using longitudinal data from the Survey of Health, Ageing and Retirement in Europe (SHARE), covering 2004–2022, I distinguish between expected and unexpected spousal deaths based on end-of-life interviews that document the circumstances surrounding death. The analysis proceeds in two parts. First, I study how financial literacy and financial responsibility evolve before spousal death. Using two-way fixed-effects models, I show that anticipatory adjustment arises only when spousal death is foreseeable. In these cases, financial literacy increases and the probability of assuming primary responsibility for household finances rises, whereas no comparable pre-bereavement dynamics are observed when death is unexpected. The evidence further suggests that individuals who take on financial responsibility experience faster literacy growth, although the transfer of responsibility often occurs late. Second, focusing on unexpected spousal deaths, I estimate the economic impact of bereavement using propensity score matching combined with difference-in-differences. Unexpected spousal death leads to declines in equivalised net income and wealth and increases financial distress. Financially literate individuals experience smaller income losses and appear better able to manage assets and mobilise accumulated financial buffers. The findings are relevant in light of persistent gender differences in financial literacy and responsibility within couples and women’s greater exposure to widowhood in later life.
-    </p>
-
-    <p class="project-classification">
-      <strong>JEL codes:</strong> G51, G53, J14.
-    </p>
-    <p class="project-classification">
-      <strong>Keywords:</strong> spousal death; household finance; financial literacy; financial responsibility; Europe; SHARE.
     </p>
   </div>
 </div>
