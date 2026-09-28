@@ -100,7 +100,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>JEL codes:</strong> G51, G53, J14.
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> spousal death; household finance; financial literacy; financial responsibility; Europe; SHARE.
+      <strong>Keywords:</strong> spousal death; household finance; financial literacy; financial decision-making; Europe; SHARE.
     </p>
   </div>
 </div>
