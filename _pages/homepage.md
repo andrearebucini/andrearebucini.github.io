@@ -93,14 +93,14 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
   <div class="project-abstract">
     <p>
-      This paper studies whether and how older individuals prepare financially for spousal loss. Using longitudinal data from the Survey of Health, Ageing and Retirement in Europe (SHARE) and end-of-life interviews documenting the circumstances surrounding death, I distinguish between spousal deaths preceded by substantial forewarning and deaths occurring with more limited scope for anticipatory adjustment. I examine how financial literacy and financial responsibility evolve in the years before bereavement. The results show that financial preparation is concentrated among individuals whose partner’s death is more foreseeable. In these cases, the probability of assuming primary responsibility for household finances increases as death approaches, while financial literacy also improves. No comparable pre-bereavement dynamics are observed before unexpected deaths. The evidence also suggests that taking on greater financial responsibility is associated with some subsequent improvement in financial literacy, although these gains are limited and the transfer of responsibility often occurs relatively late. The findings show that households respond to foreseeable spousal loss by partially unwinding financial specialisation, but that transferring financial responsibility appears easier than acquiring financial knowledge. This distinction is particularly relevant given persistent gender differences in the allocation of financial tasks within older couples.
+      This paper examines whether older couples adjust their financial organisation in anticipation of spousal death and whether the scope for forewarning shapes this process. Using longitudinal data from the Survey of Health, Ageing and Retirement in Europe (SHARE) for 2004–2022 and end-of-life interviews, I distinguish unexpected spousal deaths from those preceded by periods of illness. Two-way fixed-effects models and event studies track household financial responsibility and financial literacy before spousal death. Financial responsibility increases as spousal death approaches, particularly when illness lasts more than one year, but the adjustment is concentrated in the final years. Financial literacy also increases before long-forewarning spousal deaths and heterogeneity analyses suggest that literacy gains are concentrated among respondents with greater scope for improvement and are associated with financial involvement. Women assume financial responsibility at a similar rate to men but experience smaller literacy gains. The findings show that foreseeable spousal loss partially unwinds household financial specialisation, but that organisational adjustment occurs later and more clearly than the accumulation of financial knowledge.
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes:</strong> G51, G53, J14.
+      <strong>JEL codes:</strong> D14, G53, J14.
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> spousal death; household finance; financial literacy; financial decision-making; Europe; SHARE.
+      <strong>Keywords:</strong> spousal death; household financial specialisation; financial responsibility; financial literacy; strategic learning; anticipatory adjustment.
     </p>
   </div>
 </div>
