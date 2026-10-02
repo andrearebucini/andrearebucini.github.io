@@ -108,7 +108,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 <div class="research-project">
   <div class="project-header">
     <span class="project-title">
-      <strong>Spousal death and economic adjustment in later life</strong>
+      <strong>Spousal death and economic resources in later life</strong>
     </span>
 
     <span class="project-status">
