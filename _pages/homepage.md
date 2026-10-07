@@ -129,7 +129,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>JEL codes:</strong> D14, D31, J12.
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> spousal death; household wealth; bequests; housing choice; financial capability.
+      <strong>Keywords:</strong> spousal death; household wealth; bequests; housing choice; financial literacy.
     </p>
   </div>
 </div>
