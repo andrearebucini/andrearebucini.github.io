@@ -108,11 +108,11 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 <div class="research-project">
   <div class="project-header">
     <span class="project-title">
-      <strong>Spousal death and economic resources in later life</strong>
+      <strong>Wealth dynamics following spousal death in Europe: The role of bequests, housing, and financial capability</strong>
     </span>
 
     <span class="project-status">
-      Status: Finalising draft
+      Status: Draft in progress
     </span>
 
     <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
@@ -122,14 +122,14 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
   <div class="project-abstract">
     <p>
-      Research on widowhood typically dates treatment at bereavement. Yet when death follows a period of illness, caregiving, and financial preparation, household outcomes may begin adjusting beforehand. Pre-event observations may therefore already reflect anticipatory responses, and conventional estimates may combine these changes with the consequences of spousal loss itself. This paper addresses this timing problem using longitudinal data from the Survey of Health, Ageing and Retirement in Europe (SHARE) and end-of-life interviews to identify spousal deaths preceded by limited forewarning. I combine this classification with propensity-score matching and difference-in-differences models in a staggered-treatment setting to estimate the effects of spousal death, as a sharp economic shock, on survivors’ economic outcomes. The results show a substantial and persistent deterioration in late-life economic outcomes, including lower income and wealth, greater financial distress, and changes in household portfolios and living arrangements. These effects are more pronounced for women. I examine adjustment through labour supply, survivor pensions, private life insurance, inheritance, housing, and formal and informal support. I also study whether post-bereavement economic trajectories differ according to financial literacy measured before the shock. Individuals with higher pre-existing financial literacy experience smaller losses along some dimensions and display different patterns of financial-asset adjustment. The findings highlight the importance of treatment timing and of jointly considering institutional protection, accumulated resources, financial capability, and household balance-sheet adjustment after bereavement.
+      Spousal death can profoundly alter the economic resources and asset composition of older households. Yet limited evidence exists on how wealth changes after bereavement and where reductions in housing wealth go. This paper studies wealth dynamics following spousal death in Europe using longitudinal data from the Survey of Health, Ageing and Retirement in Europe (SHARE) for 2004–2022. To limit anticipatory wealth adjustments associated with prolonged terminal illness, the analysis focuses on deaths preceded by no reported illness, an illness lasting less than one month, or an accident. SHARE’s end-of-life interviews identify these deaths and estate beneficiaries. Matched staggered difference-in-differences models compare affected individuals with continuously partnered controls. The analysis examines total wealth and its components, including real assets, long-term savings and housing, and assesses whether changes coincide with leaving homeownership, moving, downsizing, or changes in living arrangements. The results show a gradual decline in survivor-household wealth, driven largely by reductions in real assets and long-term savings. Part of this decline reflects bequests outside the surviving household, while additional reductions are consistent with housing adjustment and asset depletion. Higher pre-existing financial literacy is not associated with systematically smaller total-wealth losses; instead, financially literate individuals enter widowhood with greater savings and draw down more financial assets. The findings show that spousal death changes both the amount and composition of wealth retained by surviving households.
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes:</strong> D14, G51, J14.
+      <strong>JEL codes:</strong> D14, D31, J12.
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> widowhood; spousal death; household finance; survivor pension; inheritance; financial capability.
+      <strong>Keywords:</strong> spousal death; household wealth; bequests; housing choice; financial capability.
     </p>
   </div>
 </div>
