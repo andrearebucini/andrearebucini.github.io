@@ -167,7 +167,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>JEL codes:</strong> I21, I24, J16, D83.
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> STEM education; gender stereotypes; parental beliefs; information experiment; upper-secondary school choice.
+      <strong>Keywords:</strong> STEM education, gender stereotypes, parental beliefs, information experiment, upper-secondary school choice.
     </p>
   </div>
 </div>
@@ -202,7 +202,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>JEL codes:</strong> I12, I18, I21, J13.
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> mandatory sex education; adolescent fertility; adolescent births; abortion; sexually transmitted infections; Europe.
+      <strong>Keywords:</strong> mandatory sex education, adolescent fertility, adolescent births, abortion, sexually transmitted infections, Europe.
     </p>
   </div>
 </div>
