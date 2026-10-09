@@ -37,7 +37,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
   <div class="news-item">
     <span class="news-label">News</span>
     <span class="news-text">
-      In October 2026, I will start a doctoral research internship at the <a href="https://www.bancaditalia.it/chi-siamo/organizzazione/ac/tutela-educazione-finanziaria/index.html?com.dotmarketing.htmlpage.language=1" target="_blank" rel="noopener noreferrer">Financial Education Directorate</a> of the Bank of Italy, working on branch closures, microenterprise trust, and financial and digital literacy.
+      In October 2026, I started a doctoral research internship at the <a href="https://www.bancaditalia.it/chi-siamo/organizzazione/ac/tutela-educazione-finanziaria/index.html?com.dotmarketing.htmlpage.language=1" target="_blank" rel="noopener noreferrer">Financial Education Directorate</a> of the Bank of Italy, working on branch closures, microenterprise trust, and financial and digital literacy.
     </span>
   </div>
 </div>
