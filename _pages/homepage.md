@@ -58,11 +58,6 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
     <i class="fas fa-graduation-cap" aria-hidden="true"></i>
     Google Scholar
   </a>
-  <span>·</span>
-  <a href="https://github.com/andrearebucini" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-github" aria-hidden="true"></i>
-    GitHub
-  </a>
 </p>
 
   </div>
