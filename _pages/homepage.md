@@ -49,14 +49,14 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
     andrea.rebucini@unibg.it
   </a>
   <span>·</span>
-  <a href="https://www.linkedin.com/in/andrea-rebucini/" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-linkedin" aria-hidden="true"></i>
-    LinkedIn
-  </a>
-  <span>·</span>
   <a href="https://scholar.google.com/citations?user=hVfaDXwAAAAJ&hl" target="_blank" rel="noopener noreferrer">
     <i class="fas fa-graduation-cap" aria-hidden="true"></i>
     Google Scholar
+  </a>
+  <span>·</span>
+  <a href="https://www.linkedin.com/in/andrea-rebucini/" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin" aria-hidden="true"></i>
+    LinkedIn
   </a>
 </p>
 
