@@ -162,7 +162,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
       <strong>JEL codes:</strong> I21, I24, J16, D83.
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> STEM education, gender stereotypes, beliefs, preferences, information experiment, upper-secondary school choice.
+      <strong>Keywords:</strong> STEM education, gender stereotypes, parental beliefs, parental preferences, information experiment, upper-secondary track choice.
     </p>
   </div>
 </div>
