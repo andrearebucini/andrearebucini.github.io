@@ -190,14 +190,14 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
   <div class="project-abstract">
     <p>
-      This paper examines the effects of mandatory sex education on adolescent reproductive and sexual health in Europe. We combine cross-country variation in the timing of policy adoption with measures of births, fertility, abortions, and sexually transmitted infections (STIs) among adolescents aged 15–19 from the Global Burden of Disease (GBD) study, produced by the Institute for Health Metrics and Evaluation (IHME). We estimate average treatment effects using a staggered difference-in-differences design that exploits cross-country variation in the timing of policy adoption. The results show gradual and persistent reductions in adolescent births and fertility, with effects increasing as exposure to the policy accumulates. Abortion rates also decline, particularly at longer post-treatment horizons, suggesting that mandatory sex education reduces adolescent pregnancies rather than merely shifting pregnancy outcomes from births to abortions. The policy is additionally associated with a reduction in the STI rate. This aggregate effect is smaller than the fertility-related effects and masks substantial heterogeneity across individual infections. Overall, the findings indicate that the implementation of mandatory sex education programmes in schools improves adolescent reproductive and sexual health, although its effects emerge gradually and vary across outcomes.
+      Coming soon.
     </p>
 
     <p class="project-classification">
-      <strong>JEL codes:</strong> I12, I18, I21, J13.
+      <strong>JEL codes:</strong> 
     </p>
     <p class="project-classification">
-      <strong>Keywords:</strong> mandatory sex education, adolescent fertility, adolescent births, abortion, sexually transmitted infections, Europe.
+      <strong>Keywords:</strong>
     </p>
   </div>
 </div>
