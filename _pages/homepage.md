@@ -180,25 +180,20 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
     </span>
 
     <span class="project-authors">
-      with <a href="https://elisabaldazzi.github.io/" target="_blank" rel="noopener">E. Baldazzi</a> and <a href="https://www.unibz.it/en/faculties/economics-management/phd-economics-finance/phd-students/phd/48805-chiara-gastaldi" target="_blank" rel="noopener">C. Gastaldi</a>
+      with <a href="https://elisabaldazzi.github.io/" target="_blank" rel="noopener noreferrer">E. Baldazzi</a> and <a href="https://www.unibz.it/en/faculties/economics-management/phd-economics-finance/phd-students/phd/48805-chiara-gastaldi" target="_blank" rel="noopener noreferrer">C. Gastaldi</a>
+    </span>
+  </div>
+</div>
+
+<div class="research-project">
+  <div class="project-header">
+    <span class="project-title">
+      <strong>Relational capital in a digital era: Bank branch closures, microenterprise capabilities, and trust</strong>
     </span>
 
-    <button class="abstract-toggle" type="button" aria-expanded="false" onclick="var project=this.closest('.research-project'); var open=project.classList.toggle('is-open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); this.blur();">
-      Abstract
-    </button>
-  </div>
-
-  <div class="project-abstract">
-    <p>
-      Coming soon.
-    </p>
-
-    <p class="project-classification">
-      <strong>JEL codes:</strong> 
-    </p>
-    <p class="project-classification">
-      <strong>Keywords:</strong>
-    </p>
+    <span class="project-authors">
+      with F. Travaglino and P. Marotta
+    </span>
   </div>
 </div>
 
