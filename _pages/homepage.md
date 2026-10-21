@@ -30,7 +30,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
   <div class="news-item">
     <span class="news-label">News</span>
     <span class="news-text">
-      In August 2026, I joined the <a href="https://g53network.org/training-and-mentoring/g53-network-rising-scholars/" target="_blank" rel="noopener noreferrer">G53 Network Rising Scholars</a>, an early-career research community in financial literacy and personal finance.
+      In August 2026, I joined the <a href="https://g53network.org/training-and-mentoring/g53-network-rising-scholars/" target="_blank" rel="noopener noreferrer">G53 Financial Literacy and Personal Finance Research Network Rising Scholars</a>, an early-career research community in financial literacy and personal finance.
     </span>
   </div>
 
