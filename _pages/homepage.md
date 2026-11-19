@@ -70,16 +70,7 @@ I spent the academic year 2025–26 visiting the [Department of Social Policy](h
 
 <section id="working-papers" class="homepage-section" markdown="1">
 
-<div class="photo-section-heading">
-  <img
-    class="photo-section-heading-image"
-    src="/images/presentation_phdday_2026.jpg"
-    alt=""
-    aria-hidden="true"
-    loading="lazy"
-  >
-  <h2>Working papers</h2>
-</div>
+## Working papers
 
 <div class="research-project">
   <div class="project-header">
