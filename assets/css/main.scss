@@ -1903,3 +1903,102 @@ html.dark-mode .news-text,
 html.light-mode .news-text {
   color: var(--site-text) !important;
 }
+
+
+
+
+
+/* ============================================================
+   EXPERIMENTAL PHOTOGRAPHIC SECTION HEADING
+   Currently applied to Working papers only
+   ============================================================ */
+
+.photo-section-heading {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 100% !important;
+  min-height: 108px !important;
+  margin: 0 0 1.6rem 0 !important;
+  padding: 1rem !important;
+
+  overflow: hidden !important;
+  border: 1px solid var(--site-rule-soft) !important;
+  border-radius: 5px !important;
+  background: var(--site-surface-soft) !important;
+  isolation: isolate !important;
+}
+
+/* Photograph occupying the right portion of the heading */
+
+.photo-section-heading-image {
+  position: absolute !important;
+  z-index: 0 !important;
+
+  top: 0 !important;
+  right: 0 !important;
+
+  width: 55% !important;
+  height: 100% !important;
+
+  object-fit: cover !important;
+  object-position: center 40% !important;
+
+  opacity: 0.42 !important;
+  filter: grayscale(45%) saturate(65%) contrast(85%) !important;
+
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, black 85%) !important;
+  mask-image:
+    linear-gradient(to right, transparent 0%, black 85%) !important;
+
+  pointer-events: none !important;
+  user-select: none !important;
+
+  transition: none !important;
+}
+
+/* Retain the existing section-title typography */
+
+.page__content .photo-section-heading h2 {
+  position: relative !important;
+  z-index: 1 !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  text-align: center !important;
+  color: var(--site-text) !important;
+  background: transparent !important;
+  border: 0 !important;
+
+  transition: none !important;
+}
+
+/* Dark-mode adjustment */
+
+html.dark-mode .photo-section-heading-image {
+  opacity: 0.27 !important;
+}
+
+/* Mobile */
+
+@media (max-width: 64em) {
+  .photo-section-heading {
+    min-height: 82px !important;
+    margin-bottom: 1.25rem !important;
+    padding: 0.75rem !important;
+  }
+
+  .photo-section-heading-image {
+    width: 60% !important;
+    opacity: 0.30 !important;
+  }
+
+  html.dark-mode .photo-section-heading-image {
+    opacity: 0.20 !important;
+  }
+}
